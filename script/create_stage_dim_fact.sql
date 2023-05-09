@@ -19,7 +19,7 @@ CREATE TABLE [stgStore] (
     [staff_id] int,
     [address_id] int
 )
-CREATE TABLE [ stgCategory] (
+CREATE TABLE [stgCategory] (
     [film_id] int,
     [name] nvarchar(255)
 )
@@ -126,6 +126,14 @@ CREATE TABLE [DimStaff] (
     [store_id] int,
     [email] nvarchar(255)
 )
+CREATE TABLE [DimCustomer] (
+    [customer_id] int primary key,
+    [first_name] nvarchar(255),
+    [last_name] nvarchar(255),
+    [email] nvarchar(255),
+    [address_id] int FOREIGN KEY REFERENCES DimAddress(address_id)
+)
+
 CREATE TABLE [DimDate] (
     [date key] int primary key,
     [full date] datetime,
@@ -152,10 +160,24 @@ CREATE TABLE [DimDate] (
     [month end flag] nvarchar(255),
     [same day year ago] datetime
 )
-CREATE TABLE [DimCustomer] (
-    [customer_id] int primary key,
-    [first_name] nvarchar(255),
-    [last_name] nvarchar(255),
-    [email] nvarchar(255),
-    [address_id] int FOREIGN KEY REFERENCES DimAddress(address_id)
+
+CREATE TABLE [FactRental] (
+    [rental_id] int primary key,
+    [customer_id] int ,
+    [staff_id] int,
+    [film_id] int,
+    [store_id] int,
+    [rental_date_key] int,
+    [return_date_key] int
 )
+
+
+---
+truncate table DimDate
+truncate table DimCategory
+truncate table DimActor
+truncate table DimFilm
+truncate table DimStaff
+truncate table DimStore
+truncate table DimCustomer
+truncate table DimAddress
