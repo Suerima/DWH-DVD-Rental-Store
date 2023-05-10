@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="10"
-  DTS:VersionGUID="{3B949A02-B5BE-4E77-8461-09EEAF06E8FF}">
+  DTS:VersionBuild="18"
+  DTS:VersionGUID="{57F2462D-335A-45D8-A441-32564166EAAE}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -3923,37 +3923,45 @@
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="150.4,41.6"
-          Id="Package\Sequence Container\DF - DimAddress"
-          TopLeft="216.5,5.49999999999995" />
+          Size="148,41.6"
+          Id="Package\DF - FactRenal"
+          TopLeft="654.114501736254,270.976006016296" />
         <NodeLayout
-          Size="140,41.6"
-          Id="Package\Sequence Container\DF - DimFilm"
-          TopLeft="213.985706865544,172.205884690928" />
-        <NodeLayout
-          Size="150.4,41.6"
-          Id="Package\Sequence Container\DF - DimCategory"
-          TopLeft="57.3571326878605,230.98235467858" />
+          Size="162.4,41.6"
+          Id="Package\Execute SQL Task"
+          TopLeft="846.042531293721,276.913168953364" />
         <NodeLayout
           Size="144.8,41.6"
           Id="Package\Sequence Container\DF - DimActor"
           TopLeft="351.014276956052,234.04117825089" />
         <NodeLayout
           Size="150.4,41.6"
-          Id="Package\Sequence Container\DF - DimStore"
-          TopLeft="5.50000000000004,107.1" />
+          Id="Package\Sequence Container\DF - DimAddress"
+          TopLeft="216.5,4.65032678546922" />
         <NodeLayout
           Size="150.4,41.6"
-          Id="Package\Sequence Container\DF - DimStaff"
-          TopLeft="216.5,107.1" />
+          Id="Package\Sequence Container\DF - DimCategory"
+          TopLeft="57.3571326878605,230.98235467858" />
+        <NodeLayout
+          Size="165.6,41.6"
+          Id="Package\Sequence Container\DF - DimCustomer"
+          TopLeft="424.328571367751,117.614706029818" />
         <NodeLayout
           Size="142.4,41.6"
           Id="Package\Sequence Container\DF - DimDate"
           TopLeft="219.071414071686,313.379414657697" />
         <NodeLayout
-          Size="165.6,41.6"
-          Id="Package\Sequence Container\DF - DimCustomer"
-          TopLeft="424.328571367751,117.614706029818" />
+          Size="140,41.6"
+          Id="Package\Sequence Container\DF - DimFilm"
+          TopLeft="213.985706865544,172.205884690928" />
+        <NodeLayout
+          Size="150.4,41.6"
+          Id="Package\Sequence Container\DF - DimStaff"
+          TopLeft="216.5,107.1" />
+        <NodeLayout
+          Size="150.4,41.6"
+          Id="Package\Sequence Container\DF - DimStore"
+          TopLeft="5.50000000000004,107.1" />
         <EdgeLayout
           Id="Package\Sequence Container.PrecedenceConstraints[Constraint]"
           TopLeft="213.985706865544,193.005884690928">
@@ -4012,30 +4020,30 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Sequence Container.PrecedenceConstraints[Constraint 2]"
-          TopLeft="256.1,47.1">
+          TopLeft="256.1,46.2503267854692">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-175.4,59.9999999999999"
+              EndConnector="-175.4,60.8496732145308"
               Start="0,0"
-              End="-175.4,52.4999999999999">
+              End="-175.4,53.3496732145308">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,16.6968641114982" />
+                    End="0,16.9899569625037" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,16.6968641114982"
-                    Point2="0,20.6968641114982"
-                    Point3="-4,20.6968641114982" />
+                    Point1="0,16.9899569625037"
+                    Point2="0,20.9899569625037"
+                    Point3="-4,20.9899569625037" />
                   <mssgle:LineSegment
-                    End="-171.4,20.6968641114982" />
+                    End="-171.4,20.9899569625037" />
                   <mssgle:CubicBezierSegment
-                    Point1="-171.4,20.6968641114982"
-                    Point2="-175.4,20.6968641114982"
-                    Point3="-175.4,24.6968641114982" />
+                    Point1="-171.4,20.9899569625037"
+                    Point2="-175.4,20.9899569625037"
+                    Point3="-175.4,24.9899569625037" />
                   <mssgle:LineSegment
-                    End="-175.4,52.4999999999999" />
+                    End="-175.4,53.3496732145308" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4046,18 +4054,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Sequence Container.PrecedenceConstraints[Constraint 3]"
-          TopLeft="291.7,47.1">
+          TopLeft="291.7,46.2503267854692">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,59.9999999999999"
+              EndConnector="0,60.8496732145308"
               Start="0,0"
-              End="0,52.4999999999999">
+              End="0,53.3496732145308">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,52.4999999999999" />
+                    End="0,53.3496732145308" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4068,30 +4076,30 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Sequence Container.PrecedenceConstraints[Constraint 4]"
-          TopLeft="327.3,47.1">
+          TopLeft="327.3,46.2503267854692">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="179.828571367751,70.5147060298176"
+              EndConnector="179.828571367751,71.3643792443488"
               Start="0,0"
-              End="179.828571367751,63.0147060298176">
+              End="179.828571367751,63.8643792443488">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,20.3238881426897" />
+                    End="0,20.6169809936952" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,20.3238881426897"
-                    Point2="0,24.3238881426897"
-                    Point3="4,24.3238881426897" />
+                    Point1="0,20.6169809936952"
+                    Point2="0,24.6169809936952"
+                    Point3="4,24.6169809936952" />
                   <mssgle:LineSegment
-                    End="175.828571367751,24.3238881426897" />
+                    End="175.828571367751,24.6169809936952" />
                   <mssgle:CubicBezierSegment
-                    Point1="175.828571367751,24.3238881426897"
-                    Point2="179.828571367751,24.3238881426897"
-                    Point3="179.828571367751,28.3238881426897" />
+                    Point1="175.828571367751,24.6169809936952"
+                    Point2="179.828571367751,24.6169809936952"
+                    Point3="179.828571367751,28.6169809936952" />
                   <mssgle:LineSegment
-                    End="179.828571367751,63.0147060298176" />
+                    End="179.828571367751,63.8643792443488" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4106,37 +4114,21 @@
           PanelSize="599.2,420"
           Size="599.2,463.2"
           Id="Package\Sequence Container"
-          TopLeft="34.7214185207462,116.694113941672" />
-        <NodeLayout
-          Size="148,41.6"
-          Id="Package\DF - FactRenal"
-          TopLeft="687.561214323989,228.24958151418" />
+          TopLeft="22.8166564132473,64.8640478552977" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="633.921418520746,348.294113941672">
+          TopLeft="622.016656413247,294.120026935797">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="53.639795803243,-99.2445324274916"
+              EndConnector="32.0978453230067,0"
               Start="0,0"
-              End="46.139795803243,-99.2445324274916">
+              End="24.5978453230067,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="22.8198979016215,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="22.8198979016215,0"
-                    Point2="26.8198979016215,0"
-                    Point3="26.8198979016215,-4" />
-                  <mssgle:LineSegment
-                    End="26.8198979016215,-95.2445324274916" />
-                  <mssgle:CubicBezierSegment
-                    Point1="26.8198979016215,-95.2445324274916"
-                    Point2="26.8198979016215,-99.2445324274916"
-                    Point3="30.8198979016215,-99.2445324274916" />
-                  <mssgle:LineSegment
-                    End="46.139795803243,-99.2445324274916" />
+                    End="24.5978453230067,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4145,36 +4137,77 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="162.4,41.6"
-          Id="Package\Execute SQL Task"
-          TopLeft="768.750013091735,342.82353402339" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="761.561214323989,269.84958151418">
+          TopLeft="802.114501736254,294.74458748483">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="88.3887987677456,72.9739525092102"
+              EndConnector="43.9280295574669,0"
               Start="0,0"
-              End="88.3887987677456,65.4739525092102">
+              End="36.4280295574669,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,32.4869762546051" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,32.4869762546051"
-                    Point2="0,36.4869762546051"
-                    Point3="4,36.4869762546051" />
+                    End="36.4280295574669,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <AnnotationLayout
+          Text=""
+          ParentId="Package"
+          FontInfo="{assembly:Null}"
+          Size="28.8,60"
+          Id="c89ebede-3340-48ec-8506-60e08714c45c"
+          TopLeft="5.5,265.098042933586" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\DF - FactRenal">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="156,41.6"
+          Id="Package\DF - FactRenal\SRC - DimRental"
+          TopLeft="196,46" />
+        <NodeLayout
+          Size="170.4,41.6"
+          Id="Package\DF - FactRenal\DST - FactRental"
+          TopLeft="217,210" />
+        <EdgeLayout
+          Id="Package\DF - FactRenal.Paths[OLE DB Source Output]"
+          TopLeft="274,87.6">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="28.1999999999998,122.4"
+              Start="0,0"
+              End="28.1999999999998,114.9">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
                   <mssgle:LineSegment
-                    End="84.3887987677456,36.4869762546051" />
+                    End="0,57.2" />
                   <mssgle:CubicBezierSegment
-                    Point1="84.3887987677456,36.4869762546051"
-                    Point2="88.3887987677456,36.4869762546051"
-                    Point3="88.3887987677456,40.4869762546051" />
+                    Point1="0,57.2"
+                    Point2="0,61.2"
+                    Point3="4,61.2" />
                   <mssgle:LineSegment
-                    End="88.3887987677456,65.4739525092102" />
+                    End="24.1999999999998,61.2" />
+                  <mssgle:CubicBezierSegment
+                    Point1="24.1999999999998,61.2"
+                    Point2="28.1999999999998,61.2"
+                    Point3="28.1999999999998,65.2" />
+                  <mssgle:LineSegment
+                    End="28.1999999999998,114.9" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4185,7 +4218,109 @@
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
-  </Package>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\DF - FactRenal\DST - FactRental">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\DF - FactRenal\SRC - DimRental">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Sequence Container\DF - DimActor">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="146.4,41.6"
+          Id="Package\Sequence Container\DF - DimActor\SRC - stgActor"
+          TopLeft="265,186" />
+        <NodeLayout
+          Size="151.2,41.6"
+          Id="Package\Sequence Container\DF - DimActor\DST - DimActor"
+          TopLeft="541,196" />
+        <EdgeLayout
+          Id="Package\Sequence Container\DF - DimActor.Paths[OLE DB Source Output]"
+          TopLeft="411.4,206.8">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="129.6,10"
+              Start="0,0"
+              End="122.1,10">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="60.8,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="60.8,0"
+                    Point2="64.8,0"
+                    Point3="64.8,4" />
+                  <mssgle:LineSegment
+                    End="64.8,6" />
+                  <mssgle:CubicBezierSegment
+                    Point1="64.8,6"
+                    Point2="64.8,10"
+                    Point3="68.8,10" />
+                  <mssgle:LineSegment
+                    End="122.1,10" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\DF - DimActor\DST - DimActor">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\DF - DimActor\SRC - stgActor">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Sequence Container\DF - DimAddress">
     <LayoutInfo>
@@ -4224,69 +4359,6 @@
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
-  <TaskHost
-    design-time-name="Package\Sequence Container\DF - DimFilm">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="141.6,41.6"
-          Id="Package\Sequence Container\DF - DimFilm\SRC - stgFilm"
-          TopLeft="422,152" />
-        <NodeLayout
-          Size="146.4,41.6"
-          Id="Package\Sequence Container\DF - DimFilm\DST - DimFilm"
-          TopLeft="661,172" />
-        <EdgeLayout
-          Id="Package\Sequence Container\DF - DimFilm.Paths[OLE DB Source Output]"
-          TopLeft="563.6,172.8">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="97.4,20"
-              Start="0,0"
-              End="89.9,20">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="44.7,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="44.7,0"
-                    Point2="48.7,0"
-                    Point3="48.7,4" />
-                  <mssgle:LineSegment
-                    End="48.7,16" />
-                  <mssgle:CubicBezierSegment
-                    Point1="48.7,16"
-                    Point2="48.7,20"
-                    Point3="52.7,20" />
-                  <mssgle:LineSegment
-                    End="89.9,20" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container\DF - DimAddress\SRC - stgAddress">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Sequence Container\DF - DimAddress\DST - DimAddress">
     <Properties>
@@ -4301,20 +4373,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container\DF - DimFilm\SRC - stgFilm">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container\DF - DimFilm\DST - DimFilm">
+    design-time-name="Package\Sequence Container\DF - DimAddress\SRC - stgAddress">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -4376,69 +4435,6 @@
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
-  <TaskHost
-    design-time-name="Package\Sequence Container\DF - DimActor">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="146.4,41.6"
-          Id="Package\Sequence Container\DF - DimActor\SRC - stgActor"
-          TopLeft="265,186" />
-        <NodeLayout
-          Size="151.2,41.6"
-          Id="Package\Sequence Container\DF - DimActor\DST - DimActor"
-          TopLeft="541,196" />
-        <EdgeLayout
-          Id="Package\Sequence Container\DF - DimActor.Paths[OLE DB Source Output]"
-          TopLeft="411.4,206.8">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="129.6,10"
-              Start="0,0"
-              End="122.1,10">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="60.8,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="60.8,0"
-                    Point2="64.8,0"
-                    Point3="64.8,4" />
-                  <mssgle:LineSegment
-                    End="64.8,6" />
-                  <mssgle:CubicBezierSegment
-                    Point1="64.8,6"
-                    Point2="64.8,10"
-                    Point3="68.8,10" />
-                  <mssgle:LineSegment
-                    End="122.1,10" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container\DF - DimCategory\SRC - stgCategory">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Sequence Container\DF - DimCategory\DST - DimCategory">
     <Properties>
@@ -4453,20 +4449,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container\DF - DimActor\SRC - stgActor">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container\DF - DimActor\DST - DimActor">
+    design-time-name="Package\Sequence Container\DF - DimCategory\SRC - stgCategory">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -4479,44 +4462,44 @@
     </Properties>
   </PipelineComponentMetadata>
   <TaskHost
-    design-time-name="Package\Sequence Container\DF - DimStore">
+    design-time-name="Package\Sequence Container\DF - DimCustomer">
     <LayoutInfo>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="149.6,41.6"
-          Id="Package\Sequence Container\DF - DimStore\SRC - stgStore"
-          TopLeft="141,135" />
+          Id="Package\Sequence Container\DF - DimCustomer\SRC - stgCustomer"
+          TopLeft="392,160" />
         <NodeLayout
-          Size="170.4,41.6"
-          Id="Package\Sequence Container\DF - DimStore\DST - DimStore"
-          TopLeft="426,114" />
+          Size="172,41.6"
+          Id="Package\Sequence Container\DF - DimCustomer\DST - DimCustomer"
+          TopLeft="707,171" />
         <EdgeLayout
-          Id="Package\Sequence Container\DF - DimStore.Paths[OLE DB Source Output]"
-          TopLeft="290.6,155.8">
+          Id="Package\Sequence Container\DF - DimCustomer.Paths[OLE DB Source Output]"
+          TopLeft="541.6,180.8">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="135.4,-21"
+              EndConnector="165.4,11"
               Start="0,0"
-              End="127.9,-21">
+              End="157.9,11">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="63.7,0" />
+                    End="78.7,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="63.7,0"
-                    Point2="67.7,0"
-                    Point3="67.7,-4" />
+                    Point1="78.7,0"
+                    Point2="82.7,0"
+                    Point3="82.7,4" />
                   <mssgle:LineSegment
-                    End="67.7,-17" />
+                    End="82.7,7.00000000000003" />
                   <mssgle:CubicBezierSegment
-                    Point1="67.7,-17"
-                    Point2="67.7,-21"
-                    Point3="71.7,-21" />
+                    Point1="82.7,7.00000000000003"
+                    Point2="82.7,11"
+                    Point3="86.7,11" />
                   <mssgle:LineSegment
-                    End="127.9,-21" />
+                    End="157.9,11" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4529,7 +4512,7 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container\DF - DimStore\SRC - stgStore">
+    design-time-name="Package\Sequence Container\DF - DimCustomer\DST - DimCustomer">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -4542,7 +4525,147 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container\DF - DimStore\DST - DimStore">
+    design-time-name="Package\Sequence Container\DF - DimCustomer\SRC - stgCustomer">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Sequence Container\DF - DimDate">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="144,41.6"
+          Id="Package\Sequence Container\DF - DimDate\SRC - stgDate"
+          TopLeft="142,240" />
+        <NodeLayout
+          Size="148.8,41.6"
+          Id="Package\Sequence Container\DF - DimDate\DST - DimDate"
+          TopLeft="466,242" />
+        <EdgeLayout
+          Id="Package\Sequence Container\DF - DimDate.Paths[OLE DB Source Output]"
+          TopLeft="291.6,261.8">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="174.4,0"
+              Start="0,0"
+              End="166.9,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="166.9,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\DF - DimDate\DST - DimDate">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\DF - DimDate\SRC - stgDate">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Sequence Container\DF - DimFilm">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="141.6,41.6"
+          Id="Package\Sequence Container\DF - DimFilm\SRC - stgFilm"
+          TopLeft="422,152" />
+        <NodeLayout
+          Size="146.4,41.6"
+          Id="Package\Sequence Container\DF - DimFilm\DST - DimFilm"
+          TopLeft="661,172" />
+        <EdgeLayout
+          Id="Package\Sequence Container\DF - DimFilm.Paths[OLE DB Source Output]"
+          TopLeft="563.6,172.8">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="97.4,20"
+              Start="0,0"
+              End="89.9,20">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="44.7,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="44.7,0"
+                    Point2="48.7,0"
+                    Point3="48.7,4" />
+                  <mssgle:LineSegment
+                    End="48.7,16" />
+                  <mssgle:CubicBezierSegment
+                    Point1="48.7,16"
+                    Point2="48.7,20"
+                    Point3="52.7,20" />
+                  <mssgle:LineSegment
+                    End="89.9,20" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\DF - DimFilm\DST - DimFilm">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\DF - DimFilm\SRC - stgFilm">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -4605,19 +4728,6 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container\DF - DimStaff\SRC - stgStaff">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\Sequence Container\DF - DimStaff\DST - DimStaff">
     <Properties>
       <Property>
@@ -4630,59 +4740,8 @@
       </Property>
     </Properties>
   </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\Sequence Container\DF - DimDate">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="144,41.6"
-          Id="Package\Sequence Container\DF - DimDate\SRC - stgDate"
-          TopLeft="142,240" />
-        <NodeLayout
-          Size="148.8,41.6"
-          Id="Package\Sequence Container\DF - DimDate\DST - DimDate"
-          TopLeft="466,242" />
-        <EdgeLayout
-          Id="Package\Sequence Container\DF - DimDate.Paths[OLE DB Source Output]"
-          TopLeft="291.6,261.8">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="174.4,0"
-              Start="0,0"
-              End="166.9,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="166.9,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container\DF - DimDate\SRC - stgDate">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container\DF - DimDate\DST - DimDate">
+    design-time-name="Package\Sequence Container\DF - DimStaff\SRC - stgStaff">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -4695,94 +4754,44 @@
     </Properties>
   </PipelineComponentMetadata>
   <TaskHost
-    design-time-name="Package\Sequence Container\DF - DimCustomer">
+    design-time-name="Package\Sequence Container\DF - DimStore">
     <LayoutInfo>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="149.6,41.6"
-          Id="Package\Sequence Container\DF - DimCustomer\SRC - stgCustomer"
-          TopLeft="392,160" />
-        <NodeLayout
-          Size="172,41.6"
-          Id="Package\Sequence Container\DF - DimCustomer\DST - DimCustomer"
-          TopLeft="707,171" />
-        <EdgeLayout
-          Id="Package\Sequence Container\DF - DimCustomer.Paths[OLE DB Source Output]"
-          TopLeft="541.6,180.8">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="165.4,11"
-              Start="0,0"
-              End="157.9,11">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="78.7,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="78.7,0"
-                    Point2="82.7,0"
-                    Point3="82.7,4" />
-                  <mssgle:LineSegment
-                    End="82.7,7.00000000000003" />
-                  <mssgle:CubicBezierSegment
-                    Point1="82.7,7.00000000000003"
-                    Point2="82.7,11"
-                    Point3="86.7,11" />
-                  <mssgle:LineSegment
-                    End="157.9,11" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <TaskHost
-    design-time-name="Package\DF - FactRenal">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="156,41.6"
-          Id="Package\DF - FactRenal\SRC - DimRental"
-          TopLeft="196,46" />
+          Id="Package\Sequence Container\DF - DimStore\SRC - stgStore"
+          TopLeft="141,135" />
         <NodeLayout
           Size="170.4,41.6"
-          Id="Package\DF - FactRenal\DST - FactRental"
-          TopLeft="217,210" />
+          Id="Package\Sequence Container\DF - DimStore\DST - DimStore"
+          TopLeft="426,114" />
         <EdgeLayout
-          Id="Package\DF - FactRenal.Paths[OLE DB Source Output]"
-          TopLeft="274,87.6">
+          Id="Package\Sequence Container\DF - DimStore.Paths[OLE DB Source Output]"
+          TopLeft="290.6,155.8">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="28.1999999999998,122.4"
+              EndConnector="135.4,-21"
               Start="0,0"
-              End="28.1999999999998,114.9">
+              End="127.9,-21">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,57.2" />
+                    End="63.7,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,57.2"
-                    Point2="0,61.2"
-                    Point3="4,61.2" />
+                    Point1="63.7,0"
+                    Point2="67.7,0"
+                    Point3="67.7,-4" />
                   <mssgle:LineSegment
-                    End="24.1999999999998,61.2" />
+                    End="67.7,-17" />
                   <mssgle:CubicBezierSegment
-                    Point1="24.1999999999998,61.2"
-                    Point2="28.1999999999998,61.2"
-                    Point3="28.1999999999998,65.2" />
+                    Point1="67.7,-17"
+                    Point2="67.7,-21"
+                    Point3="71.7,-21" />
                   <mssgle:LineSegment
-                    End="28.1999999999998,114.9" />
+                    End="127.9,-21" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4795,7 +4804,7 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container\DF - DimCustomer\SRC - stgCustomer">
+    design-time-name="Package\Sequence Container\DF - DimStore\DST - DimStore">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -4808,33 +4817,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container\DF - DimCustomer\DST - DimCustomer">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\DF - FactRenal\SRC - DimRental">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\DF - FactRenal\DST - FactRental">
+    design-time-name="Package\Sequence Container\DF - DimStore\SRC - stgStore">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

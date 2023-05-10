@@ -6,10 +6,75 @@
     <Name>SSAS_Sakila.database</Name>
     <FullPath>SSAS_Sakila.database</FullPath>
   </Database>
+  <Cubes>
+    <ProjectItem>
+      <Name>DWHSakila.cube</Name>
+      <FullPath>DWHSakila.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>DWHSakila.partitions</Name>
+          <FullPath>DWHSakila.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+  </Cubes>
+  <Dimensions>
+    <ProjectItem>
+      <Name>Dim Film.dim</Name>
+      <FullPath>Dim Film.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Address.dim</Name>
+      <FullPath>Dim Address.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Date.dim</Name>
+      <FullPath>Dim Date.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Store.dim</Name>
+      <FullPath>Dim Store.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Staff.dim</Name>
+      <FullPath>Dim Staff.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Customer.dim</Name>
+      <FullPath>Dim Customer.dim</FullPath>
+    </ProjectItem>
+  </Dimensions>
+  <DataSources>
+    <ProjectItem>
+      <Name>DWHSakila.ds</Name>
+      <FullPath>DWHSakila.ds</FullPath>
+    </ProjectItem>
+  </DataSources>
+  <DataSourceViews>
+    <ProjectItem>
+      <Name>DWHSakila.dsv</Name>
+      <FullPath>DWHSakila.dsv</FullPath>
+    </ProjectItem>
+  </DataSourceViews>
   <Configurations>
     <Configuration>
       <Name>Development</Name>
-      <Options />
+      <Options>
+        <ConnectionMappings>
+          <ConfigurationSetting>
+            <Id>DWHSakila</Id>
+            <Name>DWHSakila</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=localhost;Integrated Security=SSPI;Initial Catalog=DWHSakila</Value>
+          </ConfigurationSetting>
+        </ConnectionMappings>
+        <ConnectionSecurityMappings>
+          <ConfigurationSetting>
+            <Id>DWHSakila</Id>
+            <Name>DWHSakila</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+        </ConnectionSecurityMappings>
+      </Options>
     </Configuration>
   </Configurations>
 </Project>

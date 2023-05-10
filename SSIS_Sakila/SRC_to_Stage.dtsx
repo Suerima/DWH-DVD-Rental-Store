@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="21"
-  DTS:VersionGUID="{4FFFEAE8-4FFC-49BB-9943-30C710F61C23}">
+  DTS:VersionBuild="23"
+  DTS:VersionGUID="{EDE7485E-3B0B-45EC-9513-C835324BA10E}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -5226,33 +5226,17 @@
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="144.8,41.6"
-          Id="Package\Sequence Container\DF - Address"
-          TopLeft="15.6000011920929,7.92941324471605" />
-        <NodeLayout
-          Size="129.6,41.6"
-          Id="Package\Sequence Container\DF - Staff"
-          TopLeft="179.171432549127,101.988238093267" />
-        <NodeLayout
-          Size="134.4,41.6"
-          Id="Package\Sequence Container\DF - Inventory"
-          TopLeft="16.3142869185427,196.811768834896" />
-        <NodeLayout
-          Size="129.6,41.6"
-          Id="Package\Sequence Container\DF - Store"
-          TopLeft="14.8857154656435,102.752943986345" />
-        <NodeLayout
-          Size="144,41.6"
-          Id="Package\Sequence Container\DF - Category"
-          TopLeft="10.6000011069434,54.5764727224529" />
-        <NodeLayout
           Size="126.4,41.6"
           Id="Package\Sequence Container\DF - Actor"
           TopLeft="180.600004002026,57.6352962947635" />
         <NodeLayout
-          Size="129.6,41.6"
-          Id="Package\Sequence Container\DF - Film"
-          TopLeft="179.885718275576,8.69411913779379" />
+          Size="144.8,41.6"
+          Id="Package\Sequence Container\DF - Address"
+          TopLeft="15.6000011920929,7.92941324471605" />
+        <NodeLayout
+          Size="144,41.6"
+          Id="Package\Sequence Container\DF - Category"
+          TopLeft="10.6000011069434,54.5764727224529" />
         <NodeLayout
           Size="146.4,41.6"
           Id="Package\Sequence Container\DF - Customer"
@@ -5262,16 +5246,32 @@
           Id="Package\Sequence Container\DF - Date"
           TopLeft="14.8000011920928,147.835298300284" />
         <NodeLayout
+          Size="129.6,41.6"
+          Id="Package\Sequence Container\DF - Film"
+          TopLeft="179.885718275576,8.69411913779379" />
+        <NodeLayout
+          Size="134.4,41.6"
+          Id="Package\Sequence Container\DF - Inventory"
+          TopLeft="16.3142869185427,196.811768834896" />
+        <NodeLayout
           Size="150.4,41.6"
           Id="Package\Sequence Container\DF - Rental"
-          TopLeft="166.571434337266,202.247063488779" />
+          TopLeft="168.714291516616,196.894122237235" />
+        <NodeLayout
+          Size="129.6,41.6"
+          Id="Package\Sequence Container\DF - Staff"
+          TopLeft="179.171432549127,101.988238093267" />
+        <NodeLayout
+          Size="129.6,41.6"
+          Id="Package\Sequence Container\DF - Store"
+          TopLeft="14.8857154656435,102.752943986345" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="340.8,309.6"
-          Size="340.8,352.8"
+          PanelSize="340.8,263.2"
+          Size="340.8,306.4"
           Id="Package\Sequence Container"
-          TopLeft="172.042854199117,125.411766464735" />
+          TopLeft="175.614282831367,134.423531106269" />
         <NodeLayout
           Size="162.4,41.6"
           Id="Package\Truncate Table"
@@ -5282,26 +5282,26 @@
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-18.042864842805,38.6117661000948"
+              EndConnector="-14.4714362105555,47.6235307416289"
               Start="0,0"
-              End="-18.042864842805,31.1117661000948">
+              End="-14.4714362105555,40.1235307416289">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,15.3058830500474" />
+                    End="0,19.8117653708144" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,15.3058830500474"
-                    Point2="0,19.3058830500474"
-                    Point3="-4,19.3058830500474" />
+                    Point1="0,19.8117653708144"
+                    Point2="0,23.8117653708144"
+                    Point3="-4,23.8117653708144" />
                   <mssgle:LineSegment
-                    End="-14.042864842805,19.3058830500474" />
+                    End="-10.4714362105555,23.8117653708144" />
                   <mssgle:CubicBezierSegment
-                    Point1="-14.042864842805,19.3058830500474"
-                    Point2="-18.042864842805,19.3058830500474"
-                    Point3="-18.042864842805,23.3058830500474" />
+                    Point1="-10.4714362105555,23.8117653708144"
+                    Point2="-14.4714362105555,23.8117653708144"
+                    Point3="-14.4714362105555,27.8117653708144" />
                   <mssgle:LineSegment
-                    End="-18.042864842805,31.1117661000948" />
+                    End="-14.4714362105555,40.1235307416289" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5313,6 +5313,82 @@
       </GraphLayout>
     </LayoutInfo>
   </Package>
+  <TaskHost
+    design-time-name="Package\Sequence Container\DF - Actor">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="170.4,41.6"
+          Id="Package\Sequence Container\DF - Actor\DST - stgActor"
+          TopLeft="363,150" />
+        <NodeLayout
+          Size="138.4,41.6"
+          Id="Package\Sequence Container\DF - Actor\SRC - Actor"
+          TopLeft="119,181" />
+        <EdgeLayout
+          Id="Package\Sequence Container\DF - Actor.Paths[Excel Source Output]"
+          TopLeft="257.4,201.8">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="105.6,-31"
+              Start="0,0"
+              End="98.1,-31">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="48.8,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="48.8,0"
+                    Point2="52.8,0"
+                    Point3="52.8,-4" />
+                  <mssgle:LineSegment
+                    End="52.8,-27" />
+                  <mssgle:CubicBezierSegment
+                    Point1="52.8,-27"
+                    Point2="52.8,-31"
+                    Point3="56.8,-31" />
+                  <mssgle:LineSegment
+                    End="98.1,-31" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\DF - Actor\DST - stgActor">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\DF - Actor\SRC - Actor">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Sequence Container\DF - Address">
     <LayoutInfo>
@@ -5351,6 +5427,705 @@
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\DF - Address\DST - stgAddress">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\DF - Address\Excel Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Sequence Container\DF - Category">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="149.6,41.6"
+          Id="Package\Sequence Container\DF - Category\SRC - Category"
+          TopLeft="229,173" />
+        <NodeLayout
+          Size="164.8,41.6"
+          Id="Package\Sequence Container\DF - Category\DST - stgCategory"
+          TopLeft="505,149" />
+        <EdgeLayout
+          Id="Package\Sequence Container\DF - Category.Paths[Excel Source Output]"
+          TopLeft="378.6,193.8">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="126.4,-24"
+              Start="0,0"
+              End="118.9,-24">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="59.2,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="59.2,0"
+                    Point2="63.2,0"
+                    Point3="63.2,-4" />
+                  <mssgle:LineSegment
+                    End="63.2,-20" />
+                  <mssgle:CubicBezierSegment
+                    Point1="63.2,-20"
+                    Point2="63.2,-24"
+                    Point3="67.2,-24" />
+                  <mssgle:LineSegment
+                    End="118.9,-24" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\DF - Category\DST - stgCategory">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\DF - Category\SRC - Category">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Sequence Container\DF - Customer">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="138.4,41.6"
+          Id="Package\Sequence Container\DF - Customer\SRC - Customer"
+          TopLeft="184,217" />
+        <NodeLayout
+          Size="167.2,41.6"
+          Id="Package\Sequence Container\DF - Customer\DST - stgCustomer"
+          TopLeft="378,217" />
+        <EdgeLayout
+          Id="Package\Sequence Container\DF - Customer.Paths[Excel Source Output]"
+          TopLeft="322.4,237.8">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="55.6000000000001,0"
+              Start="0,0"
+              End="48.1000000000001,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="48.1000000000001,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\DF - Customer\DST - stgCustomer">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\DF - Customer\SRC - Customer">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Sequence Container\DF - Date">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="129.6,41.6"
+          Id="Package\Sequence Container\DF - Date\SRC - Date"
+          TopLeft="175,158" />
+        <NodeLayout
+          Size="144.8,41.6"
+          Id="Package\Sequence Container\DF - Date\DST - stgDate"
+          TopLeft="494,101" />
+        <EdgeLayout
+          Id="Package\Sequence Container\DF - Date.Paths[Excel Source Output]"
+          TopLeft="304.6,178.8">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="189.4,-57"
+              Start="0,0"
+              End="181.9,-57">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="90.7,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="90.7,0"
+                    Point2="94.7,0"
+                    Point3="94.7,-4" />
+                  <mssgle:LineSegment
+                    End="94.7,-53" />
+                  <mssgle:CubicBezierSegment
+                    Point1="94.7,-53"
+                    Point2="94.7,-57"
+                    Point3="98.7,-57" />
+                  <mssgle:LineSegment
+                    End="181.9,-57" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\DF - Date\DST - stgDate">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\DF - Date\SRC - Date">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Sequence Container\DF - Film">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="127.2,41.6"
+          Id="Package\Sequence Container\DF - Film\SRC - Film"
+          TopLeft="208,184" />
+        <NodeLayout
+          Size="141.6,41.6"
+          Id="Package\Sequence Container\DF - Film\DST - stgFilm"
+          TopLeft="623,186" />
+        <EdgeLayout
+          Id="Package\Sequence Container\DF - Film.Paths[Excel Source Output]"
+          TopLeft="335.2,205.8">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="287.8,0"
+              Start="0,0"
+              End="280.3,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="280.3,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\DF - Film\DST - stgFilm">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\DF - Film\SRC - Film">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Sequence Container\DF - Inventory">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="138.4,41.6"
+          Id="Package\Sequence Container\DF - Inventory\SRC - Inventory"
+          TopLeft="110.714285714286,93.8571428571429" />
+        <NodeLayout
+          Size="153.6,41.6"
+          Id="Package\Sequence Container\DF - Inventory\DST - Inventory"
+          TopLeft="451.571428571429,104.142857142857" />
+        <EdgeLayout
+          Id="Package\Sequence Container\DF - Inventory.Paths[Excel Source Output]"
+          TopLeft="249.114285714286,114.657142857143">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="202.457142857143,10.2857142857143"
+              Start="0,0"
+              End="194.957142857143,10.2857142857143">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="97.2285714285716,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="97.2285714285716,0"
+                    Point2="101.228571428572,0"
+                    Point3="101.228571428572,4" />
+                  <mssgle:LineSegment
+                    End="101.228571428572,6.28571428571431" />
+                  <mssgle:CubicBezierSegment
+                    Point1="101.228571428572,6.28571428571431"
+                    Point2="101.228571428572,10.2857142857143"
+                    Point3="105.228571428572,10.2857142857143" />
+                  <mssgle:LineSegment
+                    End="194.957142857143,10.2857142857143" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\DF - Inventory\DST - Inventory">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\DF - Inventory\SRC - Inventory">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Sequence Container\DF - Rental">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="170.4,41.6"
+          Id="Package\Sequence Container\DF - Rental\DST - stgRental"
+          TopLeft="339,436" />
+        <NodeLayout
+          Size="138.4,41.6"
+          Id="Package\Sequence Container\DF - Rental\SRC - Rental"
+          TopLeft="213,82.0000000000001" />
+        <NodeLayout
+          Size="129.6,41.6"
+          Id="Package\Sequence Container\DF - Rental\Merge Join"
+          TopLeft="343,323.6" />
+        <NodeLayout
+          Size="168,41.6"
+          Id="Package\Sequence Container\DF - Rental\DST - stgInventory"
+          TopLeft="553,34" />
+        <NodeLayout
+          Size="97.6,41.6"
+          Id="Package\Sequence Container\DF - Rental\Sort"
+          TopLeft="298,244.6" />
+        <NodeLayout
+          Size="155.2,41.6"
+          Id="Package\Sequence Container\DF - Rental\Data Conversion"
+          TopLeft="250,179.6" />
+        <NodeLayout
+          Size="106.4,41.6"
+          Id="Package\Sequence Container\DF - Rental\Sort 1"
+          TopLeft="539,263.6" />
+        <NodeLayout
+          Size="164.8,41.6"
+          Id="Package\Sequence Container\DF - Rental\Data Conversion 1"
+          TopLeft="518,166.6" />
+        <EdgeLayout
+          Id="Package\Sequence Container\DF - Rental.Paths[Data Conversion Output1]"
+          TopLeft="600.4,208.2">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-8.19999999999993,55.4"
+              Start="0,0"
+              End="-8.19999999999993,47.9">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,23.7" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,23.7"
+                    Point2="0,27.7"
+                    Point3="-4,27.7" />
+                  <mssgle:LineSegment
+                    End="-4.19999999999993,27.7" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-4.19999999999993,27.7"
+                    Point2="-8.19999999999993,27.7"
+                    Point3="-8.19999999999993,31.7" />
+                  <mssgle:LineSegment
+                    End="-8.19999999999993,47.9" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container\DF - Rental.Paths[Data Conversion Output]"
+          TopLeft="327.6,221.2">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="19.2000000000001,23.4"
+              Start="0,0"
+              End="19.2000000000001,15.9">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,7.70000000000002" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,7.70000000000002"
+                    Point2="0,11.7"
+                    Point3="4,11.7" />
+                  <mssgle:LineSegment
+                    End="15.2000000000001,11.7" />
+                  <mssgle:CubicBezierSegment
+                    Point1="15.2000000000001,11.7"
+                    Point2="19.2000000000001,11.7"
+                    Point3="19.2000000000001,15.7" />
+                  <mssgle:LineSegment
+                    End="19.2000000000001,15.9" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container\DF - Rental.Paths[Sort Output1]"
+          TopLeft="539,284.4">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-66.3999999999999,60"
+              Start="0,0"
+              End="-58.8999999999999,60">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-29.1999999999999,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-29.1999999999999,0"
+                    Point2="-33.1999999999999,0"
+                    Point3="-33.1999999999999,4" />
+                  <mssgle:LineSegment
+                    End="-33.1999999999999,56" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-33.1999999999999,56"
+                    Point2="-33.1999999999999,60"
+                    Point3="-37.1999999999999,60" />
+                  <mssgle:LineSegment
+                    End="-58.8999999999999,60" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container\DF - Rental.Paths[Sort Output]"
+          TopLeft="346.8,286.2">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="61.0000000000001,37.4"
+              Start="0,0"
+              End="61.0000000000001,29.9">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,14.7" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,14.7"
+                    Point2="0,18.7"
+                    Point3="4,18.7" />
+                  <mssgle:LineSegment
+                    End="57.0000000000001,18.7" />
+                  <mssgle:CubicBezierSegment
+                    Point1="57.0000000000001,18.7"
+                    Point2="61.0000000000001,18.7"
+                    Point3="61.0000000000001,22.7" />
+                  <mssgle:LineSegment
+                    End="61.0000000000001,29.9" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container\DF - Rental.Paths[OLE DB Source Output]"
+          TopLeft="637,75.6">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-36.5999999999999,91"
+              Start="0,0"
+              End="-36.5999999999999,83.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,41.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,41.5"
+                    Point2="0,45.5"
+                    Point3="-4,45.5" />
+                  <mssgle:LineSegment
+                    End="-32.5999999999999,45.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-32.5999999999999,45.5"
+                    Point2="-36.5999999999999,45.5"
+                    Point3="-36.5999999999999,49.5" />
+                  <mssgle:LineSegment
+                    End="-36.5999999999999,83.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container\DF - Rental.Paths[Merge Join Output]"
+          TopLeft="407.8,365.2">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="16.3999999999999,70.7999999999999"
+              Start="0,0"
+              End="16.3999999999999,63.2999999999999">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.3999999999999" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,31.3999999999999"
+                    Point2="0,35.3999999999999"
+                    Point3="4,35.3999999999999" />
+                  <mssgle:LineSegment
+                    End="12.3999999999999,35.3999999999999" />
+                  <mssgle:CubicBezierSegment
+                    Point1="12.3999999999999,35.3999999999999"
+                    Point2="16.3999999999999,35.3999999999999"
+                    Point3="16.3999999999999,39.3999999999999" />
+                  <mssgle:LineSegment
+                    End="16.3999999999999,63.2999999999999" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container\DF - Rental.Paths[Excel Source Output]"
+          TopLeft="282.2,123.6">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="45.3999999999998,55.9999999999999"
+              Start="0,0"
+              End="45.3999999999998,48.4999999999999">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,23.9999999999999" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,23.9999999999999"
+                    Point2="0,27.9999999999999"
+                    Point3="4,27.9999999999999" />
+                  <mssgle:LineSegment
+                    End="41.3999999999998,27.9999999999999" />
+                  <mssgle:CubicBezierSegment
+                    Point1="41.3999999999998,27.9999999999999"
+                    Point2="45.3999999999998,27.9999999999999"
+                    Point3="45.3999999999998,31.9999999999999" />
+                  <mssgle:LineSegment
+                    End="45.3999999999998,48.4999999999999" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\DF - Rental\DST - stgRental">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\DF - Rental\SRC - Rental">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\DF - Rental\DST - stgInventory">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Sequence Container\DF - Staff">
     <LayoutInfo>
@@ -5415,95 +6190,6 @@
       </Property>
     </Properties>
   </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container\DF - Address\Excel Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container\DF - Address\DST - stgAddress">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\Sequence Container\DF - Inventory">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="138.4,41.6"
-          Id="Package\Sequence Container\DF - Inventory\SRC - Inventory"
-          TopLeft="110.714285714286,93.8571428571429" />
-        <NodeLayout
-          Size="153.6,41.6"
-          Id="Package\Sequence Container\DF - Inventory\DST - Inventory"
-          TopLeft="451.571428571429,104.142857142857" />
-        <EdgeLayout
-          Id="Package\Sequence Container\DF - Inventory.Paths[Excel Source Output]"
-          TopLeft="249.114285714286,114.657142857143">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="202.457142857143,10.2857142857143"
-              Start="0,0"
-              End="194.957142857143,10.2857142857143">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="97.2285714285716,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="97.2285714285716,0"
-                    Point2="101.228571428572,0"
-                    Point3="101.228571428572,4" />
-                  <mssgle:LineSegment
-                    End="101.228571428572,6.28571428571431" />
-                  <mssgle:CubicBezierSegment
-                    Point1="101.228571428572,6.28571428571431"
-                    Point2="101.228571428572,10.2857142857143"
-                    Point3="105.228571428572,10.2857142857143" />
-                  <mssgle:LineSegment
-                    End="194.957142857143,10.2857142857143" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container\DF - Inventory\SRC - Inventory">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Sequence Container\DF - Store">
     <LayoutInfo>
@@ -5555,19 +6241,6 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container\DF - Store\SRC - Store">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\Sequence Container\DF - Store\DST - stgStore">
     <Properties>
       <Property>
@@ -5580,681 +6253,8 @@
       </Property>
     </Properties>
   </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\Sequence Container\DF - Category">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="149.6,41.6"
-          Id="Package\Sequence Container\DF - Category\SRC - Category"
-          TopLeft="229,173" />
-        <NodeLayout
-          Size="164.8,41.6"
-          Id="Package\Sequence Container\DF - Category\DST - stgCategory"
-          TopLeft="505,149" />
-        <EdgeLayout
-          Id="Package\Sequence Container\DF - Category.Paths[Excel Source Output]"
-          TopLeft="378.6,193.8">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="126.4,-24"
-              Start="0,0"
-              End="118.9,-24">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="59.2,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="59.2,0"
-                    Point2="63.2,0"
-                    Point3="63.2,-4" />
-                  <mssgle:LineSegment
-                    End="63.2,-20" />
-                  <mssgle:CubicBezierSegment
-                    Point1="63.2,-20"
-                    Point2="63.2,-24"
-                    Point3="67.2,-24" />
-                  <mssgle:LineSegment
-                    End="118.9,-24" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <TaskHost
-    design-time-name="Package\Sequence Container\DF - Actor">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="170.4,41.6"
-          Id="Package\Sequence Container\DF - Actor\DST - stgActor"
-          TopLeft="363,150" />
-        <NodeLayout
-          Size="138.4,41.6"
-          Id="Package\Sequence Container\DF - Actor\SRC - Actor"
-          TopLeft="119,181" />
-        <EdgeLayout
-          Id="Package\Sequence Container\DF - Actor.Paths[Excel Source Output]"
-          TopLeft="257.4,201.8">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="105.6,-31"
-              Start="0,0"
-              End="98.1,-31">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="48.8,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="48.8,0"
-                    Point2="52.8,0"
-                    Point3="52.8,-4" />
-                  <mssgle:LineSegment
-                    End="52.8,-27" />
-                  <mssgle:CubicBezierSegment
-                    Point1="52.8,-27"
-                    Point2="52.8,-31"
-                    Point3="56.8,-31" />
-                  <mssgle:LineSegment
-                    End="98.1,-31" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <TaskHost
-    design-time-name="Package\Sequence Container\DF - Film">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="127.2,41.6"
-          Id="Package\Sequence Container\DF - Film\SRC - Film"
-          TopLeft="208,184" />
-        <NodeLayout
-          Size="141.6,41.6"
-          Id="Package\Sequence Container\DF - Film\DST - stgFilm"
-          TopLeft="623,186" />
-        <EdgeLayout
-          Id="Package\Sequence Container\DF - Film.Paths[Excel Source Output]"
-          TopLeft="335.2,205.8">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="287.8,0"
-              Start="0,0"
-              End="280.3,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="280.3,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container\DF - Category\SRC - Category">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container\DF - Category\DST - stgCategory">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container\DF - Actor\DST - stgActor">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container\DF - Actor\SRC - Actor">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container\DF - Film\SRC - Film">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container\DF - Film\DST - stgFilm">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\Sequence Container\DF - Customer">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="138.4,41.6"
-          Id="Package\Sequence Container\DF - Customer\SRC - Customer"
-          TopLeft="184,217" />
-        <NodeLayout
-          Size="167.2,41.6"
-          Id="Package\Sequence Container\DF - Customer\DST - stgCustomer"
-          TopLeft="378,217" />
-        <EdgeLayout
-          Id="Package\Sequence Container\DF - Customer.Paths[Excel Source Output]"
-          TopLeft="322.4,237.8">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="55.6000000000001,0"
-              Start="0,0"
-              End="48.1000000000001,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="48.1000000000001,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container\DF - Customer\SRC - Customer">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container\DF - Customer\DST - stgCustomer">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\Sequence Container\DF - Date">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="129.6,41.6"
-          Id="Package\Sequence Container\DF - Date\SRC - Date"
-          TopLeft="175,158" />
-        <NodeLayout
-          Size="144.8,41.6"
-          Id="Package\Sequence Container\DF - Date\DST - stgDate"
-          TopLeft="494,101" />
-        <EdgeLayout
-          Id="Package\Sequence Container\DF - Date.Paths[Excel Source Output]"
-          TopLeft="304.6,178.8">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="189.4,-57"
-              Start="0,0"
-              End="181.9,-57">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="90.7,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="90.7,0"
-                    Point2="94.7,0"
-                    Point3="94.7,-4" />
-                  <mssgle:LineSegment
-                    End="94.7,-53" />
-                  <mssgle:CubicBezierSegment
-                    Point1="94.7,-53"
-                    Point2="94.7,-57"
-                    Point3="98.7,-57" />
-                  <mssgle:LineSegment
-                    End="181.9,-57" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container\DF - Date\SRC - Date">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container\DF - Date\DST - stgDate">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\Sequence Container\DF - Rental">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="138.4,41.6"
-          Id="Package\Sequence Container\DF - Rental\SRC - Rental"
-          TopLeft="213,82.0000000000001" />
-        <NodeLayout
-          Size="168,41.6"
-          Id="Package\Sequence Container\DF - Rental\DST - stgInventory"
-          TopLeft="553,34" />
-        <NodeLayout
-          Size="170.4,41.6"
-          Id="Package\Sequence Container\DF - Rental\DST - stgRental"
-          TopLeft="339,436" />
-        <NodeLayout
-          Size="155.2,41.6"
-          Id="Package\Sequence Container\DF - Rental\Data Conversion"
-          TopLeft="250,179.6" />
-        <EdgeLayout
-          Id="Package\Sequence Container\DF - Rental.Paths[Excel Source Output]"
-          TopLeft="282.2,123.6">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="45.3999999999998,55.9999999999999"
-              Start="0,0"
-              End="45.3999999999998,48.4999999999999">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,23.9999999999999" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,23.9999999999999"
-                    Point2="0,27.9999999999999"
-                    Point3="4,27.9999999999999" />
-                  <mssgle:LineSegment
-                    End="41.3999999999998,27.9999999999999" />
-                  <mssgle:CubicBezierSegment
-                    Point1="41.3999999999998,27.9999999999999"
-                    Point2="45.3999999999998,27.9999999999999"
-                    Point3="45.3999999999998,31.9999999999999" />
-                  <mssgle:LineSegment
-                    End="45.3999999999998,48.4999999999999" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="164.8,41.6"
-          Id="Package\Sequence Container\DF - Rental\Data Conversion 1"
-          TopLeft="518,166.6" />
-        <EdgeLayout
-          Id="Package\Sequence Container\DF - Rental.Paths[OLE DB Source Output]"
-          TopLeft="637,75.6">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-36.5999999999999,91"
-              Start="0,0"
-              End="-36.5999999999999,83.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,41.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,41.5"
-                    Point2="0,45.5"
-                    Point3="-4,45.5" />
-                  <mssgle:LineSegment
-                    End="-32.5999999999999,45.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-32.5999999999999,45.5"
-                    Point2="-36.5999999999999,45.5"
-                    Point3="-36.5999999999999,49.5" />
-                  <mssgle:LineSegment
-                    End="-36.5999999999999,83.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="97.6,41.6"
-          Id="Package\Sequence Container\DF - Rental\Sort"
-          TopLeft="298,244.6" />
-        <EdgeLayout
-          Id="Package\Sequence Container\DF - Rental.Paths[Data Conversion Output]"
-          TopLeft="327.6,221.2">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="19.2000000000001,23.4"
-              Start="0,0"
-              End="19.2000000000001,15.9">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,7.70000000000002" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,7.70000000000002"
-                    Point2="0,11.7"
-                    Point3="4,11.7" />
-                  <mssgle:LineSegment
-                    End="15.2000000000001,11.7" />
-                  <mssgle:CubicBezierSegment
-                    Point1="15.2000000000001,11.7"
-                    Point2="19.2000000000001,11.7"
-                    Point3="19.2000000000001,15.7" />
-                  <mssgle:LineSegment
-                    End="19.2000000000001,15.9" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="106.4,41.6"
-          Id="Package\Sequence Container\DF - Rental\Sort 1"
-          TopLeft="539,263.6" />
-        <EdgeLayout
-          Id="Package\Sequence Container\DF - Rental.Paths[Data Conversion Output1]"
-          TopLeft="600.4,208.2">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-8.19999999999993,55.4"
-              Start="0,0"
-              End="-8.19999999999993,47.9">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,23.7" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,23.7"
-                    Point2="0,27.7"
-                    Point3="-4,27.7" />
-                  <mssgle:LineSegment
-                    End="-4.19999999999993,27.7" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-4.19999999999993,27.7"
-                    Point2="-8.19999999999993,27.7"
-                    Point3="-8.19999999999993,31.7" />
-                  <mssgle:LineSegment
-                    End="-8.19999999999993,47.9" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="129.6,41.6"
-          Id="Package\Sequence Container\DF - Rental\Merge Join"
-          TopLeft="343,323.6" />
-        <EdgeLayout
-          Id="Package\Sequence Container\DF - Rental.Paths[Sort Output]"
-          TopLeft="346.8,286.2">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="61.0000000000001,37.4"
-              Start="0,0"
-              End="61.0000000000001,29.9">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,14.7" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,14.7"
-                    Point2="0,18.7"
-                    Point3="4,18.7" />
-                  <mssgle:LineSegment
-                    End="57.0000000000001,18.7" />
-                  <mssgle:CubicBezierSegment
-                    Point1="57.0000000000001,18.7"
-                    Point2="61.0000000000001,18.7"
-                    Point3="61.0000000000001,22.7" />
-                  <mssgle:LineSegment
-                    End="61.0000000000001,29.9" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Sequence Container\DF - Rental.Paths[Sort Output1]"
-          TopLeft="539,284.4">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-66.3999999999999,60"
-              Start="0,0"
-              End="-58.8999999999999,60">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="-29.1999999999999,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-29.1999999999999,0"
-                    Point2="-33.1999999999999,0"
-                    Point3="-33.1999999999999,4" />
-                  <mssgle:LineSegment
-                    End="-33.1999999999999,56" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-33.1999999999999,56"
-                    Point2="-33.1999999999999,60"
-                    Point3="-37.1999999999999,60" />
-                  <mssgle:LineSegment
-                    End="-58.8999999999999,60" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Sequence Container\DF - Rental.Paths[Merge Join Output]"
-          TopLeft="407.8,365.2">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="16.3999999999999,70.7999999999999"
-              Start="0,0"
-              End="16.3999999999999,63.2999999999999">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,31.3999999999999" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,31.3999999999999"
-                    Point2="0,35.3999999999999"
-                    Point3="4,35.3999999999999" />
-                  <mssgle:LineSegment
-                    End="12.3999999999999,35.3999999999999" />
-                  <mssgle:CubicBezierSegment
-                    Point1="12.3999999999999,35.3999999999999"
-                    Point2="16.3999999999999,35.3999999999999"
-                    Point3="16.3999999999999,39.3999999999999" />
-                  <mssgle:LineSegment
-                    End="16.3999999999999,63.2999999999999" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container\DF - Inventory\DST - Inventory">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container\DF - Rental\SRC - Rental">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container\DF - Rental\DST - stgInventory">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container\DF - Rental\DST - stgRental">
+    design-time-name="Package\Sequence Container\DF - Store\SRC - Store">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
