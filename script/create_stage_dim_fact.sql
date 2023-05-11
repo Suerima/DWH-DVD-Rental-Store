@@ -1,4 +1,6 @@
 -- file:///C:/Users/TotNguyen/Downloads/Documents/31815308.pdf
+
+
 CREATE TABLE [stgAddress] (
     [address_id] int,
     [address] nvarchar(255),
@@ -44,7 +46,7 @@ CREATE TABLE [stgCustomer] (
     [first_name] nvarchar(255),
     [last_name] nvarchar(255),
     [email] nvarchar(255),
-    [address_id] float
+    [address_id] int
 )
 
 CREATE TABLE [stgDate] (
@@ -81,11 +83,17 @@ CREATE TABLE [stgInventory] (
 CREATE TABLE [stgRental] (
     [rental_id] int,
     [customer_id] int,
-    [staff_id] int,
     [film_id] int,
+    [staff_id] int,
     [store_id] int,
     [rental_date_key] int,
-    [return_date_key] int
+    [return_date_key] int,
+    [amount] float,
+    [rental_duration] int,
+    [rental_rate] float,
+    [TotalRentalTime] int,
+    [ProfitReturnEarly] float,
+    [ProfitReturnLate] float
 )
 ---------------------------------------------------------
 CREATE TABLE [DimAddress] (
@@ -93,6 +101,25 @@ CREATE TABLE [DimAddress] (
     [address] nvarchar(255),
     [city] nvarchar(255),
     [country] nvarchar(255)
+)
+
+CREATE TABLE [DimStore] (
+    [store_id] int primary key,
+    [staff_id] int,
+    [address_id] int FOREIGN KEY REFERENCES DimAddress(address_id), 
+)
+CREATE TABLE [DimStaff] (
+    [staff_id] int primary key,
+    [name] nvarchar(255),
+    [address_id] int FOREIGN KEY REFERENCES DimAddress(address_id) ,
+    [store_id] int,
+    [email] nvarchar(255)
+)
+CREATE TABLE [DimCustomer] (
+    [customer_id] int primary key,
+    [name] nvarchar(255),
+    [email] nvarchar(255),
+    [address_id] int FOREIGN KEY REFERENCES DimAddress(address_id)
 )
 CREATE TABLE [DimFilm] (
     [film_id] int primary key,
@@ -113,62 +140,37 @@ CREATE TABLE [DimActor] (
     [film_id] int FOREIGN KEY REFERENCES DimFilm(film_id),
     [fullname] nvarchar(255)
 )
-CREATE TABLE [DimStore] (
-    [store_id] int primary key,
-    [staff_id] int,
-    [address_id] int FOREIGN KEY REFERENCES DimAddress(address_id), 
-)
-CREATE TABLE [DimStaff] (
-    [staff_id] int primary key,
-    [first_name] nvarchar(255),
-    [last_name] nvarchar(255),
-    [address_id] int FOREIGN KEY REFERENCES DimAddress(address_id) ,
-    [store_id] int,
-    [email] nvarchar(255)
-)
-CREATE TABLE [DimCustomer] (
-    [customer_id] int primary key,
-    [first_name] nvarchar(255),
-    [last_name] nvarchar(255),
-    [email] nvarchar(255),
-    [address_id] int FOREIGN KEY REFERENCES DimAddress(address_id)
-)
+
 
 CREATE TABLE [DimDate] (
     [date key] int primary key,
     [full date] datetime,
     [day of week] int,
-    [day num in month] int,
-    [day num overall] int,
     [day name] nvarchar(255),
-    [day abbrev] nvarchar(255),
+	[day num in month] int,
+    [day num overall] int,
     [weekday flag] nvarchar(255),
     [week num in year] int,
-    [week num overall] int,
-    [week begin date] datetime,
-    [week begin date key] int,
-    [month] int,
-    [month num overall] int,
+    [month] int, 
     [month name] nvarchar(255),
-    [month abbrev] nvarchar(255),
     [quarter] int,
-    [year] int,
-    [yearmo] int,
-    [fiscal month] int,
-    [fiscal quarter] int,
-    [fiscal year] int,
-    [month end flag] nvarchar(255),
-    [same day year ago] datetime
+    [year] int
 )
-
+use DWHSakila
 CREATE TABLE [FactRental] (
     [rental_id] int primary key,
-    [customer_id] int ,
-    [staff_id] int,
+    [customer_id] int,
     [film_id] int,
+    [staff_id] int,
     [store_id] int,
     [rental_date_key] int,
-    [return_date_key] int
+    [return_date_key] int,
+    [amount] float,
+    [rental_duration] int,
+    [rental_rate] float,
+    [TotalRentalTime] int,
+    [ProfitReturnEarly] float,
+    [ProfitReturnLate] float
 )
 
 
@@ -181,3 +183,10 @@ truncate table DimStaff
 truncate table DimStore
 truncate table DimCustomer
 truncate table DimAddress
+
+----
+use StageSakila
+
+select *
+from stgRental
+where ProfitReturnEarly = 0 and ProfitReturnLate = 0

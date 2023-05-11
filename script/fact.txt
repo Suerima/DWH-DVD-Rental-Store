@@ -1,0 +1,54 @@
+[sale]
+sale_key
+store_id x
+film_id x
+rental_rate x
+rental_duration x
+sum_amount() 
+profit_sum_early((amount - (rental_rate/retal_duration)*(returndate-rentaldate))) 
+profit_sum_lately((amount - rental_rate) # = ((returndate-rentaldate) - duration) * 1$ 
+count_film()
+count rental()
+max_date_rental()
+
+amount - 
+
+[customer]
+customer_id
+count_rental_film() 
+avg_time_rental
+avg_time_length
+most_category_rental
+most_actor
+most_rating
+
+select i.film_id, f.rental_rate, f.rental_duration, sum(p.amount) SumReality, 
+	  Sum(p.amount - (f.rental_rate / f.rental_duration) * DATEDIFF(day, r.rental_date, r.return_date)) Profit_early
+from rental r
+	inner join payment p on r.rental_id = p.rental_id
+	inner join inventory i on i.inventory_id= r.inventory_id
+	inner join film f on i.film_id = f.film_id
+group by i.film_id, f.rental_rate, f.rental_duration
+order by i.film_id, f.rental_rate, f.rental_duration
+
+
+----
+select r.rental_id, s.store_id,  i.film_id, f.rental_rate, f.rental_duration,
+	  sum(p.amount) SumReality, 
+	  Sum(p.amount - (f.rental_rate / f.rental_duration) * DATEDIFF(day, r.rental_date, r.return_date)) Profit_early
+from rental r
+	inner join payment p on r.rental_id = p.rental_id
+	inner join inventory i on i.inventory_id= r.inventory_id
+	inner join store s on s.store_id = i.store_id
+	inner join film f on i.film_id = f.film_id
+group by r.rental_id, s.store_id,  i.film_id, f.rental_rate, f.rental_duration
+order by r.rental_id, s.store_id,  i.film_id, f.rental_rate, f.rental_duration
+
+
+
+1 subnet trong 1VPC có địa chỉ 172.11.27.0/26 có bao nhiêu địa chỉ IPv4 có thể sử dụng trong subnet này
+
+
+Xây dựng ứng dụng truy vấn dữ liệu
+Dữ liệu transaction
+Hãy trình bày các điểm khác nhau giữa Amazon RDS và Amazon DynanoDB
