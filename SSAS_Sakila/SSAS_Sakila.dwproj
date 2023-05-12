@@ -8,24 +8,28 @@
   </Database>
   <Cubes>
     <ProjectItem>
-      <Name>DWHSakila.cube</Name>
-      <FullPath>DWHSakila.cube</FullPath>
+      <Name>DWH Sakila.cube</Name>
+      <FullPath>DWH Sakila.cube</FullPath>
       <Dependencies>
         <ProjectItem>
-          <Name>DWHSakila.partitions</Name>
-          <FullPath>DWHSakila.partitions</FullPath>
+          <Name>DWH Sakila.partitions</Name>
+          <FullPath>DWH Sakila.partitions</FullPath>
         </ProjectItem>
       </Dependencies>
     </ProjectItem>
   </Cubes>
   <Dimensions>
     <ProjectItem>
+      <Name>Dim Staff.dim</Name>
+      <FullPath>Dim Staff.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>Dim Film.dim</Name>
       <FullPath>Dim Film.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Dim Address.dim</Name>
-      <FullPath>Dim Address.dim</FullPath>
+      <Name>Dim Customer.dim</Name>
+      <FullPath>Dim Customer.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>Dim Date.dim</Name>
@@ -36,24 +40,20 @@
       <FullPath>Dim Store.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Dim Staff.dim</Name>
-      <FullPath>Dim Staff.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Dim Customer.dim</Name>
-      <FullPath>Dim Customer.dim</FullPath>
+      <Name>Dim Actor.dim</Name>
+      <FullPath>Dim Actor.dim</FullPath>
     </ProjectItem>
   </Dimensions>
   <DataSources>
     <ProjectItem>
-      <Name>DWHSakila.ds</Name>
-      <FullPath>DWHSakila.ds</FullPath>
+      <Name>DWH Sakila.ds</Name>
+      <FullPath>DWH Sakila.ds</FullPath>
     </ProjectItem>
   </DataSources>
   <DataSourceViews>
     <ProjectItem>
-      <Name>DWHSakila.dsv</Name>
-      <FullPath>DWHSakila.dsv</FullPath>
+      <Name>DWH Sakila.dsv</Name>
+      <FullPath>DWH Sakila.dsv</FullPath>
     </ProjectItem>
   </DataSourceViews>
   <Configurations>
@@ -62,15 +62,15 @@
       <Options>
         <ConnectionMappings>
           <ConfigurationSetting>
-            <Id>DWHSakila</Id>
-            <Name>DWHSakila</Name>
+            <Id>DWH Sakila</Id>
+            <Name>DWH Sakila</Name>
             <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=localhost;Integrated Security=SSPI;Initial Catalog=DWHSakila</Value>
           </ConfigurationSetting>
         </ConnectionMappings>
         <ConnectionSecurityMappings>
           <ConfigurationSetting>
-            <Id>DWHSakila</Id>
-            <Name>DWHSakila</Name>
+            <Id>DWH Sakila</Id>
+            <Name>DWH Sakila</Name>
             <Value xsi:type="xsd:int">0</Value>
           </ConfigurationSetting>
         </ConnectionSecurityMappings>

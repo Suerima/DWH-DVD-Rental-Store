@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="66"
-  DTS:VersionGUID="{EBB57F1D-7218-4ACB-9E63-8709A6BD3600}">
+  DTS:VersionBuild="71"
+  DTS:VersionGUID="{B1833E85-656E-4436-91D4-C13445B8B46A}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -114,30 +114,30 @@
                       name="OLE DB Destination Input">
                       <inputColumns>
                         <inputColumn
-                          refId="Package\Sequence Container\DF - Actor\DST - stgActor.Inputs[OLE DB Destination Input].Columns[film_id]"
+                          refId="Package\Sequence Container\DF - Actor\DST - stgActor.Inputs[OLE DB Destination Input].Columns[actor_id]"
                           cachedDataType="r8"
-                          cachedName="film_id"
-                          externalMetadataColumnId="Package\Sequence Container\DF - Actor\DST - stgActor.Inputs[OLE DB Destination Input].ExternalColumns[film_id]"
-                          lineageId="Package\Sequence Container\DF - Actor\SRC - Actor.Outputs[Excel Source Output].Columns[film_id]" />
+                          cachedName="actor_id"
+                          externalMetadataColumnId="Package\Sequence Container\DF - Actor\DST - stgActor.Inputs[OLE DB Destination Input].ExternalColumns[actor_id]"
+                          lineageId="Package\Sequence Container\DF - Actor\SRC - Actor.Outputs[Excel Source Output].Columns[actor_id]" />
                         <inputColumn
-                          refId="Package\Sequence Container\DF - Actor\DST - stgActor.Inputs[OLE DB Destination Input].Columns[fullname]"
+                          refId="Package\Sequence Container\DF - Actor\DST - stgActor.Inputs[OLE DB Destination Input].Columns[actors]"
                           cachedDataType="wstr"
                           cachedLength="255"
-                          cachedName="fullname"
-                          externalMetadataColumnId="Package\Sequence Container\DF - Actor\DST - stgActor.Inputs[OLE DB Destination Input].ExternalColumns[fullname]"
-                          lineageId="Package\Sequence Container\DF - Actor\SRC - Actor.Outputs[Excel Source Output].Columns[fullname]" />
+                          cachedName="actors"
+                          externalMetadataColumnId="Package\Sequence Container\DF - Actor\DST - stgActor.Inputs[OLE DB Destination Input].ExternalColumns[actors]"
+                          lineageId="Package\Sequence Container\DF - Actor\SRC - Actor.Outputs[Excel Source Output].Columns[actors]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
                         <externalMetadataColumn
-                          refId="Package\Sequence Container\DF - Actor\DST - stgActor.Inputs[OLE DB Destination Input].ExternalColumns[film_id]"
+                          refId="Package\Sequence Container\DF - Actor\DST - stgActor.Inputs[OLE DB Destination Input].ExternalColumns[actor_id]"
                           dataType="i4"
-                          name="film_id" />
+                          name="actor_id" />
                         <externalMetadataColumn
-                          refId="Package\Sequence Container\DF - Actor\DST - stgActor.Inputs[OLE DB Destination Input].ExternalColumns[fullname]"
+                          refId="Package\Sequence Container\DF - Actor\DST - stgActor.Inputs[OLE DB Destination Input].ExternalColumns[actors]"
                           dataType="wstr"
                           length="255"
-                          name="fullname" />
+                          name="actors" />
                       </externalMetadataColumns>
                     </input>
                   </inputs>
@@ -209,7 +209,7 @@
                   <connections>
                     <connection
                       refId="Package\Sequence Container\DF - Actor\SRC - Actor.Connections[OleDbConnection]"
-                      connectionManagerID="{9695E05D-D100-43C5-8F00-DBCE59781C93}:external"
+                      connectionManagerID="{3EC1D377-FC56-4D99-9EFB-7D44167A10F7}:external"
                       connectionManagerRefId="Project.ConnectionManagers[Excel Connection Manager]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
@@ -220,36 +220,36 @@
                       name="Excel Source Output">
                       <outputColumns>
                         <outputColumn
-                          refId="Package\Sequence Container\DF - Actor\SRC - Actor.Outputs[Excel Source Output].Columns[film_id]"
+                          refId="Package\Sequence Container\DF - Actor\SRC - Actor.Outputs[Excel Source Output].Columns[actor_id]"
                           dataType="r8"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\DF - Actor\SRC - Actor.Outputs[Excel Source Output].ExternalColumns[film_id]"
-                          lineageId="Package\Sequence Container\DF - Actor\SRC - Actor.Outputs[Excel Source Output].Columns[film_id]"
-                          name="film_id"
+                          externalMetadataColumnId="Package\Sequence Container\DF - Actor\SRC - Actor.Outputs[Excel Source Output].ExternalColumns[actor_id]"
+                          lineageId="Package\Sequence Container\DF - Actor\SRC - Actor.Outputs[Excel Source Output].Columns[actor_id]"
+                          name="actor_id"
                           truncationRowDisposition="FailComponent" />
                         <outputColumn
-                          refId="Package\Sequence Container\DF - Actor\SRC - Actor.Outputs[Excel Source Output].Columns[fullname]"
+                          refId="Package\Sequence Container\DF - Actor\SRC - Actor.Outputs[Excel Source Output].Columns[actors]"
                           dataType="wstr"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\DF - Actor\SRC - Actor.Outputs[Excel Source Output].ExternalColumns[fullname]"
+                          externalMetadataColumnId="Package\Sequence Container\DF - Actor\SRC - Actor.Outputs[Excel Source Output].ExternalColumns[actors]"
                           length="255"
-                          lineageId="Package\Sequence Container\DF - Actor\SRC - Actor.Outputs[Excel Source Output].Columns[fullname]"
-                          name="fullname"
+                          lineageId="Package\Sequence Container\DF - Actor\SRC - Actor.Outputs[Excel Source Output].Columns[actors]"
+                          name="actors"
                           truncationRowDisposition="FailComponent" />
                       </outputColumns>
                       <externalMetadataColumns
                         isUsed="True">
                         <externalMetadataColumn
-                          refId="Package\Sequence Container\DF - Actor\SRC - Actor.Outputs[Excel Source Output].ExternalColumns[film_id]"
+                          refId="Package\Sequence Container\DF - Actor\SRC - Actor.Outputs[Excel Source Output].ExternalColumns[actor_id]"
                           dataType="r8"
-                          name="film_id" />
+                          name="actor_id" />
                         <externalMetadataColumn
-                          refId="Package\Sequence Container\DF - Actor\SRC - Actor.Outputs[Excel Source Output].ExternalColumns[fullname]"
+                          refId="Package\Sequence Container\DF - Actor\SRC - Actor.Outputs[Excel Source Output].ExternalColumns[actors]"
                           dataType="wstr"
                           length="255"
-                          name="fullname" />
+                          name="actors" />
                       </externalMetadataColumns>
                     </output>
                     <output
@@ -258,16 +258,16 @@
                       name="Excel Source Error Output">
                       <outputColumns>
                         <outputColumn
-                          refId="Package\Sequence Container\DF - Actor\SRC - Actor.Outputs[Excel Source Error Output].Columns[film_id]"
+                          refId="Package\Sequence Container\DF - Actor\SRC - Actor.Outputs[Excel Source Error Output].Columns[actor_id]"
                           dataType="r8"
-                          lineageId="Package\Sequence Container\DF - Actor\SRC - Actor.Outputs[Excel Source Error Output].Columns[film_id]"
-                          name="film_id" />
+                          lineageId="Package\Sequence Container\DF - Actor\SRC - Actor.Outputs[Excel Source Error Output].Columns[actor_id]"
+                          name="actor_id" />
                         <outputColumn
-                          refId="Package\Sequence Container\DF - Actor\SRC - Actor.Outputs[Excel Source Error Output].Columns[fullname]"
+                          refId="Package\Sequence Container\DF - Actor\SRC - Actor.Outputs[Excel Source Error Output].Columns[actors]"
                           dataType="wstr"
                           length="255"
-                          lineageId="Package\Sequence Container\DF - Actor\SRC - Actor.Outputs[Excel Source Error Output].Columns[fullname]"
-                          name="fullname" />
+                          lineageId="Package\Sequence Container\DF - Actor\SRC - Actor.Outputs[Excel Source Error Output].Columns[actors]"
+                          name="actors" />
                         <outputColumn
                           refId="Package\Sequence Container\DF - Actor\SRC - Actor.Outputs[Excel Source Error Output].Columns[ErrorCode]"
                           dataType="i4"
@@ -502,7 +502,7 @@
                   <connections>
                     <connection
                       refId="Package\Sequence Container\DF - Address\Excel Source.Connections[OleDbConnection]"
-                      connectionManagerID="{9695E05D-D100-43C5-8F00-DBCE59781C93}:external"
+                      connectionManagerID="{3EC1D377-FC56-4D99-9EFB-7D44167A10F7}:external"
                       connectionManagerRefId="Project.ConnectionManagers[Excel Connection Manager]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
@@ -718,30 +718,30 @@
                       name="OLE DB Destination Input">
                       <inputColumns>
                         <inputColumn
-                          refId="Package\Sequence Container\DF - Category\DST - stgCategory.Inputs[OLE DB Destination Input].Columns[film_id]"
-                          cachedDataType="r8"
-                          cachedName="film_id"
-                          externalMetadataColumnId="Package\Sequence Container\DF - Category\DST - stgCategory.Inputs[OLE DB Destination Input].ExternalColumns[film_id]"
-                          lineageId="Package\Sequence Container\DF - Category\SRC - Category.Outputs[Excel Source Output].Columns[film_id]" />
-                        <inputColumn
                           refId="Package\Sequence Container\DF - Category\DST - stgCategory.Inputs[OLE DB Destination Input].Columns[name]"
                           cachedDataType="wstr"
                           cachedLength="255"
                           cachedName="name"
                           externalMetadataColumnId="Package\Sequence Container\DF - Category\DST - stgCategory.Inputs[OLE DB Destination Input].ExternalColumns[name]"
                           lineageId="Package\Sequence Container\DF - Category\SRC - Category.Outputs[Excel Source Output].Columns[name]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\DF - Category\DST - stgCategory.Inputs[OLE DB Destination Input].Columns[category_id]"
+                          cachedDataType="r8"
+                          cachedName="category_id"
+                          externalMetadataColumnId="Package\Sequence Container\DF - Category\DST - stgCategory.Inputs[OLE DB Destination Input].ExternalColumns[category_id]"
+                          lineageId="Package\Sequence Container\DF - Category\SRC - Category.Outputs[Excel Source Output].Columns[category_id]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\DF - Category\DST - stgCategory.Inputs[OLE DB Destination Input].ExternalColumns[film_id]"
-                          dataType="i4"
-                          name="film_id" />
                         <externalMetadataColumn
                           refId="Package\Sequence Container\DF - Category\DST - stgCategory.Inputs[OLE DB Destination Input].ExternalColumns[name]"
                           dataType="wstr"
                           length="255"
                           name="name" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\DF - Category\DST - stgCategory.Inputs[OLE DB Destination Input].ExternalColumns[category_id]"
+                          dataType="i4"
+                          name="category_id" />
                       </externalMetadataColumns>
                     </input>
                   </inputs>
@@ -813,7 +813,7 @@
                   <connections>
                     <connection
                       refId="Package\Sequence Container\DF - Category\SRC - Category.Connections[OleDbConnection]"
-                      connectionManagerID="{9695E05D-D100-43C5-8F00-DBCE59781C93}:external"
+                      connectionManagerID="{3EC1D377-FC56-4D99-9EFB-7D44167A10F7}:external"
                       connectionManagerRefId="Project.ConnectionManagers[Excel Connection Manager]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
@@ -824,13 +824,13 @@
                       name="Excel Source Output">
                       <outputColumns>
                         <outputColumn
-                          refId="Package\Sequence Container\DF - Category\SRC - Category.Outputs[Excel Source Output].Columns[film_id]"
+                          refId="Package\Sequence Container\DF - Category\SRC - Category.Outputs[Excel Source Output].Columns[category_id]"
                           dataType="r8"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\DF - Category\SRC - Category.Outputs[Excel Source Output].ExternalColumns[film_id]"
-                          lineageId="Package\Sequence Container\DF - Category\SRC - Category.Outputs[Excel Source Output].Columns[film_id]"
-                          name="film_id"
+                          externalMetadataColumnId="Package\Sequence Container\DF - Category\SRC - Category.Outputs[Excel Source Output].ExternalColumns[category_id]"
+                          lineageId="Package\Sequence Container\DF - Category\SRC - Category.Outputs[Excel Source Output].Columns[category_id]"
+                          name="category_id"
                           truncationRowDisposition="FailComponent" />
                         <outputColumn
                           refId="Package\Sequence Container\DF - Category\SRC - Category.Outputs[Excel Source Output].Columns[name]"
@@ -846,14 +846,14 @@
                       <externalMetadataColumns
                         isUsed="True">
                         <externalMetadataColumn
-                          refId="Package\Sequence Container\DF - Category\SRC - Category.Outputs[Excel Source Output].ExternalColumns[film_id]"
-                          dataType="r8"
-                          name="film_id" />
-                        <externalMetadataColumn
                           refId="Package\Sequence Container\DF - Category\SRC - Category.Outputs[Excel Source Output].ExternalColumns[name]"
                           dataType="wstr"
                           length="255"
                           name="name" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\DF - Category\SRC - Category.Outputs[Excel Source Output].ExternalColumns[category_id]"
+                          dataType="r8"
+                          name="category_id" />
                       </externalMetadataColumns>
                     </output>
                     <output
@@ -861,17 +861,6 @@
                       isErrorOut="true"
                       name="Excel Source Error Output">
                       <outputColumns>
-                        <outputColumn
-                          refId="Package\Sequence Container\DF - Category\SRC - Category.Outputs[Excel Source Error Output].Columns[film_id]"
-                          dataType="r8"
-                          lineageId="Package\Sequence Container\DF - Category\SRC - Category.Outputs[Excel Source Error Output].Columns[film_id]"
-                          name="film_id" />
-                        <outputColumn
-                          refId="Package\Sequence Container\DF - Category\SRC - Category.Outputs[Excel Source Error Output].Columns[name]"
-                          dataType="wstr"
-                          length="255"
-                          lineageId="Package\Sequence Container\DF - Category\SRC - Category.Outputs[Excel Source Error Output].Columns[name]"
-                          name="name" />
                         <outputColumn
                           refId="Package\Sequence Container\DF - Category\SRC - Category.Outputs[Excel Source Error Output].Columns[ErrorCode]"
                           dataType="i4"
@@ -884,6 +873,17 @@
                           lineageId="Package\Sequence Container\DF - Category\SRC - Category.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
                           name="ErrorColumn"
                           specialFlags="2" />
+                        <outputColumn
+                          refId="Package\Sequence Container\DF - Category\SRC - Category.Outputs[Excel Source Error Output].Columns[category_id]"
+                          dataType="r8"
+                          lineageId="Package\Sequence Container\DF - Category\SRC - Category.Outputs[Excel Source Error Output].Columns[category_id]"
+                          name="category_id" />
+                        <outputColumn
+                          refId="Package\Sequence Container\DF - Category\SRC - Category.Outputs[Excel Source Error Output].Columns[name]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\Sequence Container\DF - Category\SRC - Category.Outputs[Excel Source Error Output].Columns[name]"
+                          name="name" />
                       </outputColumns>
                       <externalMetadataColumns />
                     </output>
@@ -930,7 +930,7 @@
                     <property
                       dataType="System.String"
                       description="Specifies the name of the database object used to open a rowset."
-                      name="OpenRowset">[stgCustomer]</property>
+                      name="OpenRowset">[dbo].[stgCustomer]</property>
                     <property
                       dataType="System.String"
                       description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -1126,7 +1126,7 @@
                   <connections>
                     <connection
                       refId="Package\Sequence Container\DF - Customer\SRC - Customer.Connections[OleDbConnection]"
-                      connectionManagerID="{9695E05D-D100-43C5-8F00-DBCE59781C93}:external"
+                      connectionManagerID="{3EC1D377-FC56-4D99-9EFB-7D44167A10F7}:external"
                       connectionManagerRefId="Project.ConnectionManagers[Excel Connection Manager]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
@@ -1703,7 +1703,7 @@
                   <connections>
                     <connection
                       refId="Package\Sequence Container\DF - Date\SRC - Date.Connections[OleDbConnection]"
-                      connectionManagerID="{9695E05D-D100-43C5-8F00-DBCE59781C93}:external"
+                      connectionManagerID="{3EC1D377-FC56-4D99-9EFB-7D44167A10F7}:external"
                       connectionManagerRefId="Project.ConnectionManagers[Excel Connection Manager]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
@@ -2241,7 +2241,7 @@
                     <property
                       dataType="System.String"
                       description="Specifies the name of the database object used to open a rowset."
-                      name="OpenRowset">[dbo].[stgFilm]</property>
+                      name="OpenRowset">[stgFilm]</property>
                     <property
                       dataType="System.String"
                       description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -2302,59 +2302,71 @@
                           cachedDataType="r8"
                           cachedName="film_id"
                           externalMetadataColumnId="Package\Sequence Container\DF - Film\DST - stgFilm.Inputs[OLE DB Destination Input].ExternalColumns[film_id]"
-                          lineageId="Package\Sequence Container\DF - Film\SRC - Film.Outputs[Excel Source Output].Columns[film_id]" />
+                          lineageId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Output].Columns[film_id]" />
                         <inputColumn
                           refId="Package\Sequence Container\DF - Film\DST - stgFilm.Inputs[OLE DB Destination Input].Columns[title]"
                           cachedDataType="wstr"
                           cachedLength="255"
                           cachedName="title"
                           externalMetadataColumnId="Package\Sequence Container\DF - Film\DST - stgFilm.Inputs[OLE DB Destination Input].ExternalColumns[title]"
-                          lineageId="Package\Sequence Container\DF - Film\SRC - Film.Outputs[Excel Source Output].Columns[title]" />
+                          lineageId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Output].Columns[title]" />
                         <inputColumn
                           refId="Package\Sequence Container\DF - Film\DST - stgFilm.Inputs[OLE DB Destination Input].Columns[description]"
                           cachedDataType="wstr"
                           cachedLength="255"
                           cachedName="description"
                           externalMetadataColumnId="Package\Sequence Container\DF - Film\DST - stgFilm.Inputs[OLE DB Destination Input].ExternalColumns[description]"
-                          lineageId="Package\Sequence Container\DF - Film\SRC - Film.Outputs[Excel Source Output].Columns[description]" />
+                          lineageId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Output].Columns[description]" />
                         <inputColumn
                           refId="Package\Sequence Container\DF - Film\DST - stgFilm.Inputs[OLE DB Destination Input].Columns[rental_duration]"
                           cachedDataType="r8"
                           cachedName="rental_duration"
                           externalMetadataColumnId="Package\Sequence Container\DF - Film\DST - stgFilm.Inputs[OLE DB Destination Input].ExternalColumns[rental_duration]"
-                          lineageId="Package\Sequence Container\DF - Film\SRC - Film.Outputs[Excel Source Output].Columns[rental_duration]" />
+                          lineageId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Output].Columns[rental_duration]" />
                         <inputColumn
                           refId="Package\Sequence Container\DF - Film\DST - stgFilm.Inputs[OLE DB Destination Input].Columns[rental_rate]"
                           cachedDataType="r8"
                           cachedName="rental_rate"
                           externalMetadataColumnId="Package\Sequence Container\DF - Film\DST - stgFilm.Inputs[OLE DB Destination Input].ExternalColumns[rental_rate]"
-                          lineageId="Package\Sequence Container\DF - Film\SRC - Film.Outputs[Excel Source Output].Columns[rental_rate]" />
+                          lineageId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Output].Columns[rental_rate]" />
                         <inputColumn
                           refId="Package\Sequence Container\DF - Film\DST - stgFilm.Inputs[OLE DB Destination Input].Columns[length]"
                           cachedDataType="r8"
                           cachedName="length"
                           externalMetadataColumnId="Package\Sequence Container\DF - Film\DST - stgFilm.Inputs[OLE DB Destination Input].ExternalColumns[length]"
-                          lineageId="Package\Sequence Container\DF - Film\SRC - Film.Outputs[Excel Source Output].Columns[length]" />
+                          lineageId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Output].Columns[length]" />
                         <inputColumn
                           refId="Package\Sequence Container\DF - Film\DST - stgFilm.Inputs[OLE DB Destination Input].Columns[replacement_cost]"
                           cachedDataType="r8"
                           cachedName="replacement_cost"
                           externalMetadataColumnId="Package\Sequence Container\DF - Film\DST - stgFilm.Inputs[OLE DB Destination Input].ExternalColumns[replacement_cost]"
-                          lineageId="Package\Sequence Container\DF - Film\SRC - Film.Outputs[Excel Source Output].Columns[replacement_cost]" />
+                          lineageId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Output].Columns[replacement_cost]" />
                         <inputColumn
                           refId="Package\Sequence Container\DF - Film\DST - stgFilm.Inputs[OLE DB Destination Input].Columns[rating]"
                           cachedDataType="wstr"
                           cachedLength="255"
                           cachedName="rating"
                           externalMetadataColumnId="Package\Sequence Container\DF - Film\DST - stgFilm.Inputs[OLE DB Destination Input].ExternalColumns[rating]"
-                          lineageId="Package\Sequence Container\DF - Film\SRC - Film.Outputs[Excel Source Output].Columns[rating]" />
+                          lineageId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Output].Columns[rating]" />
                         <inputColumn
                           refId="Package\Sequence Container\DF - Film\DST - stgFilm.Inputs[OLE DB Destination Input].Columns[special_features]"
                           cachedDataType="wstr"
                           cachedLength="255"
                           cachedName="special_features"
                           externalMetadataColumnId="Package\Sequence Container\DF - Film\DST - stgFilm.Inputs[OLE DB Destination Input].ExternalColumns[special_features]"
-                          lineageId="Package\Sequence Container\DF - Film\SRC - Film.Outputs[Excel Source Output].Columns[special_features]" />
+                          lineageId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Output].Columns[special_features]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\DF - Film\DST - stgFilm.Inputs[OLE DB Destination Input].Columns[category_id]"
+                          cachedDataType="r8"
+                          cachedName="category_id"
+                          externalMetadataColumnId="Package\Sequence Container\DF - Film\DST - stgFilm.Inputs[OLE DB Destination Input].ExternalColumns[category_id]"
+                          lineageId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Output].Columns[category_id]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\DF - Film\DST - stgFilm.Inputs[OLE DB Destination Input].Columns[actor_id]"
+                          cachedDataType="r8"
+                          cachedName="actor_id"
+                          externalMetadataColumnId="Package\Sequence Container\DF - Film\DST - stgFilm.Inputs[OLE DB Destination Input].ExternalColumns[actor_id]"
+                          lineageId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Output].Columns[actor_id]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -2398,6 +2410,14 @@
                           dataType="wstr"
                           length="255"
                           name="special_features" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\DF - Film\DST - stgFilm.Inputs[OLE DB Destination Input].ExternalColumns[category_id]"
+                          dataType="i4"
+                          name="category_id" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\DF - Film\DST - stgFilm.Inputs[OLE DB Destination Input].ExternalColumns[actor_id]"
+                          dataType="i4"
+                          name="actor_id" />
                       </externalMetadataColumns>
                     </input>
                   </inputs>
@@ -2427,11 +2447,11 @@
                   </outputs>
                 </component>
                 <component
-                  refId="Package\Sequence Container\DF - Film\SRC - Film"
+                  refId="Package\Sequence Container\DF - Film\Excel Source"
                   componentClassID="Microsoft.ExcelSource"
                   contactInfo="Excel Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
                   description="Excel Source"
-                  name="SRC - Film"
+                  name="Excel Source"
                   usesDispositions="true"
                   version="1">
                   <properties>
@@ -2468,231 +2488,249 @@
                   </properties>
                   <connections>
                     <connection
-                      refId="Package\Sequence Container\DF - Film\SRC - Film.Connections[OleDbConnection]"
-                      connectionManagerID="{9695E05D-D100-43C5-8F00-DBCE59781C93}:external"
+                      refId="Package\Sequence Container\DF - Film\Excel Source.Connections[OleDbConnection]"
+                      connectionManagerID="{3EC1D377-FC56-4D99-9EFB-7D44167A10F7}:external"
                       connectionManagerRefId="Project.ConnectionManagers[Excel Connection Manager]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
                   </connections>
                   <outputs>
                     <output
-                      refId="Package\Sequence Container\DF - Film\SRC - Film.Outputs[Excel Source Output]"
+                      refId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Output]"
                       name="Excel Source Output">
                       <outputColumns>
                         <outputColumn
-                          refId="Package\Sequence Container\DF - Film\SRC - Film.Outputs[Excel Source Output].Columns[film_id]"
+                          refId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Output].Columns[film_id]"
                           dataType="r8"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\DF - Film\SRC - Film.Outputs[Excel Source Output].ExternalColumns[film_id]"
-                          lineageId="Package\Sequence Container\DF - Film\SRC - Film.Outputs[Excel Source Output].Columns[film_id]"
+                          externalMetadataColumnId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Output].ExternalColumns[film_id]"
+                          lineageId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Output].Columns[film_id]"
                           name="film_id"
                           truncationRowDisposition="FailComponent" />
                         <outputColumn
-                          refId="Package\Sequence Container\DF - Film\SRC - Film.Outputs[Excel Source Output].Columns[title]"
+                          refId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Output].Columns[category_id]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Output].ExternalColumns[category_id]"
+                          lineageId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Output].Columns[category_id]"
+                          name="category_id"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Output].Columns[actor_id]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Output].ExternalColumns[actor_id]"
+                          lineageId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Output].Columns[actor_id]"
+                          name="actor_id"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Output].Columns[title]"
                           dataType="wstr"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\DF - Film\SRC - Film.Outputs[Excel Source Output].ExternalColumns[title]"
+                          externalMetadataColumnId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Output].ExternalColumns[title]"
                           length="255"
-                          lineageId="Package\Sequence Container\DF - Film\SRC - Film.Outputs[Excel Source Output].Columns[title]"
+                          lineageId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Output].Columns[title]"
                           name="title"
                           truncationRowDisposition="FailComponent" />
                         <outputColumn
-                          refId="Package\Sequence Container\DF - Film\SRC - Film.Outputs[Excel Source Output].Columns[description]"
+                          refId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Output].Columns[description]"
                           dataType="wstr"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\DF - Film\SRC - Film.Outputs[Excel Source Output].ExternalColumns[description]"
+                          externalMetadataColumnId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Output].ExternalColumns[description]"
                           length="255"
-                          lineageId="Package\Sequence Container\DF - Film\SRC - Film.Outputs[Excel Source Output].Columns[description]"
+                          lineageId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Output].Columns[description]"
                           name="description"
                           truncationRowDisposition="FailComponent" />
                         <outputColumn
-                          refId="Package\Sequence Container\DF - Film\SRC - Film.Outputs[Excel Source Output].Columns[rental_duration]"
+                          refId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Output].Columns[rental_duration]"
                           dataType="r8"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\DF - Film\SRC - Film.Outputs[Excel Source Output].ExternalColumns[rental_duration]"
-                          lineageId="Package\Sequence Container\DF - Film\SRC - Film.Outputs[Excel Source Output].Columns[rental_duration]"
+                          externalMetadataColumnId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Output].ExternalColumns[rental_duration]"
+                          lineageId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Output].Columns[rental_duration]"
                           name="rental_duration"
                           truncationRowDisposition="FailComponent" />
                         <outputColumn
-                          refId="Package\Sequence Container\DF - Film\SRC - Film.Outputs[Excel Source Output].Columns[rental_rate]"
+                          refId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Output].Columns[rental_rate]"
                           dataType="r8"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\DF - Film\SRC - Film.Outputs[Excel Source Output].ExternalColumns[rental_rate]"
-                          lineageId="Package\Sequence Container\DF - Film\SRC - Film.Outputs[Excel Source Output].Columns[rental_rate]"
+                          externalMetadataColumnId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Output].ExternalColumns[rental_rate]"
+                          lineageId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Output].Columns[rental_rate]"
                           name="rental_rate"
                           truncationRowDisposition="FailComponent" />
                         <outputColumn
-                          refId="Package\Sequence Container\DF - Film\SRC - Film.Outputs[Excel Source Output].Columns[length]"
+                          refId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Output].Columns[length]"
                           dataType="r8"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\DF - Film\SRC - Film.Outputs[Excel Source Output].ExternalColumns[length]"
-                          lineageId="Package\Sequence Container\DF - Film\SRC - Film.Outputs[Excel Source Output].Columns[length]"
+                          externalMetadataColumnId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Output].ExternalColumns[length]"
+                          lineageId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Output].Columns[length]"
                           name="length"
                           truncationRowDisposition="FailComponent" />
                         <outputColumn
-                          refId="Package\Sequence Container\DF - Film\SRC - Film.Outputs[Excel Source Output].Columns[replacement_cost]"
+                          refId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Output].Columns[replacement_cost]"
                           dataType="r8"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\DF - Film\SRC - Film.Outputs[Excel Source Output].ExternalColumns[replacement_cost]"
-                          lineageId="Package\Sequence Container\DF - Film\SRC - Film.Outputs[Excel Source Output].Columns[replacement_cost]"
+                          externalMetadataColumnId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Output].ExternalColumns[replacement_cost]"
+                          lineageId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Output].Columns[replacement_cost]"
                           name="replacement_cost"
                           truncationRowDisposition="FailComponent" />
                         <outputColumn
-                          refId="Package\Sequence Container\DF - Film\SRC - Film.Outputs[Excel Source Output].Columns[rating]"
+                          refId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Output].Columns[rating]"
                           dataType="wstr"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\DF - Film\SRC - Film.Outputs[Excel Source Output].ExternalColumns[rating]"
+                          externalMetadataColumnId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Output].ExternalColumns[rating]"
                           length="255"
-                          lineageId="Package\Sequence Container\DF - Film\SRC - Film.Outputs[Excel Source Output].Columns[rating]"
+                          lineageId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Output].Columns[rating]"
                           name="rating"
                           truncationRowDisposition="FailComponent" />
                         <outputColumn
-                          refId="Package\Sequence Container\DF - Film\SRC - Film.Outputs[Excel Source Output].Columns[special_features]"
+                          refId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Output].Columns[special_features]"
                           dataType="wstr"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Sequence Container\DF - Film\SRC - Film.Outputs[Excel Source Output].ExternalColumns[special_features]"
+                          externalMetadataColumnId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Output].ExternalColumns[special_features]"
                           length="255"
-                          lineageId="Package\Sequence Container\DF - Film\SRC - Film.Outputs[Excel Source Output].Columns[special_features]"
+                          lineageId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Output].Columns[special_features]"
                           name="special_features"
                           truncationRowDisposition="FailComponent" />
                       </outputColumns>
                       <externalMetadataColumns
                         isUsed="True">
                         <externalMetadataColumn
-                          refId="Package\Sequence Container\DF - Film\SRC - Film.Outputs[Excel Source Output].ExternalColumns[film_id]"
+                          refId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Output].ExternalColumns[film_id]"
                           dataType="r8"
                           name="film_id" />
                         <externalMetadataColumn
-                          refId="Package\Sequence Container\DF - Film\SRC - Film.Outputs[Excel Source Output].ExternalColumns[title]"
+                          refId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Output].ExternalColumns[category_id]"
+                          dataType="r8"
+                          name="category_id" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Output].ExternalColumns[actor_id]"
+                          dataType="r8"
+                          name="actor_id" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Output].ExternalColumns[title]"
                           dataType="wstr"
                           length="255"
                           name="title" />
                         <externalMetadataColumn
-                          refId="Package\Sequence Container\DF - Film\SRC - Film.Outputs[Excel Source Output].ExternalColumns[description]"
+                          refId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Output].ExternalColumns[description]"
                           dataType="wstr"
                           length="255"
                           name="description" />
                         <externalMetadataColumn
-                          refId="Package\Sequence Container\DF - Film\SRC - Film.Outputs[Excel Source Output].ExternalColumns[release_year]"
-                          dataType="r8"
-                          name="release_year" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\DF - Film\SRC - Film.Outputs[Excel Source Output].ExternalColumns[language_id]"
-                          dataType="r8"
-                          name="language_id" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\DF - Film\SRC - Film.Outputs[Excel Source Output].ExternalColumns[original_language_id]"
-                          dataType="wstr"
-                          length="255"
-                          name="original_language_id" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\DF - Film\SRC - Film.Outputs[Excel Source Output].ExternalColumns[rental_duration]"
+                          refId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Output].ExternalColumns[rental_duration]"
                           dataType="r8"
                           name="rental_duration" />
                         <externalMetadataColumn
-                          refId="Package\Sequence Container\DF - Film\SRC - Film.Outputs[Excel Source Output].ExternalColumns[rental_rate]"
+                          refId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Output].ExternalColumns[rental_rate]"
                           dataType="r8"
                           name="rental_rate" />
                         <externalMetadataColumn
-                          refId="Package\Sequence Container\DF - Film\SRC - Film.Outputs[Excel Source Output].ExternalColumns[length]"
+                          refId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Output].ExternalColumns[length]"
                           dataType="r8"
                           name="length" />
                         <externalMetadataColumn
-                          refId="Package\Sequence Container\DF - Film\SRC - Film.Outputs[Excel Source Output].ExternalColumns[replacement_cost]"
+                          refId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Output].ExternalColumns[replacement_cost]"
                           dataType="r8"
                           name="replacement_cost" />
                         <externalMetadataColumn
-                          refId="Package\Sequence Container\DF - Film\SRC - Film.Outputs[Excel Source Output].ExternalColumns[rating]"
+                          refId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Output].ExternalColumns[rating]"
                           dataType="wstr"
                           length="255"
                           name="rating" />
                         <externalMetadataColumn
-                          refId="Package\Sequence Container\DF - Film\SRC - Film.Outputs[Excel Source Output].ExternalColumns[special_features]"
+                          refId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Output].ExternalColumns[special_features]"
                           dataType="wstr"
                           length="255"
                           name="special_features" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\DF - Film\SRC - Film.Outputs[Excel Source Output].ExternalColumns[Column1]"
-                          dataType="wstr"
-                          length="255"
-                          name="Column1" />
                       </externalMetadataColumns>
                     </output>
                     <output
-                      refId="Package\Sequence Container\DF - Film\SRC - Film.Outputs[Excel Source Error Output]"
+                      refId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Error Output]"
                       isErrorOut="true"
                       name="Excel Source Error Output">
                       <outputColumns>
                         <outputColumn
-                          refId="Package\Sequence Container\DF - Film\SRC - Film.Outputs[Excel Source Error Output].Columns[film_id]"
+                          refId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Error Output].Columns[film_id]"
                           dataType="r8"
-                          lineageId="Package\Sequence Container\DF - Film\SRC - Film.Outputs[Excel Source Error Output].Columns[film_id]"
+                          lineageId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Error Output].Columns[film_id]"
                           name="film_id" />
                         <outputColumn
-                          refId="Package\Sequence Container\DF - Film\SRC - Film.Outputs[Excel Source Error Output].Columns[title]"
+                          refId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Error Output].Columns[category_id]"
+                          dataType="r8"
+                          lineageId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Error Output].Columns[category_id]"
+                          name="category_id" />
+                        <outputColumn
+                          refId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Error Output].Columns[actor_id]"
+                          dataType="r8"
+                          lineageId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Error Output].Columns[actor_id]"
+                          name="actor_id" />
+                        <outputColumn
+                          refId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Error Output].Columns[title]"
                           dataType="wstr"
                           length="255"
-                          lineageId="Package\Sequence Container\DF - Film\SRC - Film.Outputs[Excel Source Error Output].Columns[title]"
+                          lineageId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Error Output].Columns[title]"
                           name="title" />
                         <outputColumn
-                          refId="Package\Sequence Container\DF - Film\SRC - Film.Outputs[Excel Source Error Output].Columns[description]"
+                          refId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Error Output].Columns[description]"
                           dataType="wstr"
                           length="255"
-                          lineageId="Package\Sequence Container\DF - Film\SRC - Film.Outputs[Excel Source Error Output].Columns[description]"
+                          lineageId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Error Output].Columns[description]"
                           name="description" />
                         <outputColumn
-                          refId="Package\Sequence Container\DF - Film\SRC - Film.Outputs[Excel Source Error Output].Columns[rental_duration]"
+                          refId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Error Output].Columns[rental_duration]"
                           dataType="r8"
-                          lineageId="Package\Sequence Container\DF - Film\SRC - Film.Outputs[Excel Source Error Output].Columns[rental_duration]"
+                          lineageId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Error Output].Columns[rental_duration]"
                           name="rental_duration" />
                         <outputColumn
-                          refId="Package\Sequence Container\DF - Film\SRC - Film.Outputs[Excel Source Error Output].Columns[rental_rate]"
+                          refId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Error Output].Columns[rental_rate]"
                           dataType="r8"
-                          lineageId="Package\Sequence Container\DF - Film\SRC - Film.Outputs[Excel Source Error Output].Columns[rental_rate]"
+                          lineageId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Error Output].Columns[rental_rate]"
                           name="rental_rate" />
                         <outputColumn
-                          refId="Package\Sequence Container\DF - Film\SRC - Film.Outputs[Excel Source Error Output].Columns[length]"
+                          refId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Error Output].Columns[length]"
                           dataType="r8"
-                          lineageId="Package\Sequence Container\DF - Film\SRC - Film.Outputs[Excel Source Error Output].Columns[length]"
+                          lineageId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Error Output].Columns[length]"
                           name="length" />
                         <outputColumn
-                          refId="Package\Sequence Container\DF - Film\SRC - Film.Outputs[Excel Source Error Output].Columns[replacement_cost]"
+                          refId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Error Output].Columns[replacement_cost]"
                           dataType="r8"
-                          lineageId="Package\Sequence Container\DF - Film\SRC - Film.Outputs[Excel Source Error Output].Columns[replacement_cost]"
+                          lineageId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Error Output].Columns[replacement_cost]"
                           name="replacement_cost" />
                         <outputColumn
-                          refId="Package\Sequence Container\DF - Film\SRC - Film.Outputs[Excel Source Error Output].Columns[rating]"
+                          refId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Error Output].Columns[rating]"
                           dataType="wstr"
                           length="255"
-                          lineageId="Package\Sequence Container\DF - Film\SRC - Film.Outputs[Excel Source Error Output].Columns[rating]"
+                          lineageId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Error Output].Columns[rating]"
                           name="rating" />
                         <outputColumn
-                          refId="Package\Sequence Container\DF - Film\SRC - Film.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                          refId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Error Output].Columns[special_features]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Error Output].Columns[special_features]"
+                          name="special_features" />
+                        <outputColumn
+                          refId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorCode]"
                           dataType="i4"
-                          lineageId="Package\Sequence Container\DF - Film\SRC - Film.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                          lineageId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorCode]"
                           name="ErrorCode"
                           specialFlags="1" />
                         <outputColumn
-                          refId="Package\Sequence Container\DF - Film\SRC - Film.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                          refId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
                           dataType="i4"
-                          lineageId="Package\Sequence Container\DF - Film\SRC - Film.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                          lineageId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
                           name="ErrorColumn"
                           specialFlags="2" />
-                        <outputColumn
-                          refId="Package\Sequence Container\DF - Film\SRC - Film.Outputs[Excel Source Error Output].Columns[special_features]"
-                          dataType="wstr"
-                          length="255"
-                          lineageId="Package\Sequence Container\DF - Film\SRC - Film.Outputs[Excel Source Error Output].Columns[special_features]"
-                          name="special_features" />
                       </outputColumns>
                       <externalMetadataColumns />
                     </output>
@@ -2704,7 +2742,7 @@
                   refId="Package\Sequence Container\DF - Film.Paths[Excel Source Output]"
                   endId="Package\Sequence Container\DF - Film\DST - stgFilm.Inputs[OLE DB Destination Input]"
                   name="Excel Source Output"
-                  startId="Package\Sequence Container\DF - Film\SRC - Film.Outputs[Excel Source Output]" />
+                  startId="Package\Sequence Container\DF - Film\Excel Source.Outputs[Excel Source Output]" />
               </paths>
             </pipeline>
           </DTS:ObjectData>
@@ -2898,7 +2936,7 @@
                   <connections>
                     <connection
                       refId="Package\Sequence Container\DF - Inventory\SRC - Inventory.Connections[OleDbConnection]"
-                      connectionManagerID="{9695E05D-D100-43C5-8F00-DBCE59781C93}:external"
+                      connectionManagerID="{3EC1D377-FC56-4D99-9EFB-7D44167A10F7}:external"
                       connectionManagerRefId="Project.ConnectionManagers[Excel Connection Manager]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
@@ -6288,7 +6326,7 @@
                   <connections>
                     <connection
                       refId="Package\Sequence Container\DF - Rental\SRC - Rental.Connections[OleDbConnection]"
-                      connectionManagerID="{9695E05D-D100-43C5-8F00-DBCE59781C93}:external"
+                      connectionManagerID="{3EC1D377-FC56-4D99-9EFB-7D44167A10F7}:external"
                       connectionManagerRefId="Project.ConnectionManagers[Excel Connection Manager]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
@@ -6636,6 +6674,14 @@
                           dataType="wstr"
                           length="255"
                           name="special_features" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\DF - Rental\SRC - stgFilm.Outputs[OLE DB Source Output].ExternalColumns[category_id]"
+                          dataType="i4"
+                          name="category_id" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\DF - Rental\SRC - stgFilm.Outputs[OLE DB Source Output].ExternalColumns[actor_id]"
+                          dataType="i4"
+                          name="actor_id" />
                       </externalMetadataColumns>
                     </output>
                     <output
@@ -6977,7 +7023,7 @@
                   <connections>
                     <connection
                       refId="Package\Sequence Container\DF - Staff\SRC - Staff.Connections[OleDbConnection]"
-                      connectionManagerID="{9695E05D-D100-43C5-8F00-DBCE59781C93}:external"
+                      connectionManagerID="{3EC1D377-FC56-4D99-9EFB-7D44167A10F7}:external"
                       connectionManagerRefId="Project.ConnectionManagers[Excel Connection Manager]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
@@ -7346,7 +7392,7 @@
                   <connections>
                     <connection
                       refId="Package\Sequence Container\DF - Store\SRC - Store.Connections[OleDbConnection]"
-                      connectionManagerID="{9695E05D-D100-43C5-8F00-DBCE59781C93}:external"
+                      connectionManagerID="{3EC1D377-FC56-4D99-9EFB-7D44167A10F7}:external"
                       connectionManagerRefId="Project.ConnectionManagers[Excel Connection Manager]"
                       description="The OLE DB runtime connection used to access the database."
                       name="OleDbConnection" />
@@ -7515,11 +7561,11 @@
         <NodeLayout
           Size="144.8,41.6"
           Id="Package\Sequence Container\DF - Address"
-          TopLeft="10.0444455419268,94.3594780548494" />
+          TopLeft="11.4730169948267,157.065361287217" />
         <NodeLayout
           Size="144,41.6"
           Id="Package\Sequence Container\DF - Category"
-          TopLeft="9.46825403583296,153.751635750547" />
+          TopLeft="12.3253969416327,101.751635021267" />
         <NodeLayout
           Size="146.4,41.6"
           Id="Package\Sequence Container\DF - Customer"
@@ -7527,7 +7573,7 @@
         <NodeLayout
           Size="124,41.6"
           Id="Package\Sequence Container\DF - Date"
-          TopLeft="10.83174715626,267.402618477116" />
+          TopLeft="13.6888900620598,270.461442049427" />
         <NodeLayout
           Size="129.6,41.6"
           Id="Package\Sequence Container\DF - Film"
@@ -7619,8 +7665,8 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="340.8,325.6"
-          Size="340.8,368.8"
+          PanelSize="340.8,382.4"
+          Size="340.8,425.6"
           Id="Package\Sequence Container"
           TopLeft="175.53491775065,134.73529064284" />
         <NodeLayout
@@ -7633,26 +7679,26 @@
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-13.1222298383723,47.1705843851224"
+              EndConnector="-13.122229838372,47.1705843851221"
               Start="0,0"
-              End="-13.1222298383723,39.6705843851224">
+              End="-13.122229838372,39.6705843851221">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,19.5852921925612" />
+                    End="0,19.585292192561" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,19.5852921925612"
-                    Point2="0,23.5852921925612"
-                    Point3="-4,23.5852921925612" />
+                    Point1="0,19.585292192561"
+                    Point2="0,23.585292192561"
+                    Point3="-4,23.585292192561" />
                   <mssgle:LineSegment
-                    End="-9.12222983837228,23.5852921925612" />
+                    End="-9.12222983837199,23.585292192561" />
                   <mssgle:CubicBezierSegment
-                    Point1="-9.12222983837228,23.5852921925612"
-                    Point2="-13.1222298383723,23.5852921925612"
-                    Point3="-13.1222298383723,27.5852921925612" />
+                    Point1="-9.12222983837199,23.585292192561"
+                    Point2="-13.122229838372,23.585292192561"
+                    Point3="-13.122229838372,27.585292192561" />
                   <mssgle:LineSegment
-                    End="-13.1222298383723,39.6705843851224" />
+                    End="-13.122229838372,39.6705843851221" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -7668,7 +7714,7 @@
     design-time-name="Package\Sequence Container\DF - Actor">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="138.4,41.6"
           Id="Package\Sequence Container\DF - Actor\SRC - Actor"
@@ -7696,9 +7742,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -7734,37 +7778,47 @@
     design-time-name="Package\Sequence Container\DF - Address">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="138.4,41.6"
           Id="Package\Sequence Container\DF - Address\Excel Source"
-          TopLeft="141,116" />
+          TopLeft="115,136" />
         <NodeLayout
           Size="170.4,41.6"
           Id="Package\Sequence Container\DF - Address\DST - stgAddress"
           TopLeft="451,113" />
         <EdgeLayout
           Id="Package\Sequence Container\DF - Address.Paths[Excel Source Output]"
-          TopLeft="279.4,135.3">
+          TopLeft="253.4,156.8">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="171.6,0"
+              EndConnector="197.6,-23"
               Start="0,0"
-              End="164.1,0">
+              End="190.1,-23">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="164.1,0" />
+                    End="94.8,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="94.8,0"
+                    Point2="98.8,0"
+                    Point3="98.8,-4" />
+                  <mssgle:LineSegment
+                    End="98.8,-19" />
+                  <mssgle:CubicBezierSegment
+                    Point1="98.8,-19"
+                    Point2="98.8,-23"
+                    Point3="102.8,-23" />
+                  <mssgle:LineSegment
+                    End="190.1,-23" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -7800,7 +7854,7 @@
     design-time-name="Package\Sequence Container\DF - Category">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="149.6,41.6"
           Id="Package\Sequence Container\DF - Category\SRC - Category"
@@ -7840,9 +7894,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -7878,7 +7930,7 @@
     design-time-name="Package\Sequence Container\DF - Customer">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="138.4,41.6"
           Id="Package\Sequence Container\DF - Customer\SRC - Customer"
@@ -7918,9 +7970,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -7956,7 +8006,7 @@
     design-time-name="Package\Sequence Container\DF - Date">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="129.6,41.6"
           Id="Package\Sequence Container\DF - Date\SRC - Date"
@@ -7996,9 +8046,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -8034,37 +8082,47 @@
     design-time-name="Package\Sequence Container\DF - Film">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
-        <NodeLayout
-          Size="127.2,41.6"
-          Id="Package\Sequence Container\DF - Film\SRC - Film"
-          TopLeft="208,184" />
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="141.6,41.6"
           Id="Package\Sequence Container\DF - Film\DST - stgFilm"
-          TopLeft="623,186" />
+          TopLeft="510.857140947361,126.352940339943" />
+        <NodeLayout
+          Size="138.4,41.6"
+          Id="Package\Sequence Container\DF - Film\Excel Source"
+          TopLeft="100.00000170299,143.764707898599" />
         <EdgeLayout
           Id="Package\Sequence Container\DF - Film.Paths[Excel Source Output]"
-          TopLeft="335.2,205.8">
+          TopLeft="238.40000170299,164.564707898599">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="287.8,0"
+              EndConnector="272.457139244371,-17.4117675586556"
               Start="0,0"
-              End="280.3,0">
+              End="264.957139244371,-17.4117675586556">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="280.3,0" />
+                    End="132.228569622186,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="132.228569622186,0"
+                    Point2="136.228569622186,0"
+                    Point3="136.228569622186,-4" />
+                  <mssgle:LineSegment
+                    End="136.228569622186,-13.4117675586556" />
+                  <mssgle:CubicBezierSegment
+                    Point1="136.228569622186,-13.4117675586556"
+                    Point2="136.228569622186,-17.4117675586556"
+                    Point3="140.228569622186,-17.4117675586556" />
+                  <mssgle:LineSegment
+                    End="264.957139244371,-17.4117675586556" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -8083,24 +8141,11 @@
       </Property>
     </Properties>
   </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container\DF - Film\SRC - Film">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Sequence Container\DF - Inventory">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="138.4,41.6"
           Id="Package\Sequence Container\DF - Inventory\SRC - Inventory"
@@ -8140,9 +8185,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -8702,7 +8745,7 @@
     design-time-name="Package\Sequence Container\DF - Staff">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="138.4,41.6"
           Id="Package\Sequence Container\DF - Staff\SRC - Staff"
@@ -8730,9 +8773,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -8768,7 +8809,7 @@
     design-time-name="Package\Sequence Container\DF - Store">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="132.8,41.6"
           Id="Package\Sequence Container\DF - Store\SRC - Store"
@@ -8808,9 +8849,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -8831,6 +8870,19 @@
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Sequence Container\DF - Store\SRC - Store">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\DF - Film\Excel Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

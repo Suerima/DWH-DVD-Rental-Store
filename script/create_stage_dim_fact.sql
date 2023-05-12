@@ -1,6 +1,5 @@
 -- file:///C:/Users/TotNguyen/Downloads/Documents/31815308.pdf
 
-
 CREATE TABLE [stgAddress] (
     [address_id] int,
     [address] nvarchar(255),
@@ -22,15 +21,17 @@ CREATE TABLE [stgStore] (
     [address_id] int
 )
 CREATE TABLE [stgCategory] (
-    [film_id] int,
+    [category_id] int,
     [name] nvarchar(255)
 )
 CREATE TABLE [stgActor] (
-    [film_id] int,
-    [fullname] nvarchar(255)
+    [actor_id] int,
+    [actors] nvarchar(255)
 )
 CREATE TABLE [stgFilm] (
     [film_id] int,
+	[category_id] int,
+	[actor_id] int,
     [title] nvarchar(255),
     [description] nvarchar(255),
     [rental_duration] float,
@@ -103,6 +104,11 @@ CREATE TABLE [DimAddress] (
     [country] nvarchar(255)
 )
 
+CREATE TABLE [DimActor] (
+	[actor_id] int primary key,
+	[actors] nvarchar(255)
+)
+
 CREATE TABLE [DimStore] (
     [store_id] int primary key,
     [staff_id] int,
@@ -111,7 +117,7 @@ CREATE TABLE [DimStore] (
 CREATE TABLE [DimStaff] (
     [staff_id] int primary key,
     [name] nvarchar(255),
-    [address_id] int FOREIGN KEY REFERENCES DimAddress(address_id) ,
+    [address_id] int FOREIGN KEY REFERENCES DimAddress(address_id),
     [store_id] int,
     [email] nvarchar(255)
 )
@@ -123,6 +129,8 @@ CREATE TABLE [DimCustomer] (
 )
 CREATE TABLE [DimFilm] (
     [film_id] int primary key,
+	[category_id] int FOREIGN KEY REFERENCES DimCategory(category_id),
+	[actor_id] int FOREIGN KEY REFERENCES DimActor(actor_id),
     [title] nvarchar(255),
     [description] nvarchar(255),
     [rental_duration] float,
@@ -133,12 +141,8 @@ CREATE TABLE [DimFilm] (
     [special_features] nvarchar(255)
 )
 CREATE TABLE [DimCategory] (
-    [film_id] int FOREIGN KEY REFERENCES DimFilm(film_id),
+    [category_id] int primary key,
     [name] nvarchar(255)
-)
-CREATE TABLE [DimActor] (
-    [film_id] int FOREIGN KEY REFERENCES DimFilm(film_id),
-    [fullname] nvarchar(255)
 )
 
 
@@ -156,7 +160,7 @@ CREATE TABLE [DimDate] (
     [quarter] int,
     [year] int
 )
-use DWHSakila
+
 CREATE TABLE [FactRental] (
     [rental_id] int primary key,
     [customer_id] int,
