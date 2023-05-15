@@ -7,6 +7,6 @@
     <DTS:ConnectionManager
       DTS:ConnectRetryCount="0"
       DTS:ConnectRetryInterval="0"
-      DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\GitHub\Sakila\data\data.xlsx;Extended Properties=&quot;Excel 8.0;HDR=YES&quot;;" />
+      DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\GitHub\Sakila\data\data.xlsx;Extended Properties=&quot;EXCEL 8.0;HDR=YES&quot;;" />
   </DTS:ObjectData>
 </DTS:ConnectionManager>

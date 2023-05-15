@@ -39,10 +39,6 @@
       <Name>Dim Store.dim</Name>
       <FullPath>Dim Store.dim</FullPath>
     </ProjectItem>
-    <ProjectItem>
-      <Name>Dim Actor.dim</Name>
-      <FullPath>Dim Actor.dim</FullPath>
-    </ProjectItem>
   </Dimensions>
   <DataSources>
     <ProjectItem>

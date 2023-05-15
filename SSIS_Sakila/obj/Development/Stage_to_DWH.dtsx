@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="76"
-  DTS:VersionGUID="{E60CE7DB-5C7C-4D0E-8B4C-5F1CD3E89FD0}">
+  DTS:VersionBuild="80"
+  DTS:VersionGUID="{E9D3BB37-8C65-49C6-81C3-3BB7E1083696}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -32,11 +32,11 @@
           version="1">
           <components>
             <component
-              refId="Package\DF - FactRental\DST - Slowly Changing Dimension FactRental"
+              refId="Package\DF - FactRental\DST - Slowly Changing FactRental"
               componentClassID="Microsoft.SCD"
               contactInfo="Slowly Changing Dimension;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;3"
               description="Updates a SQL Server Analysis Services data warehouse dimension. Update dimension records that are already present and  insert dimension records that aren't. For example, update the DimProduct table of the AdventureWorksDW OLAP database with data from the Products table in the AdventureWorks OLTP database."
-              name="DST - Slowly Changing Dimension FactRental"
+              name="DST - Slowly Changing FactRental"
               version="3">
               <properties>
                 <property
@@ -80,7 +80,7 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\DF - FactRental\DST - Slowly Changing Dimension FactRental.Connections[LookupConnection]"
+                  refId="Package\DF - FactRental\DST - Slowly Changing FactRental.Connections[LookupConnection]"
                   connectionManagerID="{E9BA9B29-2B15-4AB9-A273-36B38E26FC58}:external"
                   connectionManagerRefId="Project.ConnectionManagers[localhost.DWHSakila]"
                   description="Defines the connection to use for lookups in the dimension table"
@@ -88,14 +88,14 @@
               </connections>
               <inputs>
                 <input
-                  refId="Package\DF - FactRental\DST - Slowly Changing Dimension FactRental.Inputs[Slowly Changing Dimension Input]"
+                  refId="Package\DF - FactRental\DST - Slowly Changing FactRental.Inputs[Slowly Changing Dimension Input]"
                   name="Slowly Changing Dimension Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\DF - FactRental\DST - Slowly Changing Dimension FactRental.Inputs[Slowly Changing Dimension Input].Columns[amount]"
+                      refId="Package\DF - FactRental\DST - Slowly Changing FactRental.Inputs[Slowly Changing Dimension Input].Columns[amount]"
                       cachedDataType="r8"
                       cachedName="amount"
-                      externalMetadataColumnId="Package\DF - FactRental\DST - Slowly Changing Dimension FactRental.Inputs[Slowly Changing Dimension Input].ExternalColumns[amount]"
+                      externalMetadataColumnId="Package\DF - FactRental\DST - Slowly Changing FactRental.Inputs[Slowly Changing Dimension Input].ExternalColumns[amount]"
                       lineageId="Package\DF - FactRental\SRC - stgRental.Outputs[OLE DB Source Output].Columns[amount]">
                       <properties>
                         <property
@@ -105,10 +105,10 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DF - FactRental\DST - Slowly Changing Dimension FactRental.Inputs[Slowly Changing Dimension Input].Columns[customer_id]"
+                      refId="Package\DF - FactRental\DST - Slowly Changing FactRental.Inputs[Slowly Changing Dimension Input].Columns[customer_id]"
                       cachedDataType="i4"
                       cachedName="customer_id"
-                      externalMetadataColumnId="Package\DF - FactRental\DST - Slowly Changing Dimension FactRental.Inputs[Slowly Changing Dimension Input].ExternalColumns[customer_id]"
+                      externalMetadataColumnId="Package\DF - FactRental\DST - Slowly Changing FactRental.Inputs[Slowly Changing Dimension Input].ExternalColumns[customer_id]"
                       lineageId="Package\DF - FactRental\SRC - stgRental.Outputs[OLE DB Source Output].Columns[customer_id]">
                       <properties>
                         <property
@@ -118,10 +118,10 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DF - FactRental\DST - Slowly Changing Dimension FactRental.Inputs[Slowly Changing Dimension Input].Columns[film_id]"
+                      refId="Package\DF - FactRental\DST - Slowly Changing FactRental.Inputs[Slowly Changing Dimension Input].Columns[film_id]"
                       cachedDataType="i4"
                       cachedName="film_id"
-                      externalMetadataColumnId="Package\DF - FactRental\DST - Slowly Changing Dimension FactRental.Inputs[Slowly Changing Dimension Input].ExternalColumns[film_id]"
+                      externalMetadataColumnId="Package\DF - FactRental\DST - Slowly Changing FactRental.Inputs[Slowly Changing Dimension Input].ExternalColumns[film_id]"
                       lineageId="Package\DF - FactRental\SRC - stgRental.Outputs[OLE DB Source Output].Columns[film_id]">
                       <properties>
                         <property
@@ -131,10 +131,10 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DF - FactRental\DST - Slowly Changing Dimension FactRental.Inputs[Slowly Changing Dimension Input].Columns[ProfitReturnEarly]"
+                      refId="Package\DF - FactRental\DST - Slowly Changing FactRental.Inputs[Slowly Changing Dimension Input].Columns[ProfitReturnEarly]"
                       cachedDataType="r8"
                       cachedName="ProfitReturnEarly"
-                      externalMetadataColumnId="Package\DF - FactRental\DST - Slowly Changing Dimension FactRental.Inputs[Slowly Changing Dimension Input].ExternalColumns[ProfitReturnEarly]"
+                      externalMetadataColumnId="Package\DF - FactRental\DST - Slowly Changing FactRental.Inputs[Slowly Changing Dimension Input].ExternalColumns[ProfitReturnEarly]"
                       lineageId="Package\DF - FactRental\SRC - stgRental.Outputs[OLE DB Source Output].Columns[ProfitReturnEarly]">
                       <properties>
                         <property
@@ -144,10 +144,10 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DF - FactRental\DST - Slowly Changing Dimension FactRental.Inputs[Slowly Changing Dimension Input].Columns[ProfitReturnLate]"
+                      refId="Package\DF - FactRental\DST - Slowly Changing FactRental.Inputs[Slowly Changing Dimension Input].Columns[ProfitReturnLate]"
                       cachedDataType="r8"
                       cachedName="ProfitReturnLate"
-                      externalMetadataColumnId="Package\DF - FactRental\DST - Slowly Changing Dimension FactRental.Inputs[Slowly Changing Dimension Input].ExternalColumns[ProfitReturnLate]"
+                      externalMetadataColumnId="Package\DF - FactRental\DST - Slowly Changing FactRental.Inputs[Slowly Changing Dimension Input].ExternalColumns[ProfitReturnLate]"
                       lineageId="Package\DF - FactRental\SRC - stgRental.Outputs[OLE DB Source Output].Columns[ProfitReturnLate]">
                       <properties>
                         <property
@@ -157,10 +157,10 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DF - FactRental\DST - Slowly Changing Dimension FactRental.Inputs[Slowly Changing Dimension Input].Columns[rental_date_key]"
+                      refId="Package\DF - FactRental\DST - Slowly Changing FactRental.Inputs[Slowly Changing Dimension Input].Columns[rental_date_key]"
                       cachedDataType="i4"
                       cachedName="rental_date_key"
-                      externalMetadataColumnId="Package\DF - FactRental\DST - Slowly Changing Dimension FactRental.Inputs[Slowly Changing Dimension Input].ExternalColumns[rental_date_key]"
+                      externalMetadataColumnId="Package\DF - FactRental\DST - Slowly Changing FactRental.Inputs[Slowly Changing Dimension Input].ExternalColumns[rental_date_key]"
                       lineageId="Package\DF - FactRental\SRC - stgRental.Outputs[OLE DB Source Output].Columns[rental_date_key]">
                       <properties>
                         <property
@@ -170,10 +170,10 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DF - FactRental\DST - Slowly Changing Dimension FactRental.Inputs[Slowly Changing Dimension Input].Columns[rental_duration]"
+                      refId="Package\DF - FactRental\DST - Slowly Changing FactRental.Inputs[Slowly Changing Dimension Input].Columns[rental_duration]"
                       cachedDataType="i4"
                       cachedName="rental_duration"
-                      externalMetadataColumnId="Package\DF - FactRental\DST - Slowly Changing Dimension FactRental.Inputs[Slowly Changing Dimension Input].ExternalColumns[rental_duration]"
+                      externalMetadataColumnId="Package\DF - FactRental\DST - Slowly Changing FactRental.Inputs[Slowly Changing Dimension Input].ExternalColumns[rental_duration]"
                       lineageId="Package\DF - FactRental\SRC - stgRental.Outputs[OLE DB Source Output].Columns[rental_duration]">
                       <properties>
                         <property
@@ -183,10 +183,10 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DF - FactRental\DST - Slowly Changing Dimension FactRental.Inputs[Slowly Changing Dimension Input].Columns[rental_id]"
+                      refId="Package\DF - FactRental\DST - Slowly Changing FactRental.Inputs[Slowly Changing Dimension Input].Columns[rental_id]"
                       cachedDataType="i4"
                       cachedName="rental_id"
-                      externalMetadataColumnId="Package\DF - FactRental\DST - Slowly Changing Dimension FactRental.Inputs[Slowly Changing Dimension Input].ExternalColumns[rental_id]"
+                      externalMetadataColumnId="Package\DF - FactRental\DST - Slowly Changing FactRental.Inputs[Slowly Changing Dimension Input].ExternalColumns[rental_id]"
                       lineageId="Package\DF - FactRental\SRC - stgRental.Outputs[OLE DB Source Output].Columns[rental_id]">
                       <properties>
                         <property
@@ -196,10 +196,10 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DF - FactRental\DST - Slowly Changing Dimension FactRental.Inputs[Slowly Changing Dimension Input].Columns[rental_rate]"
+                      refId="Package\DF - FactRental\DST - Slowly Changing FactRental.Inputs[Slowly Changing Dimension Input].Columns[rental_rate]"
                       cachedDataType="r8"
                       cachedName="rental_rate"
-                      externalMetadataColumnId="Package\DF - FactRental\DST - Slowly Changing Dimension FactRental.Inputs[Slowly Changing Dimension Input].ExternalColumns[rental_rate]"
+                      externalMetadataColumnId="Package\DF - FactRental\DST - Slowly Changing FactRental.Inputs[Slowly Changing Dimension Input].ExternalColumns[rental_rate]"
                       lineageId="Package\DF - FactRental\SRC - stgRental.Outputs[OLE DB Source Output].Columns[rental_rate]">
                       <properties>
                         <property
@@ -209,10 +209,10 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DF - FactRental\DST - Slowly Changing Dimension FactRental.Inputs[Slowly Changing Dimension Input].Columns[return_date_key]"
+                      refId="Package\DF - FactRental\DST - Slowly Changing FactRental.Inputs[Slowly Changing Dimension Input].Columns[return_date_key]"
                       cachedDataType="i4"
                       cachedName="return_date_key"
-                      externalMetadataColumnId="Package\DF - FactRental\DST - Slowly Changing Dimension FactRental.Inputs[Slowly Changing Dimension Input].ExternalColumns[return_date_key]"
+                      externalMetadataColumnId="Package\DF - FactRental\DST - Slowly Changing FactRental.Inputs[Slowly Changing Dimension Input].ExternalColumns[return_date_key]"
                       lineageId="Package\DF - FactRental\SRC - stgRental.Outputs[OLE DB Source Output].Columns[return_date_key]">
                       <properties>
                         <property
@@ -222,10 +222,10 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DF - FactRental\DST - Slowly Changing Dimension FactRental.Inputs[Slowly Changing Dimension Input].Columns[staff_id]"
+                      refId="Package\DF - FactRental\DST - Slowly Changing FactRental.Inputs[Slowly Changing Dimension Input].Columns[staff_id]"
                       cachedDataType="i4"
                       cachedName="staff_id"
-                      externalMetadataColumnId="Package\DF - FactRental\DST - Slowly Changing Dimension FactRental.Inputs[Slowly Changing Dimension Input].ExternalColumns[staff_id]"
+                      externalMetadataColumnId="Package\DF - FactRental\DST - Slowly Changing FactRental.Inputs[Slowly Changing Dimension Input].ExternalColumns[staff_id]"
                       lineageId="Package\DF - FactRental\SRC - stgRental.Outputs[OLE DB Source Output].Columns[staff_id]">
                       <properties>
                         <property
@@ -235,10 +235,10 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DF - FactRental\DST - Slowly Changing Dimension FactRental.Inputs[Slowly Changing Dimension Input].Columns[store_id]"
+                      refId="Package\DF - FactRental\DST - Slowly Changing FactRental.Inputs[Slowly Changing Dimension Input].Columns[store_id]"
                       cachedDataType="i4"
                       cachedName="store_id"
-                      externalMetadataColumnId="Package\DF - FactRental\DST - Slowly Changing Dimension FactRental.Inputs[Slowly Changing Dimension Input].ExternalColumns[store_id]"
+                      externalMetadataColumnId="Package\DF - FactRental\DST - Slowly Changing FactRental.Inputs[Slowly Changing Dimension Input].ExternalColumns[store_id]"
                       lineageId="Package\DF - FactRental\SRC - stgRental.Outputs[OLE DB Source Output].Columns[store_id]">
                       <properties>
                         <property
@@ -248,10 +248,10 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\DF - FactRental\DST - Slowly Changing Dimension FactRental.Inputs[Slowly Changing Dimension Input].Columns[TotalRentalTime]"
+                      refId="Package\DF - FactRental\DST - Slowly Changing FactRental.Inputs[Slowly Changing Dimension Input].Columns[TotalRentalTime]"
                       cachedDataType="i4"
                       cachedName="TotalRentalTime"
-                      externalMetadataColumnId="Package\DF - FactRental\DST - Slowly Changing Dimension FactRental.Inputs[Slowly Changing Dimension Input].ExternalColumns[TotalRentalTime]"
+                      externalMetadataColumnId="Package\DF - FactRental\DST - Slowly Changing FactRental.Inputs[Slowly Changing Dimension Input].ExternalColumns[TotalRentalTime]"
                       lineageId="Package\DF - FactRental\SRC - stgRental.Outputs[OLE DB Source Output].Columns[TotalRentalTime]">
                       <properties>
                         <property
@@ -264,55 +264,55 @@
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\DF - FactRental\DST - Slowly Changing Dimension FactRental.Inputs[Slowly Changing Dimension Input].ExternalColumns[amount]"
+                      refId="Package\DF - FactRental\DST - Slowly Changing FactRental.Inputs[Slowly Changing Dimension Input].ExternalColumns[amount]"
                       dataType="r8"
                       name="amount" />
                     <externalMetadataColumn
-                      refId="Package\DF - FactRental\DST - Slowly Changing Dimension FactRental.Inputs[Slowly Changing Dimension Input].ExternalColumns[customer_id]"
+                      refId="Package\DF - FactRental\DST - Slowly Changing FactRental.Inputs[Slowly Changing Dimension Input].ExternalColumns[customer_id]"
                       dataType="i4"
                       name="customer_id" />
                     <externalMetadataColumn
-                      refId="Package\DF - FactRental\DST - Slowly Changing Dimension FactRental.Inputs[Slowly Changing Dimension Input].ExternalColumns[film_id]"
+                      refId="Package\DF - FactRental\DST - Slowly Changing FactRental.Inputs[Slowly Changing Dimension Input].ExternalColumns[film_id]"
                       dataType="i4"
                       name="film_id" />
                     <externalMetadataColumn
-                      refId="Package\DF - FactRental\DST - Slowly Changing Dimension FactRental.Inputs[Slowly Changing Dimension Input].ExternalColumns[ProfitReturnEarly]"
+                      refId="Package\DF - FactRental\DST - Slowly Changing FactRental.Inputs[Slowly Changing Dimension Input].ExternalColumns[ProfitReturnEarly]"
                       dataType="r8"
                       name="ProfitReturnEarly" />
                     <externalMetadataColumn
-                      refId="Package\DF - FactRental\DST - Slowly Changing Dimension FactRental.Inputs[Slowly Changing Dimension Input].ExternalColumns[ProfitReturnLate]"
+                      refId="Package\DF - FactRental\DST - Slowly Changing FactRental.Inputs[Slowly Changing Dimension Input].ExternalColumns[ProfitReturnLate]"
                       dataType="r8"
                       name="ProfitReturnLate" />
                     <externalMetadataColumn
-                      refId="Package\DF - FactRental\DST - Slowly Changing Dimension FactRental.Inputs[Slowly Changing Dimension Input].ExternalColumns[rental_date_key]"
+                      refId="Package\DF - FactRental\DST - Slowly Changing FactRental.Inputs[Slowly Changing Dimension Input].ExternalColumns[rental_date_key]"
                       dataType="i4"
                       name="rental_date_key" />
                     <externalMetadataColumn
-                      refId="Package\DF - FactRental\DST - Slowly Changing Dimension FactRental.Inputs[Slowly Changing Dimension Input].ExternalColumns[rental_duration]"
+                      refId="Package\DF - FactRental\DST - Slowly Changing FactRental.Inputs[Slowly Changing Dimension Input].ExternalColumns[rental_duration]"
                       dataType="i4"
                       name="rental_duration" />
                     <externalMetadataColumn
-                      refId="Package\DF - FactRental\DST - Slowly Changing Dimension FactRental.Inputs[Slowly Changing Dimension Input].ExternalColumns[rental_id]"
+                      refId="Package\DF - FactRental\DST - Slowly Changing FactRental.Inputs[Slowly Changing Dimension Input].ExternalColumns[rental_id]"
                       dataType="i4"
                       name="rental_id" />
                     <externalMetadataColumn
-                      refId="Package\DF - FactRental\DST - Slowly Changing Dimension FactRental.Inputs[Slowly Changing Dimension Input].ExternalColumns[rental_rate]"
+                      refId="Package\DF - FactRental\DST - Slowly Changing FactRental.Inputs[Slowly Changing Dimension Input].ExternalColumns[rental_rate]"
                       dataType="r8"
                       name="rental_rate" />
                     <externalMetadataColumn
-                      refId="Package\DF - FactRental\DST - Slowly Changing Dimension FactRental.Inputs[Slowly Changing Dimension Input].ExternalColumns[return_date_key]"
+                      refId="Package\DF - FactRental\DST - Slowly Changing FactRental.Inputs[Slowly Changing Dimension Input].ExternalColumns[return_date_key]"
                       dataType="i4"
                       name="return_date_key" />
                     <externalMetadataColumn
-                      refId="Package\DF - FactRental\DST - Slowly Changing Dimension FactRental.Inputs[Slowly Changing Dimension Input].ExternalColumns[staff_id]"
+                      refId="Package\DF - FactRental\DST - Slowly Changing FactRental.Inputs[Slowly Changing Dimension Input].ExternalColumns[staff_id]"
                       dataType="i4"
                       name="staff_id" />
                     <externalMetadataColumn
-                      refId="Package\DF - FactRental\DST - Slowly Changing Dimension FactRental.Inputs[Slowly Changing Dimension Input].ExternalColumns[store_id]"
+                      refId="Package\DF - FactRental\DST - Slowly Changing FactRental.Inputs[Slowly Changing Dimension Input].ExternalColumns[store_id]"
                       dataType="i4"
                       name="store_id" />
                     <externalMetadataColumn
-                      refId="Package\DF - FactRental\DST - Slowly Changing Dimension FactRental.Inputs[Slowly Changing Dimension Input].ExternalColumns[TotalRentalTime]"
+                      refId="Package\DF - FactRental\DST - Slowly Changing FactRental.Inputs[Slowly Changing Dimension Input].ExternalColumns[TotalRentalTime]"
                       dataType="i4"
                       name="TotalRentalTime" />
                   </externalMetadataColumns>
@@ -320,51 +320,51 @@
               </inputs>
               <outputs>
                 <output
-                  refId="Package\DF - FactRental\DST - Slowly Changing Dimension FactRental.Outputs[Unchanged Output]"
+                  refId="Package\DF - FactRental\DST - Slowly Changing FactRental.Outputs[Unchanged Output]"
                   description="Unchanged rows"
                   exclusionGroup="1"
                   name="Unchanged Output"
-                  synchronousInputId="Package\DF - FactRental\DST - Slowly Changing Dimension FactRental.Inputs[Slowly Changing Dimension Input]">
+                  synchronousInputId="Package\DF - FactRental\DST - Slowly Changing FactRental.Inputs[Slowly Changing Dimension Input]">
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\DF - FactRental\DST - Slowly Changing Dimension FactRental.Outputs[New Output]"
+                  refId="Package\DF - FactRental\DST - Slowly Changing FactRental.Outputs[New Output]"
                   description="New rows"
                   exclusionGroup="1"
                   name="New Output"
-                  synchronousInputId="Package\DF - FactRental\DST - Slowly Changing Dimension FactRental.Inputs[Slowly Changing Dimension Input]">
+                  synchronousInputId="Package\DF - FactRental\DST - Slowly Changing FactRental.Inputs[Slowly Changing Dimension Input]">
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\DF - FactRental\DST - Slowly Changing Dimension FactRental.Outputs[Fixed Attribute Output]"
+                  refId="Package\DF - FactRental\DST - Slowly Changing FactRental.Outputs[Fixed Attribute Output]"
                   description="Rows with changes in columns tagged FixedAttribute"
                   exclusionGroup="1"
                   name="Fixed Attribute Output"
-                  synchronousInputId="Package\DF - FactRental\DST - Slowly Changing Dimension FactRental.Inputs[Slowly Changing Dimension Input]">
+                  synchronousInputId="Package\DF - FactRental\DST - Slowly Changing FactRental.Inputs[Slowly Changing Dimension Input]">
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\DF - FactRental\DST - Slowly Changing Dimension FactRental.Outputs[Changing Attribute Updates Output]"
+                  refId="Package\DF - FactRental\DST - Slowly Changing FactRental.Outputs[Changing Attribute Updates Output]"
                   description="These rows contain new information for ChangingAttribute (Type 1) column changes"
                   exclusionGroup="1"
                   name="Changing Attribute Updates Output"
-                  synchronousInputId="Package\DF - FactRental\DST - Slowly Changing Dimension FactRental.Inputs[Slowly Changing Dimension Input]">
+                  synchronousInputId="Package\DF - FactRental\DST - Slowly Changing FactRental.Inputs[Slowly Changing Dimension Input]">
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\DF - FactRental\DST - Slowly Changing Dimension FactRental.Outputs[Historical Attribute Inserts Output]"
+                  refId="Package\DF - FactRental\DST - Slowly Changing FactRental.Outputs[Historical Attribute Inserts Output]"
                   description="HistoricalAttribute (Type 2) changes result in these new rows"
                   exclusionGroup="2"
                   name="Historical Attribute Inserts Output"
-                  synchronousInputId="Package\DF - FactRental\DST - Slowly Changing Dimension FactRental.Inputs[Slowly Changing Dimension Input]">
+                  synchronousInputId="Package\DF - FactRental\DST - Slowly Changing FactRental.Inputs[Slowly Changing Dimension Input]">
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\DF - FactRental\DST - Slowly Changing Dimension FactRental.Outputs[Inferred Member Updates Output]"
+                  refId="Package\DF - FactRental\DST - Slowly Changing FactRental.Outputs[Inferred Member Updates Output]"
                   description="Information to update unpopulated initial dimension row"
                   exclusionGroup="1"
                   name="Inferred Member Updates Output"
-                  synchronousInputId="Package\DF - FactRental\DST - Slowly Changing Dimension FactRental.Inputs[Slowly Changing Dimension Input]">
+                  synchronousInputId="Package\DF - FactRental\DST - Slowly Changing FactRental.Inputs[Slowly Changing Dimension Input]">
                   <externalMetadataColumns />
                 </output>
               </outputs>
@@ -1229,15 +1229,15 @@
               refId="Package\DF - FactRental.Paths[Changing Attribute Updates Output]"
               endId="Package\DF - FactRental\OLE DB Command.Inputs[OLE DB Command Input]"
               name="Changing Attribute Updates Output"
-              startId="Package\DF - FactRental\DST - Slowly Changing Dimension FactRental.Outputs[Changing Attribute Updates Output]" />
+              startId="Package\DF - FactRental\DST - Slowly Changing FactRental.Outputs[Changing Attribute Updates Output]" />
             <path
               refId="Package\DF - FactRental.Paths[New Output]"
               endId="Package\DF - FactRental\Insert Destination.Inputs[OLE DB Destination Input]"
               name="New Output"
-              startId="Package\DF - FactRental\DST - Slowly Changing Dimension FactRental.Outputs[New Output]" />
+              startId="Package\DF - FactRental\DST - Slowly Changing FactRental.Outputs[New Output]" />
             <path
               refId="Package\DF - FactRental.Paths[OLE DB Source Output]"
-              endId="Package\DF - FactRental\DST - Slowly Changing Dimension FactRental.Inputs[Slowly Changing Dimension Input]"
+              endId="Package\DF - FactRental\DST - Slowly Changing FactRental.Inputs[Slowly Changing Dimension Input]"
               name="OLE DB Source Output"
               startId="Package\DF - FactRental\SRC - stgRental.Outputs[OLE DB Source Output]" />
           </paths>
@@ -4953,11 +4953,6 @@
                           length="255"
                           name="day name" />
                         <externalMetadataColumn
-                          refId="Package\Sequence Container\DF - DimDate\SRC - stgDate.Outputs[OLE DB Source Output].ExternalColumns[day abbrev]"
-                          dataType="wstr"
-                          length="255"
-                          name="day abbrev" />
-                        <externalMetadataColumn
                           refId="Package\Sequence Container\DF - DimDate\SRC - stgDate.Outputs[OLE DB Source Output].ExternalColumns[weekday flag]"
                           dataType="wstr"
                           length="255"
@@ -4967,35 +4962,14 @@
                           dataType="i4"
                           name="week num in year" />
                         <externalMetadataColumn
-                          refId="Package\Sequence Container\DF - DimDate\SRC - stgDate.Outputs[OLE DB Source Output].ExternalColumns[week num overall]"
-                          dataType="i4"
-                          name="week num overall" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\DF - DimDate\SRC - stgDate.Outputs[OLE DB Source Output].ExternalColumns[week begin date]"
-                          dataType="dbTimeStamp"
-                          name="week begin date" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\DF - DimDate\SRC - stgDate.Outputs[OLE DB Source Output].ExternalColumns[week begin date key]"
-                          dataType="i4"
-                          name="week begin date key" />
-                        <externalMetadataColumn
                           refId="Package\Sequence Container\DF - DimDate\SRC - stgDate.Outputs[OLE DB Source Output].ExternalColumns[month]"
                           dataType="i4"
                           name="month" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\DF - DimDate\SRC - stgDate.Outputs[OLE DB Source Output].ExternalColumns[month num overall]"
-                          dataType="i4"
-                          name="month num overall" />
                         <externalMetadataColumn
                           refId="Package\Sequence Container\DF - DimDate\SRC - stgDate.Outputs[OLE DB Source Output].ExternalColumns[month name]"
                           dataType="wstr"
                           length="255"
                           name="month name" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\DF - DimDate\SRC - stgDate.Outputs[OLE DB Source Output].ExternalColumns[month abbrev]"
-                          dataType="wstr"
-                          length="255"
-                          name="month abbrev" />
                         <externalMetadataColumn
                           refId="Package\Sequence Container\DF - DimDate\SRC - stgDate.Outputs[OLE DB Source Output].ExternalColumns[quarter]"
                           dataType="i4"
@@ -5004,31 +4978,6 @@
                           refId="Package\Sequence Container\DF - DimDate\SRC - stgDate.Outputs[OLE DB Source Output].ExternalColumns[year]"
                           dataType="i4"
                           name="year" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\DF - DimDate\SRC - stgDate.Outputs[OLE DB Source Output].ExternalColumns[yearmo]"
-                          dataType="i4"
-                          name="yearmo" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\DF - DimDate\SRC - stgDate.Outputs[OLE DB Source Output].ExternalColumns[fiscal month]"
-                          dataType="i4"
-                          name="fiscal month" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\DF - DimDate\SRC - stgDate.Outputs[OLE DB Source Output].ExternalColumns[fiscal quarter]"
-                          dataType="i4"
-                          name="fiscal quarter" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\DF - DimDate\SRC - stgDate.Outputs[OLE DB Source Output].ExternalColumns[fiscal year]"
-                          dataType="i4"
-                          name="fiscal year" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\DF - DimDate\SRC - stgDate.Outputs[OLE DB Source Output].ExternalColumns[month end flag]"
-                          dataType="wstr"
-                          length="255"
-                          name="month end flag" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\DF - DimDate\SRC - stgDate.Outputs[OLE DB Source Output].ExternalColumns[same day year ago]"
-                          dataType="dbTimeStamp"
-                          name="same day year ago" />
                       </externalMetadataColumns>
                     </output>
                     <output
@@ -8082,11 +8031,11 @@
         <NodeLayout
           Size="151.2,41.6"
           Id="Package\DF - FactRental"
-          TopLeft="773.571441745272,371.137260107021" />
+          TopLeft="226.746035607494,408.522881546373" />
         <NodeLayout
           Size="162.4,41.6"
           Id="Package\Execute SQL Task"
-          TopLeft="981.632669778329,378.000004948688" />
+          TopLeft="220.521545705572,474.862751405191" />
         <NodeLayout
           Size="144.8,41.6"
           Id="Package\Sequence Container\DF - DimActor"
@@ -8283,21 +8232,21 @@
           PanelSize="584,328"
           Size="584,371.2"
           Id="Package\Sequence Container"
-          TopLeft="79.5973564661086,210.054065175039" />
+          TopLeft="16.1052918927818,9.53118654578807" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="663.597356466109,393.79566264103">
+          TopLeft="305.225663750138,380.731186545788">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="109.974085279163,0"
+              EndConnector="0,27.7916950005849"
               Start="0,0"
-              End="102.474085279163,0">
+              End="0,20.2916950005849">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="102.474085279163,0" />
+                    End="0,20.2916950005849" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -8308,18 +8257,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="924.771441745272,395.368632527854">
+          TopLeft="302.033790656533,450.122881546373">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="56.8612280330574,0"
+              EndConnector="0,24.7398698588175"
               Start="0,0"
-              End="49.3612280330574,0">
+              End="0,17.2398698588175">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="49.3612280330574,0" />
+                    End="0,17.2398698588175" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -8344,112 +8293,114 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="208,41.6"
-          Id="Package\DF - FactRental\DST - Slowly Changing Dimension FactRental"
-          TopLeft="206.7,107.1" />
+          Size="164.8,41.6"
+          Id="Package\DF - FactRental\OLE DB Command"
+          TopLeft="372.466666666667,168.366666666667" />
+        <NodeLayout
+          Size="162.4,41.6"
+          Id="Package\DF - FactRental\Insert Destination"
+          TopLeft="37.1666666666667,162.866666666667" />
+        <NodeLayout
+          Size="238.4,41.6"
+          Id="Package\DF - FactRental\DST - Slowly Changing FactRental"
+          TopLeft="186.7,95.4333333333333" />
         <NodeLayout
           Size="152,41.6"
           Id="Package\DF - FactRental\SRC - stgRental"
           TopLeft="234.7,5.49999999999995" />
         <EdgeLayout
           Id="Package\DF - FactRental.Paths[OLE DB Source Output]"
-          TopLeft="310.7,47.1">
+          TopLeft="308.3,47.1">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,60"
+              EndConnector="0,48.3333333333334"
               Start="0,0"
-              End="0,52.5">
+              End="0,40.8333333333334">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="162.4,41.6"
-          Id="Package\DF - FactRental\Insert Destination"
-          TopLeft="5.50000000000004,208.7" />
-        <EdgeLayout
-          Id="Package\DF - FactRental.Paths[New Output]"
-          TopLeft="277.366666666667,148.7">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-190.666666666667,60"
-              Start="0,0"
-              End="-190.666666666667,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,20.2748091603053" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,20.2748091603053"
-                    Point2="0,24.2748091603053"
-                    Point3="-4,24.2748091603053" />
-                  <mssgle:LineSegment
-                    End="-186.666666666667,24.2748091603053" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-186.666666666667,24.2748091603053"
-                    Point2="-190.666666666667,24.2748091603053"
-                    Point3="-190.666666666667,28.2748091603053" />
-                  <mssgle:LineSegment
-                    End="-190.666666666667,52.5" />
+                    End="0,40.8333333333334" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-122.424720052083,29.2748091603053,54.1827734375,11.43359375"
+              BoundingBox="0,0,0,0"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="164.8,41.6"
-          Id="Package\DF - FactRental\OLE DB Command"
-          TopLeft="228.3,208.7" />
         <EdgeLayout
-          Id="Package\DF - FactRental.Paths[Changing Attribute Updates Output]"
-          TopLeft="344.033333333333,148.7">
+          Id="Package\DF - FactRental.Paths[New Output]"
+          TopLeft="267.5,137.033333333333">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-33.3333333333333,60"
+              EndConnector="-149.133333333333,25.8333333333333"
               Start="0,0"
-              End="-33.3333333333333,52.5">
+              End="-149.133333333333,18.3333333333333">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,20.2748091603054" />
+                    End="0,6.43666666666666" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,20.2748091603054"
-                    Point2="0,24.2748091603054"
-                    Point3="-4,24.2748091603054" />
+                    Point1="0,6.43666666666666"
+                    Point2="0,10.4366666666667"
+                    Point3="-4,10.4366666666667" />
                   <mssgle:LineSegment
-                    End="-29.3333333333333,24.2748091603054" />
+                    End="-145.133333333333,10.4366666666667" />
                   <mssgle:CubicBezierSegment
-                    Point1="-29.3333333333333,24.2748091603054"
-                    Point2="-33.3333333333333,24.2748091603054"
-                    Point3="-33.3333333333333,28.2748091603054" />
+                    Point1="-145.133333333333,10.4366666666667"
+                    Point2="-149.133333333333,10.4366666666667"
+                    Point3="-149.133333333333,14.4366666666667" />
                   <mssgle:LineSegment
-                    End="-33.3333333333333,52.5" />
+                    End="-149.133333333333,18.3333333333333" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-95.2005729166667,29.2748091603054,157.0678125,11.6630859375"
+              BoundingBox="-101.658053385417,15.4366666666667,54.1827734375,11.43359375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DF - FactRental.Paths[Changing Attribute Updates Output]"
+          TopLeft="344.3,137.033333333333">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="110.566666666667,31.3333333333334"
+              Start="0,0"
+              End="110.566666666667,23.8333333333334">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,8.65866666666671" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,8.65866666666671"
+                    Point2="0,12.6586666666667"
+                    Point3="4,12.6586666666667" />
+                  <mssgle:LineSegment
+                    End="106.566666666667,12.6586666666667" />
+                  <mssgle:CubicBezierSegment
+                    Point1="106.566666666667,12.6586666666667"
+                    Point2="110.566666666667,12.6586666666667"
+                    Point3="110.566666666667,16.6586666666667" />
+                  <mssgle:LineSegment
+                    End="110.566666666667,23.8333333333334" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-23.2505729166666,17.6586666666667,157.0678125,11.6630859375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -8457,7 +8408,7 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\DF - FactRental\DST - Slowly Changing Dimension FactRental">
+    design-time-name="Package\DF - FactRental\DST - Slowly Changing FactRental">
     <Properties>
       <Property>
         <Name>SCDMetadata</Name>
@@ -8584,112 +8535,126 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
+          Size="162.4,41.6"
+          Id="Package\Sequence Container\DF - DimActor\Insert Destination"
+          TopLeft="6.50000000000006,183.7" />
+        <NodeLayout
           Size="146.4,41.6"
           Id="Package\Sequence Container\DF - DimActor\SRC - stgActor"
           TopLeft="237.5,5.49999999999995" />
         <NodeLayout
           Size="284.8,41.6"
           Id="Package\Sequence Container\DF - DimActor\DST - Slowly Changing Dimension DimActor"
-          TopLeft="168.3,107.1" />
+          TopLeft="146.3,87.1" />
+        <NodeLayout
+          Size="164.8,41.6"
+          Id="Package\Sequence Container\DF - DimActor\OLE DB Command"
+          TopLeft="310.3,181.7" />
         <EdgeLayout
           Id="Package\Sequence Container\DF - DimActor.Paths[OLE DB Source Output]"
           TopLeft="310.7,47.1">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,60"
+              EndConnector="-21.9999999999999,40"
               Start="0,0"
-              End="0,52.5">
+              End="-21.9999999999999,32.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="162.4,41.6"
-          Id="Package\Sequence Container\DF - DimActor\Insert Destination"
-          TopLeft="5.50000000000004,208.7" />
-        <EdgeLayout
-          Id="Package\Sequence Container\DF - DimActor.Paths[New Output]"
-          TopLeft="264.566666666667,148.7">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-177.866666666667,60"
-              Start="0,0"
-              End="-177.866666666667,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,20.2011173184358" />
+                    End="0,16" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,20.2011173184358"
-                    Point2="0,24.2011173184358"
-                    Point3="-4,24.2011173184358" />
+                    Point1="0,16"
+                    Point2="0,20"
+                    Point3="-4,20" />
                   <mssgle:LineSegment
-                    End="-173.866666666667,24.2011173184358" />
+                    End="-17.9999999999999,20" />
                   <mssgle:CubicBezierSegment
-                    Point1="-173.866666666667,24.2011173184358"
-                    Point2="-177.866666666667,24.2011173184358"
-                    Point3="-177.866666666667,28.2011173184358" />
+                    Point1="-17.9999999999999,20"
+                    Point2="-21.9999999999999,20"
+                    Point3="-21.9999999999999,24" />
                   <mssgle:LineSegment
-                    End="-177.866666666667,52.5" />
+                    End="-21.9999999999999,32.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-116.024720052083,29.2011173184358,54.1827734375,11.43359375"
+              BoundingBox="0,0,0,0"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="164.8,41.6"
-          Id="Package\Sequence Container\DF - DimActor\OLE DB Command"
-          TopLeft="228.3,208.7" />
         <EdgeLayout
-          Id="Package\Sequence Container\DF - DimActor.Paths[Changing Attribute Updates Output]"
-          TopLeft="356.833333333333,148.7">
+          Id="Package\Sequence Container\DF - DimActor.Paths[New Output]"
+          TopLeft="242.566666666667,128.7">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-46.1333333333333,60"
+              EndConnector="-154.866666666667,55"
               Start="0,0"
-              End="-46.1333333333333,52.5">
+              End="-154.866666666667,47.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,20.2011173184358" />
+                    End="0,18.1843575418995" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,20.2011173184358"
-                    Point2="0,24.2011173184358"
-                    Point3="-4,24.2011173184358" />
+                    Point1="0,18.1843575418995"
+                    Point2="0,22.1843575418995"
+                    Point3="-4,22.1843575418995" />
                   <mssgle:LineSegment
-                    End="-42.1333333333333,24.2011173184358" />
+                    End="-150.866666666667,22.1843575418995" />
                   <mssgle:CubicBezierSegment
-                    Point1="-42.1333333333333,24.2011173184358"
-                    Point2="-46.1333333333333,24.2011173184358"
-                    Point3="-46.1333333333333,28.2011173184358" />
+                    Point1="-150.866666666667,22.1843575418995"
+                    Point2="-154.866666666667,22.1843575418995"
+                    Point3="-154.866666666667,26.1843575418995" />
                   <mssgle:LineSegment
-                    End="-46.1333333333333,52.5" />
+                    End="-154.866666666667,47.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-101.600572916667,29.2011173184358,157.0678125,11.6630859375"
+              BoundingBox="-104.524720052083,27.1843575418995,54.1827734375,11.43359375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container\DF - DimActor.Paths[Changing Attribute Updates Output]"
+          TopLeft="334.833333333333,128.7">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="57.8666666666667,53.0000000000001"
+              Start="0,0"
+              End="57.8666666666667,45.5000000000001">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,17.3776536312849" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,17.3776536312849"
+                    Point2="0,21.3776536312849"
+                    Point3="4,21.3776536312849" />
+                  <mssgle:LineSegment
+                    End="53.8666666666667,21.3776536312849" />
+                  <mssgle:CubicBezierSegment
+                    Point1="53.8666666666667,21.3776536312849"
+                    Point2="57.8666666666667,21.3776536312849"
+                    Point3="57.8666666666667,25.3776536312849" />
+                  <mssgle:LineSegment
+                    End="57.8666666666667,45.5000000000001" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-49.6005729166667,26.3776536312849,157.0678125,11.6630859375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -8758,9 +8723,17 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
+          Size="162.4,41.6"
+          Id="Package\Sequence Container\DF - DimAddress\Insert Destination"
+          TopLeft="34.5,198.7" />
+        <NodeLayout
           Size="208,41.6"
           Id="Package\Sequence Container\DF - DimAddress\DST - Slowly Changing Dimension DimAddress"
           TopLeft="206.7,107.1" />
+        <NodeLayout
+          Size="164.8,41.6"
+          Id="Package\Sequence Container\DF - DimAddress\OLE DB Command"
+          TopLeft="402.3,209.7" />
         <NodeLayout
           Size="149.6,41.6"
           Id="Package\Sequence Container\DF - DimAddress\SRC - stgAddress"
@@ -8784,86 +8757,80 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="162.4,41.6"
-          Id="Package\Sequence Container\DF - DimAddress\Insert Destination"
-          TopLeft="5.50000000000004,208.7" />
         <EdgeLayout
           Id="Package\Sequence Container\DF - DimAddress.Paths[New Output]"
           TopLeft="277.366666666667,148.7">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-190.666666666667,60"
+              EndConnector="-161.666666666667,50"
               Start="0,0"
-              End="-190.666666666667,52.5">
+              End="-161.666666666667,42.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,20.2748091603053" />
+                    End="0,16.2290076335878" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,20.2748091603053"
-                    Point2="0,24.2748091603053"
-                    Point3="-4,24.2748091603053" />
+                    Point1="0,16.2290076335878"
+                    Point2="0,20.2290076335878"
+                    Point3="-4,20.2290076335878" />
                   <mssgle:LineSegment
-                    End="-186.666666666667,24.2748091603053" />
+                    End="-157.666666666667,20.2290076335878" />
                   <mssgle:CubicBezierSegment
-                    Point1="-186.666666666667,24.2748091603053"
-                    Point2="-190.666666666667,24.2748091603053"
-                    Point3="-190.666666666667,28.2748091603053" />
+                    Point1="-157.666666666667,20.2290076335878"
+                    Point2="-161.666666666667,20.2290076335878"
+                    Point3="-161.666666666667,24.2290076335878" />
                   <mssgle:LineSegment
-                    End="-190.666666666667,52.5" />
+                    End="-161.666666666667,42.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-122.424720052083,29.2748091603053,54.1827734375,11.43359375"
+              BoundingBox="-107.924720052083,25.2290076335878,54.1827734375,11.43359375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="164.8,41.6"
-          Id="Package\Sequence Container\DF - DimAddress\OLE DB Command"
-          TopLeft="228.3,208.7" />
         <EdgeLayout
           Id="Package\Sequence Container\DF - DimAddress.Paths[Changing Attribute Updates Output]"
           TopLeft="344.033333333333,148.7">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-33.3333333333333,60"
+              EndConnector="140.666666666667,61"
               Start="0,0"
-              End="-33.3333333333333,52.5">
+              End="140.666666666667,53.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,20.2748091603054" />
+                    End="0,20.6793893129771" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,20.2748091603054"
-                    Point2="0,24.2748091603054"
-                    Point3="-4,24.2748091603054" />
+                    Point1="0,20.6793893129771"
+                    Point2="0,24.6793893129771"
+                    Point3="4,24.6793893129771" />
                   <mssgle:LineSegment
-                    End="-29.3333333333333,24.2748091603054" />
+                    End="136.666666666667,24.6793893129771" />
                   <mssgle:CubicBezierSegment
-                    Point1="-29.3333333333333,24.2748091603054"
-                    Point2="-33.3333333333333,24.2748091603054"
-                    Point3="-33.3333333333333,28.2748091603054" />
+                    Point1="136.666666666667,24.6793893129771"
+                    Point2="140.666666666667,24.6793893129771"
+                    Point3="140.666666666667,28.6793893129771" />
                   <mssgle:LineSegment
-                    End="-33.3333333333333,52.5" />
+                    End="140.666666666667,53.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-95.2005729166667,29.2748091603054,157.0678125,11.6630859375"
+              BoundingBox="-8.2005729166666,29.6793893129771,157.0678125,11.6630859375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -8944,112 +8911,126 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
+          Size="162.4,41.6"
+          Id="Package\Sequence Container\DF - DimCategory\Insert Destination"
+          TopLeft="21.3333333333334,162.033333333333" />
+        <NodeLayout
           Size="164,41.6"
           Id="Package\Sequence Container\DF - DimCategory\SRC - stgCategory"
           TopLeft="228.7,5.49999999999995" />
         <NodeLayout
           Size="302.4,41.6"
           Id="Package\Sequence Container\DF - DimCategory\DST - Slowly Changing Dimension DimCategory"
-          TopLeft="159.5,107.1" />
+          TopLeft="148.666666666667,77.1" />
+        <NodeLayout
+          Size="164.8,41.6"
+          Id="Package\Sequence Container\DF - DimCategory\OLE DB Command"
+          TopLeft="283.133333333333,165.033333333333" />
         <EdgeLayout
           Id="Package\Sequence Container\DF - DimCategory.Paths[OLE DB Source Output]"
           TopLeft="310.7,47.1">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,60"
+              EndConnector="-10.8333333333333,30"
               Start="0,0"
-              End="0,52.5">
+              End="-10.8333333333333,22.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="162.4,41.6"
-          Id="Package\Sequence Container\DF - DimCategory\Insert Destination"
-          TopLeft="5.50000000000004,208.7" />
-        <EdgeLayout
-          Id="Package\Sequence Container\DF - DimCategory.Paths[New Output]"
-          TopLeft="261.633333333333,148.7">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-174.933333333333,60"
-              Start="0,0"
-              End="-174.933333333333,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,20.1894736842105" />
+                    End="0,11" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,20.1894736842105"
-                    Point2="0,24.1894736842105"
-                    Point3="-4,24.1894736842105" />
+                    Point1="0,11"
+                    Point2="0,15"
+                    Point3="-4,15" />
                   <mssgle:LineSegment
-                    End="-170.933333333333,24.1894736842105" />
+                    End="-6.83333333333331,15" />
                   <mssgle:CubicBezierSegment
-                    Point1="-170.933333333333,24.1894736842105"
-                    Point2="-174.933333333333,24.1894736842105"
-                    Point3="-174.933333333333,28.1894736842105" />
+                    Point1="-6.83333333333331,15"
+                    Point2="-10.8333333333333,15"
+                    Point3="-10.8333333333333,19" />
                   <mssgle:LineSegment
-                    End="-174.933333333333,52.5" />
+                    End="-10.8333333333333,22.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-114.558053385417,29.1894736842105,54.1827734375,11.43359375"
+              BoundingBox="0,0,0,0"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="164.8,41.6"
-          Id="Package\Sequence Container\DF - DimCategory\OLE DB Command"
-          TopLeft="228.3,208.7" />
         <EdgeLayout
-          Id="Package\Sequence Container\DF - DimCategory.Paths[Changing Attribute Updates Output]"
-          TopLeft="359.766666666667,148.7">
+          Id="Package\Sequence Container\DF - DimCategory.Paths[New Output]"
+          TopLeft="250.8,118.7">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-49.0666666666667,60"
+              EndConnector="-148.266666666667,43.3333333333333"
               Start="0,0"
-              End="-49.0666666666667,52.5">
+              End="-148.266666666667,35.8333333333333">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,20.1894736842105" />
+                    End="0,13.4701754385965" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,20.1894736842105"
-                    Point2="0,24.1894736842105"
-                    Point3="-4,24.1894736842105" />
+                    Point1="0,13.4701754385965"
+                    Point2="0,17.4701754385965"
+                    Point3="-4,17.4701754385965" />
                   <mssgle:LineSegment
-                    End="-45.0666666666667,24.1894736842105" />
+                    End="-144.266666666667,17.4701754385965" />
                   <mssgle:CubicBezierSegment
-                    Point1="-45.0666666666667,24.1894736842105"
-                    Point2="-49.0666666666667,24.1894736842105"
-                    Point3="-49.0666666666667,28.1894736842105" />
+                    Point1="-144.266666666667,17.4701754385965"
+                    Point2="-148.266666666667,17.4701754385965"
+                    Point3="-148.266666666667,21.4701754385965" />
                   <mssgle:LineSegment
-                    End="-49.0666666666667,52.5" />
+                    End="-148.266666666667,35.8333333333333" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-103.067239583333,29.1894736842105,157.0678125,11.6630859375"
+              BoundingBox="-101.224720052083,22.4701754385965,54.1827734375,11.43359375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container\DF - DimCategory.Paths[Changing Attribute Updates Output]"
+          TopLeft="348.933333333333,118.7">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="16.6000000000001,46.3333333333333"
+              Start="0,0"
+              End="16.6000000000001,38.8333333333333">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,14.679649122807" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,14.679649122807"
+                    Point2="0,18.679649122807"
+                    Point3="4,18.679649122807" />
+                  <mssgle:LineSegment
+                    End="12.6000000000001,18.679649122807" />
+                  <mssgle:CubicBezierSegment
+                    Point1="12.6000000000001,18.679649122807"
+                    Point2="16.6000000000001,18.679649122807"
+                    Point3="16.6000000000001,22.679649122807" />
+                  <mssgle:LineSegment
+                    End="16.6000000000001,38.8333333333333" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-70.23390625,23.679649122807,157.0678125,11.6630859375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -9107,7 +9088,11 @@
         <NodeLayout
           Size="208,41.6"
           Id="Package\Sequence Container\DF - DimCustomer\DST - Slowly Changing Dimension DimCustomer"
-          TopLeft="206.7,208.7" />
+          TopLeft="199.7,189.7" />
+        <NodeLayout
+          Size="162.4,41.6"
+          Id="Package\Sequence Container\DF - DimCustomer\Insert Destination"
+          TopLeft="30.5,269.3" />
         <NodeLayout
           Size="149.6,41.6"
           Id="Package\Sequence Container\DF - DimCustomer\SRC - stgCustomer"
@@ -9115,128 +9100,128 @@
         <NodeLayout
           Size="152.8,41.6"
           Id="Package\Sequence Container\DF - DimCustomer\Derived Column"
-          TopLeft="234.3,107.1" />
+          TopLeft="227.376923076923,100.946153846154" />
+        <NodeLayout
+          Size="164.8,41.6"
+          Id="Package\Sequence Container\DF - DimCustomer\OLE DB Command"
+          TopLeft="348.3,262.3" />
         <EdgeLayout
-          Id="Package\Sequence Container\DF - DimCustomer.Paths[Derived Column Output]"
-          TopLeft="310.7,148.7">
+          Id="Package\Sequence Container\DF - DimCustomer.Paths[New Output]"
+          TopLeft="270.366666666667,231.3">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,60"
+              EndConnector="-158.666666666667,38"
               Start="0,0"
-              End="0,52.5">
+              End="-158.666666666667,30.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,52.5" />
+                    End="0,11.3740458015267" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,11.3740458015267"
+                    Point2="0,15.3740458015267"
+                    Point3="-4,15.3740458015267" />
+                  <mssgle:LineSegment
+                    End="-154.666666666667,15.3740458015267" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-154.666666666667,15.3740458015267"
+                    Point2="-158.666666666667,15.3740458015267"
+                    Point3="-158.666666666667,19.3740458015267" />
+                  <mssgle:LineSegment
+                    End="-158.666666666667,30.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="-106.424720052083,20.3740458015267,54.1827734375,11.43359375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container\DF - DimCustomer.Paths[Derived Column Output]"
+          TopLeft="303.738461538462,142.546153846154">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,47.1538461538462"
+              Start="0,0"
+              End="0,39.6538461538462">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,39.6538461538462" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container\DF - DimCustomer.Paths[Changing Attribute Updates Output]"
+          TopLeft="337.033333333333,231.3">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="93.6666666666669,31"
+              Start="0,0"
+              End="93.6666666666669,23.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,8.54198473282444" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,8.54198473282444"
+                    Point2="0,12.5419847328244"
+                    Point3="4,12.5419847328244" />
+                  <mssgle:LineSegment
+                    End="89.6666666666669,12.5419847328244" />
+                  <mssgle:CubicBezierSegment
+                    Point1="89.6666666666669,12.5419847328244"
+                    Point2="93.6666666666669,12.5419847328244"
+                    Point3="93.6666666666669,16.5419847328244" />
+                  <mssgle:LineSegment
+                    End="93.6666666666669,23.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-31.7005729166666,17.5419847328244,157.0678125,11.6630859375"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Sequence Container\DF - DimCustomer.Paths[OLE DB Source Output]"
-          TopLeft="310.7,47.1">
+          TopLeft="307.238461538462,47.1">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,59.9999999999999"
+              EndConnector="0,53.8461538461539"
               Start="0,0"
-              End="0,52.4999999999999">
+              End="0,46.3461538461539">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,52.4999999999999" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="162.4,41.6"
-          Id="Package\Sequence Container\DF - DimCustomer\Insert Destination"
-          TopLeft="5.50000000000004,310.3" />
-        <EdgeLayout
-          Id="Package\Sequence Container\DF - DimCustomer.Paths[New Output]"
-          TopLeft="277.366666666667,250.3">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-190.666666666667,60"
-              Start="0,0"
-              End="-190.666666666667,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,20.2748091603053" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,20.2748091603053"
-                    Point2="0,24.2748091603053"
-                    Point3="-4,24.2748091603053" />
-                  <mssgle:LineSegment
-                    End="-186.666666666667,24.2748091603053" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-186.666666666667,24.2748091603053"
-                    Point2="-190.666666666667,24.2748091603053"
-                    Point3="-190.666666666667,28.2748091603053" />
-                  <mssgle:LineSegment
-                    End="-190.666666666667,52.5" />
+                    End="0,46.3461538461539" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-122.424720052083,29.2748091603053,54.1827734375,11.43359375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="164.8,41.6"
-          Id="Package\Sequence Container\DF - DimCustomer\OLE DB Command"
-          TopLeft="228.3,310.3" />
-        <EdgeLayout
-          Id="Package\Sequence Container\DF - DimCustomer.Paths[Changing Attribute Updates Output]"
-          TopLeft="344.033333333333,250.3">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-33.3333333333333,60"
-              Start="0,0"
-              End="-33.3333333333333,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,20.2748091603054" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,20.2748091603054"
-                    Point2="0,24.2748091603054"
-                    Point3="-4,24.2748091603054" />
-                  <mssgle:LineSegment
-                    End="-29.3333333333333,24.2748091603054" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-29.3333333333333,24.2748091603054"
-                    Point2="-33.3333333333333,24.2748091603054"
-                    Point3="-33.3333333333333,28.2748091603054" />
-                  <mssgle:LineSegment
-                    End="-33.3333333333333,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-95.2005729166667,29.2748091603054,157.0678125,11.6630859375"
+              BoundingBox="0,0,0,0"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -9551,13 +9536,21 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
+          Size="141.6,41.6"
+          Id="Package\Sequence Container\DF - DimFilm\SRC - stgFilm"
+          TopLeft="239.9,5.49999999999995" />
+        <NodeLayout
+          Size="162.4,41.6"
+          Id="Package\Sequence Container\DF - DimFilm\Insert Destination"
+          TopLeft="5.50000000000004,208.7" />
+        <NodeLayout
           Size="208,41.6"
           Id="Package\Sequence Container\DF - DimFilm\DST - Slowly Changing Dimension DimFilm"
           TopLeft="206.7,107.1" />
         <NodeLayout
-          Size="141.6,41.6"
-          Id="Package\Sequence Container\DF - DimFilm\SRC - stgFilm"
-          TopLeft="239.9,5.49999999999995" />
+          Size="164.8,41.6"
+          Id="Package\Sequence Container\DF - DimFilm\OLE DB Command"
+          TopLeft="384.3,210.7" />
         <EdgeLayout
           Id="Package\Sequence Container\DF - DimFilm.Paths[OLE DB Source Output]"
           TopLeft="310.7,47.1">
@@ -9577,13 +9570,11 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="162.4,41.6"
-          Id="Package\Sequence Container\DF - DimFilm\Insert Destination"
-          TopLeft="5.50000000000004,208.7" />
         <EdgeLayout
           Id="Package\Sequence Container\DF - DimFilm.Paths[New Output]"
           TopLeft="277.366666666667,148.7">
@@ -9620,49 +9611,58 @@
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="164.8,41.6"
-          Id="Package\Sequence Container\DF - DimFilm\OLE DB Command"
-          TopLeft="228.3,208.7" />
         <EdgeLayout
           Id="Package\Sequence Container\DF - DimFilm.Paths[Changing Attribute Updates Output]"
           TopLeft="344.033333333333,148.7">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-33.3333333333333,60"
+              EndConnector="122.666666666667,62"
               Start="0,0"
-              End="-33.3333333333333,52.5">
+              End="122.666666666667,54.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,20.2748091603054" />
+                    End="0,21.0839694656488" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,20.2748091603054"
-                    Point2="0,24.2748091603054"
-                    Point3="-4,24.2748091603054" />
+                    Point1="0,21.0839694656488"
+                    Point2="0,25.0839694656488"
+                    Point3="4,25.0839694656488" />
                   <mssgle:LineSegment
-                    End="-29.3333333333333,24.2748091603054" />
+                    End="118.666666666667,25.0839694656488" />
                   <mssgle:CubicBezierSegment
-                    Point1="-29.3333333333333,24.2748091603054"
-                    Point2="-33.3333333333333,24.2748091603054"
-                    Point3="-33.3333333333333,28.2748091603054" />
+                    Point1="118.666666666667,25.0839694656488"
+                    Point2="122.666666666667,25.0839694656488"
+                    Point3="122.666666666667,29.0839694656488" />
                   <mssgle:LineSegment
-                    End="-33.3333333333333,52.5" />
+                    End="122.666666666667,54.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-95.2005729166667,29.2748091603054,157.0678125,11.6630859375"
+              BoundingBox="-17.2005729166667,30.0839694656488,157.0678125,11.6630859375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\DF - DimFilm\SRC - stgFilm">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Sequence Container\DF - DimFilm\DST - Slowly Changing Dimension DimFilm">
     <Properties>
@@ -9760,19 +9760,6 @@
       </Property>
     </Properties>
   </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container\DF - DimFilm\SRC - stgFilm">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Sequence Container\DF - DimStaff">
     <LayoutInfo>
@@ -9781,162 +9768,168 @@
         <NodeLayout
           Size="281.6,41.6"
           Id="Package\Sequence Container\DF - DimStaff\DST - Slowly Changing Dimension DimStaff"
-          TopLeft="169.9,310.3" />
+          TopLeft="174.1857143587,210.888233899905" />
         <NodeLayout
           Size="97.6,41.6"
           Id="Package\Sequence Container\DF - DimStaff\Sort"
-          TopLeft="261.9,208.7" />
+          TopLeft="262.61428572645,140.641175516089" />
+        <NodeLayout
+          Size="162.4,41.6"
+          Id="Package\Sequence Container\DF - DimStaff\Insert Destination"
+          TopLeft="66.214286748244,283.429409962954" />
         <NodeLayout
           Size="144,41.6"
           Id="Package\Sequence Container\DF - DimStaff\SRC - stgStaff"
           TopLeft="238.7,5.49999999999995" />
         <NodeLayout
+          Size="164.8,41.6"
+          Id="Package\Sequence Container\DF - DimStaff\OLE DB Command"
+          TopLeft="360.442859393237,290.311763000653" />
+        <NodeLayout
           Size="152.8,41.6"
           Id="Package\Sequence Container\DF - DimStaff\Derived Column"
-          TopLeft="234.3,107.1" />
+          TopLeft="233.58571427355,75.7470583838162" />
         <EdgeLayout
           Id="Package\Sequence Container\DF - DimStaff.Paths[Sort Output]"
-          TopLeft="310.7,250.3">
+          TopLeft="313.200000042575,182.241175516089">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,60"
+              EndConnector="0,28.6470583838163"
               Start="0,0"
-              End="0,52.5">
+              End="0,21.1470583838163">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,52.5" />
+                    End="0,21.1470583838163" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Sequence Container\DF - DimStaff.Paths[OLE DB Source Output]"
-          TopLeft="310.7,47.1">
+          TopLeft="310.342857136775,47.1">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,59.9999999999999"
+              EndConnector="0,28.6470583838163"
               Start="0,0"
-              End="0,52.4999999999999">
+              End="0,21.1470583838163">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,52.4999999999999" />
+                    End="0,21.1470583838163" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container\DF - DimStaff.Paths[New Output]"
+          TopLeft="269.3857143587,252.488233899905">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-121.971427610456,30.9411760630492"
+              Start="0,0"
+              End="-121.971427610456,23.4411760630492">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,8.4813557678063" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,8.4813557678063"
+                    Point2="0,12.4813557678063"
+                    Point3="-4,12.4813557678063" />
+                  <mssgle:LineSegment
+                    End="-117.971427610456,12.4813557678063" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-117.971427610456,12.4813557678063"
+                    Point2="-121.971427610456,12.4813557678063"
+                    Point3="-121.971427610456,16.4813557678063" />
+                  <mssgle:LineSegment
+                    End="-121.971427610456,23.4411760630492" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-88.0771005239778,17.4813557678063,54.1827734375,11.43359375"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Sequence Container\DF - DimStaff.Paths[Derived Column Output]"
-          TopLeft="310.7,148.7">
+          TopLeft="310.7,117.347058383816">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,59.9999999999999"
+              EndConnector="0,23.2941171322726"
               Start="0,0"
-              End="0,52.4999999999999">
+              End="0,15.7941171322726">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,52.4999999999999" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="162.4,41.6"
-          Id="Package\Sequence Container\DF - DimStaff\Insert Destination"
-          TopLeft="5.50000000000004,411.9" />
-        <EdgeLayout
-          Id="Package\Sequence Container\DF - DimStaff.Paths[New Output]"
-          TopLeft="265.1,351.9">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-178.4,60"
-              Start="0,0"
-              End="-178.4,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,20.2033898305085" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,20.2033898305085"
-                    Point2="0,24.2033898305085"
-                    Point3="-4,24.2033898305085" />
-                  <mssgle:LineSegment
-                    End="-174.4,24.2033898305085" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-174.4,24.2033898305085"
-                    Point2="-178.4,24.2033898305085"
-                    Point3="-178.4,28.2033898305085" />
-                  <mssgle:LineSegment
-                    End="-178.4,52.5" />
+                    End="0,15.7941171322726" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-116.29138671875,29.2033898305085,54.1827734375,11.43359375"
+              BoundingBox="0,0,0,0"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="164.8,41.6"
-          Id="Package\Sequence Container\DF - DimStaff\OLE DB Command"
-          TopLeft="228.3,411.9" />
         <EdgeLayout
           Id="Package\Sequence Container\DF - DimStaff.Paths[Changing Attribute Updates Output]"
-          TopLeft="356.3,351.9">
+          TopLeft="360.5857143587,252.488233899905">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-45.6,60"
+              EndConnector="82.2571450345372,37.823529100748"
               Start="0,0"
-              End="-45.6,52.5">
+              End="82.2571450345372,30.323529100748">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,20.2033898305085" />
+                    End="0,11.2576269931831" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,20.2033898305085"
-                    Point2="0,24.2033898305085"
-                    Point3="-4,24.2033898305085" />
+                    Point1="0,11.2576269931831"
+                    Point2="0,15.2576269931831"
+                    Point3="4,15.2576269931831" />
                   <mssgle:LineSegment
-                    End="-41.6,24.2033898305085" />
+                    End="78.2571450345372,15.2576269931831" />
                   <mssgle:CubicBezierSegment
-                    Point1="-41.6,24.2033898305085"
-                    Point2="-45.6,24.2033898305085"
-                    Point3="-45.6,28.2033898305085" />
+                    Point1="78.2571450345372,15.2576269931831"
+                    Point2="82.2571450345372,15.2576269931831"
+                    Point3="82.2571450345372,19.2576269931831" />
                   <mssgle:LineSegment
-                    End="-45.6,52.5" />
+                    End="82.2571450345372,30.323529100748" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-101.33390625,29.2033898305085,157.0678125,11.6630859375"
+              BoundingBox="-37.4053337327314,20.2576269931831,157.0678125,11.6630859375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -10027,108 +10020,110 @@
           Id="Package\Sequence Container\DF - DimStore\SRC - stgStore"
           TopLeft="235.9,5.49999999999995" />
         <NodeLayout
+          Size="164.8,41.6"
+          Id="Package\Sequence Container\DF - DimStore\OLE DB Command"
+          TopLeft="339.3,186.7" />
+        <NodeLayout
           Size="208,41.6"
           Id="Package\Sequence Container\DF - DimStore\DST - Slowly Changing Dimension DimStore"
-          TopLeft="206.7,107.1" />
-        <EdgeLayout
-          Id="Package\Sequence Container\DF - DimStore.Paths[OLE DB Source Output]"
-          TopLeft="310.7,47.1">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          TopLeft="201.7,76.2666666666667" />
         <NodeLayout
           Size="162.4,41.6"
           Id="Package\Sequence Container\DF - DimStore\Insert Destination"
-          TopLeft="5.50000000000004,208.7" />
+          TopLeft="71.5,176.7" />
         <EdgeLayout
-          Id="Package\Sequence Container\DF - DimStore.Paths[New Output]"
-          TopLeft="277.366666666667,148.7">
+          Id="Package\Sequence Container\DF - DimStore.Paths[OLE DB Source Output]"
+          TopLeft="308.2,47.1">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-190.666666666667,60"
+              EndConnector="0,29.1666666666667"
               Start="0,0"
-              End="-190.666666666667,52.5">
+              End="0,21.6666666666667">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,20.2748091603053" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,20.2748091603053"
-                    Point2="0,24.2748091603053"
-                    Point3="-4,24.2748091603053" />
-                  <mssgle:LineSegment
-                    End="-186.666666666667,24.2748091603053" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-186.666666666667,24.2748091603053"
-                    Point2="-190.666666666667,24.2748091603053"
-                    Point3="-190.666666666667,28.2748091603053" />
-                  <mssgle:LineSegment
-                    End="-190.666666666667,52.5" />
+                    End="0,21.6666666666667" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-122.424720052083,29.2748091603053,54.1827734375,11.43359375"
+              BoundingBox="0,0,0,0"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="164.8,41.6"
-          Id="Package\Sequence Container\DF - DimStore\OLE DB Command"
-          TopLeft="228.3,208.7" />
         <EdgeLayout
-          Id="Package\Sequence Container\DF - DimStore.Paths[Changing Attribute Updates Output]"
-          TopLeft="344.033333333333,148.7">
+          Id="Package\Sequence Container\DF - DimStore.Paths[New Output]"
+          TopLeft="272.366666666667,117.866666666667">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-33.3333333333333,60"
+              EndConnector="-119.666666666667,58.8333333333333"
               Start="0,0"
-              End="-33.3333333333333,52.5">
+              End="-119.666666666667,51.3333333333333">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,20.2748091603054" />
+                    End="0,19.8027989821883" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,20.2748091603054"
-                    Point2="0,24.2748091603054"
-                    Point3="-4,24.2748091603054" />
+                    Point1="0,19.8027989821883"
+                    Point2="0,23.8027989821883"
+                    Point3="-4,23.8027989821883" />
                   <mssgle:LineSegment
-                    End="-29.3333333333333,24.2748091603054" />
+                    End="-115.666666666667,23.8027989821883" />
                   <mssgle:CubicBezierSegment
-                    Point1="-29.3333333333333,24.2748091603054"
-                    Point2="-33.3333333333333,24.2748091603054"
-                    Point3="-33.3333333333333,28.2748091603054" />
+                    Point1="-115.666666666667,23.8027989821883"
+                    Point2="-119.666666666667,23.8027989821883"
+                    Point3="-119.666666666667,27.8027989821883" />
                   <mssgle:LineSegment
-                    End="-33.3333333333333,52.5" />
+                    End="-119.666666666667,51.3333333333333" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-95.2005729166667,29.2748091603054,157.0678125,11.6630859375"
+              BoundingBox="-86.9247200520833,28.8027989821883,54.1827734375,11.43359375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container\DF - DimStore.Paths[Changing Attribute Updates Output]"
+          TopLeft="339.033333333333,117.866666666667">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="82.6666666666667,68.8333333333333"
+              Start="0,0"
+              End="82.6666666666667,61.3333333333333">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,23.8486005089059" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,23.8486005089059"
+                    Point2="0,27.8486005089059"
+                    Point3="4,27.8486005089059" />
+                  <mssgle:LineSegment
+                    End="78.6666666666667,27.8486005089059" />
+                  <mssgle:CubicBezierSegment
+                    Point1="78.6666666666667,27.8486005089059"
+                    Point2="82.6666666666667,27.8486005089059"
+                    Point3="82.6666666666667,31.8486005089059" />
+                  <mssgle:LineSegment
+                    End="82.6666666666667,61.3333333333333" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-37.2005729166667,32.8486005089058,157.0678125,11.6630859375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -10194,6 +10189,19 @@
   &lt;DateVariable /&gt;
   &lt;EnableInferredSupport&gt;false&lt;/EnableInferredSupport&gt;
 &lt;/SCDWizardMetadata&gt;</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\DF - DimDate\Insert Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>

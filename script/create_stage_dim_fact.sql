@@ -1,4 +1,4 @@
--- file:///C:/Users/TotNguyen/Downloads/Documents/31815308.pdf
+﻿-- file:///C:/Users/TotNguyen/Downloads/Documents/31815308.pdf
 
 CREATE TABLE [stgAddress] (
     [address_id] int,
@@ -57,24 +57,12 @@ CREATE TABLE [stgDate] (
     [day num in month] int,
     [day num overall] int,
     [day name] nvarchar(255),
-    [day abbrev] nvarchar(255),
     [weekday flag] nvarchar(255),
     [week num in year] int,
-    [week num overall] int,
-    [week begin date] datetime,
-    [week begin date key] int,
     [month] int,
-    [month num overall] int,
     [month name] nvarchar(255),
-    [month abbrev] nvarchar(255),
     [quarter] int,
-    [year] int,
-    [yearmo] int,
-    [fiscal month] int,
-    [fiscal quarter] int,
-    [fiscal year] int,
-    [month end flag] nvarchar(255),
-    [same day year ago] datetime
+    [year] int
 )
 CREATE TABLE [stgInventory] (
     [store_id] int,
@@ -146,6 +134,7 @@ CREATE TABLE [DimCategory] (
 )
 
 
+
 CREATE TABLE [DimDate] (
     [date key] int primary key,
     [full date] datetime,
@@ -189,8 +178,62 @@ truncate table DimCustomer
 truncate table DimAddress
 
 ----
-use StageSakila
+-- Số lần thuê của từng khách hàng
+select c.name, count(*) as total
+from FactRental f
+	 inner join DimCustomer c on f.customer_id = c.customer_id
+group by  c.name
+order by total DESC
 
-select *
-from stgRental
-where ProfitReturnEarly = 0 and ProfitReturnLate = 0
+select * from FactRental
+--
+--1
+select store_id, count(*)
+from FactRental
+group by store_id
+--2
+select f.store_id, film_id
+	from FactRental f 
+	group by f.store_id, film_id
+
+
+select store_id, film_id
+from inventory
+where store_id = 2
+group by store_id, film_id
+
+
+-- 4
+select store_id, d.month, sum(amount) amount
+from FactRental f
+	 inner join DimDate d on f.return_date_key = d.[date key] 
+group by d.month, store_id 
+
+
+-- 6
+select c.name , count(*) soLuong
+from FactRental f 
+	 inner join DimFilm d on f.film_id = d.film_id
+	 inner join DimCategory c on d.category_id = c.category_id
+group by c.name
+order by soLuong DESC
+
+select q.customer_id, COUNT(rental_id) soLanThue, q.soLanTraMuon , Round((Convert(float, q.soLanTraMuon) / COUNT(rental_id))*100, 2) AS tyLe
+from FactRental f inner join (select customer_id, count(rental_id) soLanTraMuon
+								from FactRental f
+								WHERE ProfitReturnEarly = 0
+								group by customer_id) q on f.customer_id = q.customer_id
+
+group by q.customer_id, q.soLanTraMuon
+order by tyLe desc
+
+select customer_id, count(rental_id) soLanTraMuon
+from FactRental f
+WHERE ProfitReturnEarly = 0
+group by customer_id
+order by customer_id
+
+	 
+select store_id, sum(ProfitReturnEarly)
+from FactRental
+group by store_id
