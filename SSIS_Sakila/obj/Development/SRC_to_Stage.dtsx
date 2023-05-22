@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="80"
-  DTS:VersionGUID="{C0F3034C-FAF4-45C0-A308-67C26763B113}">
+  DTS:VersionBuild="83"
+  DTS:VersionGUID="{FFFF8024-C237-4771-B47A-306BC5B7AFE6}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -7267,9 +7267,9 @@
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="30.7714306190714,29.0901975298418"
+              EndConnector="30.7714306190713,29.0901975298418"
               Start="0,0"
-              End="30.7714306190714,21.5901975298418">
+              End="30.7714306190713,21.5901975298418">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -7280,13 +7280,13 @@
                     Point2="0,17.2643998383626"
                     Point3="4,17.2643998383626" />
                   <mssgle:LineSegment
-                    End="26.7714306190714,17.2643998383626" />
+                    End="26.7714306190713,17.2643998383626" />
                   <mssgle:CubicBezierSegment
-                    Point1="26.7714306190714,17.2643998383626"
-                    Point2="30.7714306190714,17.2643998383626"
-                    Point3="30.7714306190714,21.2643998383626" />
+                    Point1="26.7714306190713,17.2643998383626"
+                    Point2="30.7714306190713,17.2643998383626"
+                    Point3="30.7714306190713,21.2643998383626" />
                   <mssgle:LineSegment
-                    End="30.7714306190714,21.5901975298418" />
+                    End="30.7714306190713,21.5901975298418" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -7335,25 +7335,25 @@
           PanelSize="340.8,375.2"
           Size="340.8,418.4"
           Id="Package\Src to Stage"
-          TopLeft="186.070632215786,112.766658674969" />
+          TopLeft="186.070632215786,106.649011530348" />
         <NodeLayout
           Size="162.4,41.6"
           Id="Package\Truncate Table"
-          TopLeft="277.857147589022,45.9647062577179" />
+          TopLeft="275.714290409672,36.0235296477084" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="357.763889902404,87.5647062577179">
+          TopLeft="356.692461312729,77.6235296477084">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,25.2019524172511"
+              EndConnector="0,29.0254818826391"
               Start="0,0"
-              End="0,17.7019524172511">
+              End="0,21.5254818826391">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,17.7019524172511" />
+                    End="0,21.5254818826391" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -7369,7 +7369,7 @@
     design-time-name="Package\Src to Stage\DF - stgActor">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="138.4,41.6"
           Id="Package\Src to Stage\DF - stgActor\SRC - Actor"
@@ -7397,7 +7397,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -7433,7 +7435,7 @@
     design-time-name="Package\Src to Stage\DF - stgAddress">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="138.4,41.6"
           Id="Package\Src to Stage\DF - stgAddress\Excel Source"
@@ -7461,7 +7463,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -7497,7 +7501,7 @@
     design-time-name="Package\Src to Stage\DF - stgCategory">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="149.6,41.6"
           Id="Package\Src to Stage\DF - stgCategory\SRC - Category"
@@ -7525,7 +7529,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -7561,7 +7567,7 @@
     design-time-name="Package\Src to Stage\DF - stgCustomer">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="138.4,41.6"
           Id="Package\Src to Stage\DF - stgCustomer\SRC - Customer"
@@ -7589,7 +7595,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -7625,7 +7633,7 @@
     design-time-name="Package\Src to Stage\DF - stgDate">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="144.8,41.6"
           Id="Package\Src to Stage\DF - stgDate\DST - stgDate"
@@ -7653,7 +7661,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -7689,7 +7699,7 @@
     design-time-name="Package\Src to Stage\DF - stgFilm">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="138.4,41.6"
           Id="Package\Src to Stage\DF - stgFilm\Excel Source"
@@ -7717,7 +7727,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -7819,21 +7831,53 @@
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="141.6,41.6"
-          Id="Package\Src to Stage\DF - stgRental\SRC - stgFilm"
-          TopLeft="443.4904761256,8.39019041935867" />
+          Size="106.4,41.6"
+          Id="Package\Src to Stage\DF - stgRental\Sort 2"
+          TopLeft="283.614285471002,227.546341800659" />
         <NodeLayout
           Size="164.8,41.6"
           Id="Package\Src to Stage\DF - stgRental\Data Conversion 1"
           TopLeft="219.3190475785,70.1392151679135" />
         <NodeLayout
-          Size="168,41.6"
-          Id="Package\Src to Stage\DF - stgRental\SRC - stgInventory"
-          TopLeft="220.1,5.49999999999995" />
+          Size="152,41.6"
+          Id="Package\Src to Stage\DF - stgRental\DST - stgRental"
+          TopLeft="450.433333475249,437.774501617393" />
+        <NodeLayout
+          Size="126.4,41.6"
+          Id="Package\Src to Stage\DF - stgRental\Aggregate"
+          TopLeft="463.233333475249,289.378423954623" />
+        <NodeLayout
+          Size="106.4,41.6"
+          Id="Package\Src to Stage\DF - stgRental\Sort 3"
+          TopLeft="454.423809345401,76.3431311239421" />
+        <NodeLayout
+          Size="97.6,41.6"
+          Id="Package\Src to Stage\DF - stgRental\Sort"
+          TopLeft="30.6928560936939,135.097057791276" />
+        <NodeLayout
+          Size="155.2,41.6"
+          Id="Package\Src to Stage\DF - stgRental\Data Conversion"
+          TopLeft="6.69047621074996,70.1392151679134" />
+        <NodeLayout
+          Size="141.6,41.6"
+          Id="Package\Src to Stage\DF - stgRental\SRC - stgFilm"
+          TopLeft="443.4904761256,8.39019041935867" />
+        <NodeLayout
+          Size="152.8,41.6"
+          Id="Package\Src to Stage\DF - stgRental\Derived Column"
+          TopLeft="446.029004402727,221.842595555355" />
+        <NodeLayout
+          Size="106.4,41.6"
+          Id="Package\Src to Stage\DF - stgRental\Sort 1"
+          TopLeft="250.358874449659,134.778430335827" />
         <NodeLayout
           Size="138.4,41.6"
           Id="Package\Src to Stage\DF - stgRental\Merge Join 1"
           TopLeft="434.614285471001,146.080385579039" />
+        <NodeLayout
+          Size="168,41.6"
+          Id="Package\Src to Stage\DF - stgRental\SRC - stgInventory"
+          TopLeft="220.1,5.49999999999995" />
         <NodeLayout
           Size="106.4,41.6"
           Id="Package\Src to Stage\DF - stgRental\Sort 4"
@@ -7846,38 +7890,6 @@
           Size="138.4,41.6"
           Id="Package\Src to Stage\DF - stgRental\SRC - Rental"
           TopLeft="13.9000000000001,5.49999999999995" />
-        <NodeLayout
-          Size="106.4,41.6"
-          Id="Package\Src to Stage\DF - stgRental\Sort 2"
-          TopLeft="283.614285471002,227.546341800659" />
-        <NodeLayout
-          Size="106.4,41.6"
-          Id="Package\Src to Stage\DF - stgRental\Sort 1"
-          TopLeft="250.358874449659,134.778430335827" />
-        <NodeLayout
-          Size="152,41.6"
-          Id="Package\Src to Stage\DF - stgRental\DST - stgRental"
-          TopLeft="450.433333475249,437.774501617393" />
-        <NodeLayout
-          Size="155.2,41.6"
-          Id="Package\Src to Stage\DF - stgRental\Data Conversion"
-          TopLeft="6.69047621074996,70.1392151679134" />
-        <NodeLayout
-          Size="152.8,41.6"
-          Id="Package\Src to Stage\DF - stgRental\Derived Column"
-          TopLeft="446.029004402727,221.842595555355" />
-        <NodeLayout
-          Size="106.4,41.6"
-          Id="Package\Src to Stage\DF - stgRental\Sort 3"
-          TopLeft="454.423809345401,76.3431311239421" />
-        <NodeLayout
-          Size="97.6,41.6"
-          Id="Package\Src to Stage\DF - stgRental\Sort"
-          TopLeft="30.6928560936939,135.097057791276" />
-        <NodeLayout
-          Size="126.4,41.6"
-          Id="Package\Src to Stage\DF - stgRental\Aggregate"
-          TopLeft="463.233333475249,289.378423954623" />
         <EdgeLayout
           Id="Package\Src to Stage\DF - stgRental.Paths[Merge Join Output]"
           TopLeft="523.988311603531,187.680385579039">
@@ -8281,7 +8293,7 @@
     design-time-name="Package\Src to Stage\DF - stgStaff">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="138.4,41.6"
           Id="Package\Src to Stage\DF - stgStaff\SRC - Staff"
@@ -8309,7 +8321,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -8345,7 +8359,7 @@
     design-time-name="Package\Src to Stage\DF - stgStore">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="132.8,41.6"
           Id="Package\Src to Stage\DF - stgStore\SRC - Store"
@@ -8373,7 +8387,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

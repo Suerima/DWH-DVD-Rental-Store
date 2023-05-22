@@ -8,12 +8,12 @@
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>SRC_to_Stage.dtsx</Name>
-      <LastWriteTime>2023-05-14T18:22:45.1394489Z</LastWriteTime>
+      <LastWriteTime>2023-05-15T19:38:42.4343512Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Stage_to_DWH.dtsx</Name>
-      <LastWriteTime>2023-05-14T11:01:46.6833692Z</LastWriteTime>
+      <LastWriteTime>2023-05-15T19:38:41.4107505Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
