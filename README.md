@@ -10,16 +10,6 @@
 ## 1. Giới thiệu đề tài
  Sakila là tập dataset sử dụng để học và nghiên cứu quản lý cơ sở dữ liệu. Chúng em nhận thấy rằng xây dựng một kho dữ liệu cho ngành bán lẻ có thể giúp các doanh nghiệp tối ưu hóa hoạt động kinh doanh. Thị trường bán lẻ đang phát triển nhanh chóng, và việc thu thập và phân tích dữ liệu là rất quan trọng để đưa ra quyết định chiến lược và tận dụng nguồn lực. Xây dựng kho dữ liệu hiệu quả giúp giảm thiểu sự phân tán và không chính xác của dữ liệu, cùng với việc tăng cường khả năng phân tích và dự báo kinh doanh. Do đó, nhóm chúng em xây dựng kho dữ liệu cho ngành bán lẻ, đặc biệt là cho thuê băng đĩa phim, là cần thiết và có ý nghĩa lớn để tối ưu hoá hoạt động kinh doanh trong thị trường cạnh tranh ngày này.
  
- **Trong dự án này bao gồm**:
-- 1 File báo cáo word
-- 1 File thuyết trình ppt
-- 1 File video nhóm thuyết trình
-- 1 Folder project SSAS
-- 1 Folder project SSIS
-- 1 File dataset
-- 1 File tạo table
-- 1 File README
-
 ## 2. Thông tin về dataset
 Dataset được lấy từ https://www.kaggle.com/datasets/atanaskanev/sqlite-sakila-sample-database
 
