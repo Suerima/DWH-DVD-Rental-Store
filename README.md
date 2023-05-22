@@ -1,4 +1,4 @@
-# Rental Sakila Project
+# Building a data warehouse for a dvd rental store
 
 - [Rental Sakila Project](#rental-sakila-project)
   - [1. Giới thiệu đề tài](#1-giới-thiệu-đề-tài)
