@@ -24,7 +24,7 @@ Sau khi nghiên cứu, thì em đã lấy ra các thuộc tính và các bảng 
 - Staff: thông tin nhân viên
 - Rental: thông tin giao dịch ngày thuê, ngày trả và giá cả cho thuê
 
-## 3.1 Nội dung chính dự án
+## 3. Nội dung chính dự án
 
 ### 3.1 Xây dựng kho dữ liệu bằng công cụ SSIS
 - Tạo StageSakila lưu trữ các table stage và DWHSakila lưu trữ các tabel Dim - Fact
