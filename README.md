@@ -8,12 +8,12 @@
     - [3.2. Xây dựng cube và truy vấn bằng công cụ SSAS](#32-xây-dựng-cube-và-truy-vấn-bằng-công-cụ-ssas)
     - [3.3. Xây dựng Dashboard](#33-xây-dựng-dashboard)
 ## 1. Giới thiệu đề tài
- Sakila là tập dataset sử dụng để học và nghiên cứu quản lý cơ sở dữ liệu. Chúng em nhận thấy rằng xây dựng một kho dữ liệu cho ngành bán lẻ có thể giúp các doanh nghiệp tối ưu hóa hoạt động kinh doanh. Thị trường bán lẻ đang phát triển nhanh chóng, và việc thu thập và phân tích dữ liệu là rất quan trọng để đưa ra quyết định chiến lược và tận dụng nguồn lực. Xây dựng kho dữ liệu hiệu quả giúp giảm thiểu sự phân tán và không chính xác của dữ liệu, cùng với việc tăng cường khả năng phân tích và dự báo kinh doanh. Do đó, nhóm chúng em xây dựng kho dữ liệu cho ngành bán lẻ, đặc biệt là cho thuê băng đĩa phim, là cần thiết và có ý nghĩa lớn để tối ưu hoá hoạt động kinh doanh trong thị trường cạnh tranh ngày này.
+ Sakila là tập dataset sử dụng để học và nghiên cứu quản lý cơ sở dữ liệu. Nhận thấy rằng xây dựng một kho dữ liệu cho ngành bán lẻ có thể giúp các doanh nghiệp tối ưu hóa hoạt động kinh doanh. Thị trường bán lẻ đang phát triển nhanh chóng, và việc thu thập và phân tích dữ liệu là rất quan trọng để đưa ra quyết định chiến lược và tận dụng nguồn lực. Xây dựng kho dữ liệu hiệu quả giúp giảm thiểu sự phân tán và không chính xác của dữ liệu, cùng với việc tăng cường khả năng phân tích và dự báo kinh doanh. Do đó, việc dựng kho dữ liệu cho ngành bán lẻ, đặc biệt là cho thuê băng đĩa phim, là cần thiết và có ý nghĩa lớn để tối ưu hoá hoạt động kinh doanh trong thị trường cạnh tranh ngày này.
  
 ## 2. Thông tin về dataset
 Dataset được lấy từ https://www.kaggle.com/datasets/atanaskanev/sqlite-sakila-sample-database
 
-Sau khi nghiên cứu, thì nhóm chúng em đã lấy ra các thuộc tính và các bảng cần thiết cho dự án của mình, bao gồm các bảng:
+Sau khi nghiên cứu, thì em đã lấy ra các thuộc tính và các bảng cần thiết cho dự án của mình, bao gồm các bảng:
 - Address: lưu thông tin địa chỉ
 - Actor: thông tin các diễn viên trong một bộ phim
 - Customer: thông tin về khách hàng
@@ -38,8 +38,7 @@ Sau khi nghiên cứu, thì nhóm chúng em đã lấy ra các thuộc tính và
 - Tạo cube, thêm measure và các dim cần thiết
 - Truy vấn các câu hỏi mà nhóm đưa ra bằng công cụ SSAS, Pivot Table, PowerBI
 
-### 3.3. Xây dựng Dashboard
-
+### 3.3. Xây dựng Dashboard với PowerBI
 - Dashboard báo cáo doanh thu 
 [![dashboard-sales-reporting.png](https://i.postimg.cc/DZL56Pv2/dashboard-sales-reporting.png)](https://postimg.cc/mzZQ2M1q)
 - Dashboard thông kê những yếu tố nổi bật theo thời gian 
