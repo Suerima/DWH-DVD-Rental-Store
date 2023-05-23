@@ -39,10 +39,11 @@ Sau khi nghiên cứu, thì nhóm chúng em đã lấy ra các thuộc tính và
 - Truy vấn các câu hỏi mà nhóm đưa ra bằng công cụ SSAS, Pivot Table, PowerBI
 
 ### 3.3. Xây dựng Dashboard
-![dashboard_list_top](https://github.com/Suerima/DWH-DVD-Rental-Store/assets/103258005/02029466-da84-4f4d-a14f-2cef33db59e6)
 
-- Dashboard báo cáo doanh thu ![dashboard_list_top](https://github.com/Suerima/DWH-DVD-Rental-Store/assets/103258005/02029466-da84-4f4d-a14f-2cef33db59e6)
-- Dashboard thông kê những yếu tố nổi bật theo thời gian ![dashboard_list_top](![dashboard_list_top](https://github.com/Suerima/DWH-DVD-Rental-Store/assets/103258005/02029466-da84-4f4d-a14f-2cef33db59e6)
-)
+- Dashboard báo cáo doanh thu 
+![dashboard_list_top](https://github.com/Suerima/DWH-DVD-Rental-Store/assets/103258005/02029466-da84-4f4d-a14f-2cef33db59e6)
+- Dashboard thông kê những yếu tố nổi bật theo thời gian 
+![dashboard_list_top](![dashboard_list_top](https://github.com/Suerima/DWH-DVD-Rental-Store/assets/103258005/02029466-da84-4f4d-a14f-2cef33db59e6)
+
 
 
