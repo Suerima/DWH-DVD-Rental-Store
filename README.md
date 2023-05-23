@@ -41,9 +41,9 @@ Sau khi nghiên cứu, thì nhóm chúng em đã lấy ra các thuộc tính và
 ### 3.3. Xây dựng Dashboard
 
 - Dashboard báo cáo doanh thu 
-![dashboard_sales_reporting]([https://github.com/Suerima/DWH-DVD-Rental-Store/assets/103258005/02029466-da84-4f4d-a14f-2cef33db59e6](https://drive.google.com/file/d/13RCSCVjHoKFKBCfzGwnTUALVi14JFiAj/view?usp=share_link))
+![dashboard_sales_reporting](https://drive.google.com/file/d/13RCSCVjHoKFKBCfzGwnTUALVi14JFiAj/view?usp=share_link)
 - Dashboard thông kê những yếu tố nổi bật theo thời gian 
 ![dashboard_list_top]([dashboard_list_top](https://github.com/Suerima/DWH-DVD-Rental-Store/assets/103258005/02029466-da84-4f4d-a14f-2cef33db59e6))
 
-
+https://drive.google.com/file/d/13RCSCVjHoKFKBCfzGwnTUALVi14JFiAj/view?usp=share_link
 
