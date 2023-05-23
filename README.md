@@ -40,6 +40,7 @@ Sau khi nghiên cứu, thì nhóm chúng em đã lấy ra các thuộc tính và
 
 ### 3.3. Xây dựng Dashboard
 
-- Dashboard báo cáo doanh thu ![dashboard_sales_reporting](https://i.postimg.cc/W1sRkt7F/dashboard-list-top.png)
-
-- Dashboard thông kê những yếu tố nổi bật theo thời gian ![dashboard_list_top](https://drive.google.com/file/d/1JYSYDHplKFEEBTXD3N_ikba1rzlU4WQ-/view?usp=share_link)
+- Dashboard báo cáo doanh thu 
+[![dashboard-sales-reporting.png](https://i.postimg.cc/DZL56Pv2/dashboard-sales-reporting.png)](https://postimg.cc/mzZQ2M1q)
+- Dashboard thông kê những yếu tố nổi bật theo thời gian 
+![dashboard_sales_reporting](https://i.postimg.cc/W1sRkt7F/dashboard-list-top.png)
