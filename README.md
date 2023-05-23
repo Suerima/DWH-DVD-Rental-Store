@@ -1,4 +1,4 @@
-# Building a data warehouse for a dvd rental store
+# Xây dựng kho dữ liệu cho cửa hàng thuê đĩa DVD
 
 - [Rental Sakila Project](#rental-sakila-project)
   - [1. Giới thiệu đề tài](#1-giới-thiệu-đề-tài)
