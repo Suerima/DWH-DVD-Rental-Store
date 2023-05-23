@@ -45,7 +45,7 @@ Sau khi nghiên cứu, thì em đã lấy ra các thuộc tính và các bảng 
 ![dashboard_sales_reporting](https://i.postimg.cc/W1sRkt7F/dashboard-list-top.png)
 | Tên thuộc tính    | Mô tả                                                                                                                                     | 
 |-------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| CensusTract       | Mã số định danh cho từng khu dân cư trong tập dữ liệu                                                                                      |
+| CensusTract       | Mã số định danh cho từng khu dân cư trong tập dữ liệu                                                                                     |
 | State             | Mã số định danh cho bang hoặc lãnh thổ liên bang Hoa Kỳ                                                                                   |
 | County            | Tên của quận hoặc hạt nằm trong bang đó.                                                                                                  |
 | TotalPop          | Tổng số dân trong khu dân cư                                                                                                              |
@@ -57,28 +57,28 @@ Sau khi nghiên cứu, thì em đã lấy ra các thuộc tính và các bảng 
 | Asian             | Số lượng người châu Á trong khu dân cư                                                                                                    |
 | Pacific           | Số lượng người châu Đại Dương trong khu dân cư                                                                                            |
 | Citizen           | Số lượng công dân Hoa Kỳ trong khu dân cư                                                                                                 |
-| Income            | Tổng thu nhập hộ gia đình trung bình trong khu dân cư                                                                                      |
-| IncomeErr         | Sai số (độ lệch chuẩn) của thu nhập hộ gia đình trong khu dân cư                                                                           |
-| IncomePerCap      | Thu nhập trung bình đối với mỗi cá nhân trong khu dân cư                                                                                    |
-| IncomePerCapErr   | Sai số (độ lệch chuẩn) của thu nhập trung bình đối với mỗi cá nhân trong khu dân cư                                                         |
-| Poverty           | Tỷ lệ dân số trong khu dân cư ở mức sống dưới mức nghèo                                                                                    |
+| Income            | Tổng thu nhập hộ gia đình trung bình trong khu dân cư                                                                                     |
+| IncomeErr         | Sai số (độ lệch chuẩn) của thu nhập hộ gia đình trong khu dân cư                                                                          |
+| IncomePerCap      | Thu nhập trung bình đối với mỗi cá nhân trong khu dân cư                                                                                  |
+| IncomePerCapErr   | Sai số (độ lệch chuẩn) của thu nhập trung bình đối với mỗi cá nhân trong khu dân cư                                                       |
+| Poverty           | Tỷ lệ dân số trong khu dân cư ở mức sống dưới mức nghèo                                                                                   |
 | ChildPoverty      | Tỷ lệ trẻ em trong khu dân cư ở mức sống dưới mức nghèo                                                                                   |
-| Professional      | Số lượng người làm việc trong ngành nghề chuyên nghiệp trong khu dân cư                                                                    |
-| Service           | Số lượng người làm việc trong ngành dịch vụ trong khu dân cư                                                                               |
-| Office            | Số lượng người làm việc trong ngành văn phòng trong khu dân cư                                                                              |
-| Construction      | Số lượng người làm việc trong ngành xây dựng trong khu dân cư                                                                               |
-| Production        | Số lượng người làm việc trong ngành sản xuất trong khu dân cư                                                                              |
-| Drive             | Số lượng người đi xe cá nhân đến nơi làm việc trong khu dân cư                                                                              |
-| Carpool           | Số lượng người đi chung xe đến nơi làm việc trong khu dân cư                                                                                |
-| Transit           | Số lượng người sử dụng phương tiện công cộng để đến nơi làm việc trong khu dân cư                                                            |
-| Walk              | Số lượng người đi bộ đến nơi làm việc trong khu dân cư                                                                                     |
-| OtherTransp       | Số lượng người sử dụng phương tiện giao thông khác (ngoại trừ xe cá nhân, xe chung, và giao thông công cộng) để đi làm trong khu dân cư    |
-| WorkAtHome        | Số lượng người làm việc tại nhà trong khu dân cư                                                                                            |
-| MeanCommute       | Thời gian đi làm trung bình của người dân trong khu dân cư                                                                                  |
-| Employed          | Số lượng người đang có việc làm trong khu dân cư                                                                                            |
-| PrivateWork       | Tỷ lệ người làm việc trong doanh nghiệp tư nhân trong khu dân cư                                                                           |
-| PublicWork        | Tỷ lệ người làm việc trong cộng đồng trong khu dân cư                                                                                      |
-| SelfEmployed      | Tỷ lệ người tự làm chủ (làm việc tự do, kinh doanh riêng) trong khu dân cư                                                                 |
-| FamilyWork        | Tỷ lệ người làm việc trong công việc gia đình (làm việc trong doanh nghiệp gia đình) trong khu dân cư                                         |
+| Professional      | Số lượng người làm việc trong ngành nghề chuyên nghiệp trong khu dân cư                                                                   |
+| Service           | Số lượng người làm việc trong ngành dịch vụ trong khu dân cư                                                                              |
+| Office            | Số lượng người làm việc trong ngành văn phòng trong khu dân cư                                                                            |
+| Construction      | Số lượng người làm việc trong ngành xây dựng trong khu dân cư                                                                             |
+| Production        | Số lượng người làm việc trong ngành sản xuất trong khu dân cư                                                                             |
+| Drive             | Số lượng người đi xe cá nhân đến nơi làm việc trong khu dân cư                                                                            |
+| Carpool           | Số lượng người đi chung xe đến nơi làm việc trong khu dân cư                                                                              |
+| Transit           | Số lượng người sử dụng phương tiện công cộng để đến nơi làm việc trong khu dân cư                                                         |  |
+| Walk              | Số lượng người đi bộ đến nơi làm việc trong khu dân cư                                                                                    |
+| OtherTransp       | Số lượng người sử dụng phương tiện giao thông khác (ngoại trừ xe cá nhân, xe chung, và giao thông công cộng) để đi làm trong khu dân cư   |
+| WorkAtHome        | Số lượng người làm việc tại nhà trong khu dân cư                                                                                          |
+| MeanCommute       | Thời gian đi làm trung bình của người dân trong khu dân cư                                                                                |
+| Employed          | Số lượng người đang có việc làm trong khu dân cư                                                                                          |
+| PrivateWork       | Tỷ lệ người làm việc trong doanh nghiệp tư nhân trong khu dân cư                                                                          |
+| PublicWork        | Tỷ lệ người làm việc trong cộng đồng trong khu dân cư                                                                                     |
+| SelfEmployed      | Tỷ lệ người tự làm chủ (làm việc tự do, kinh doanh riêng) trong khu dân cư                                                                |
+| FamilyWork        | Tỷ lệ người làm việc trong công việc gia đình (làm việc trong doanh nghiệp gia đình) trong khu dân cư                                     |
 | Unemployment      | Tỷ lệ người thất nghiệp trong khu dân cư                                                                                                  |
 
