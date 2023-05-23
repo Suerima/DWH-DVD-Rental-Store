@@ -70,7 +70,7 @@ Sau khi nghiên cứu, thì em đã lấy ra các thuộc tính và các bảng 
 | Production        | Số lượng người làm việc trong ngành sản xuất trong khu dân cư                                                                             |
 | Drive             | Số lượng người đi xe cá nhân đến nơi làm việc trong khu dân cư                                                                            |
 | Carpool           | Số lượng người đi chung xe đến nơi làm việc trong khu dân cư                                                                              |
-| Transit           | Số lượng người sử dụng phương tiện công cộng để đến nơi làm việc trong khu dân cư                                                         |  |
+| Transit           | Số lượng người sử dụng phương tiện công cộng để đến nơi làm việc trong khu dân cư                                                         |
 | Walk              | Số lượng người đi bộ đến nơi làm việc trong khu dân cư                                                                                    |
 | OtherTransp       | Số lượng người sử dụng phương tiện giao thông khác (ngoại trừ xe cá nhân, xe chung, và giao thông công cộng) để đi làm trong khu dân cư   |
 | WorkAtHome        | Số lượng người làm việc tại nhà trong khu dân cư                                                                                          |
