@@ -43,8 +43,7 @@ Sau khi nghiên cứu, thì em đã lấy ra các thuộc tính và các bảng 
 [![dashboard-sales-reporting.png](https://i.postimg.cc/DZL56Pv2/dashboard-sales-reporting.png)](https://postimg.cc/mzZQ2M1q)
 - Dashboard thông kê những yếu tố nổi bật theo thời gian 
 ![dashboard_sales_reporting](https://i.postimg.cc/W1sRkt7F/dashboard-list-top.png)
-
-| Header 1 | Header 2 | Header 3 |
-|----------|----------|----------|
-| Cell 1   | Cell 2   | Cell 3   |
-| Cell 4   | Cell 5   | Cell 6   |
+| Tên thuộc tính | Mô tả | 
+|----------|----------|
+| Cell 1   | Cell 2   |
+| Cell 4   | Cell 5   | 
